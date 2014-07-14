@@ -1,0 +1,1993 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x589c
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          195100 (bytes into file)
+  Flags:                             0x5000000, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         7
+  Size of section headers:           40 (bytes)
+  Number of section headers:         24
+  Section header string table index: 23
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00000114 000114 000013 00   A  0   0  1
+  [ 2] .dynsym           DYNSYM          00000128 000128 001d90 10   A  3   1  4
+  [ 3] .dynstr           STRTAB          00001eb8 001eb8 002504 00   A  0   0  1
+  [ 4] .hash             HASH            000043bc 0043bc 000b88 04   A  2   0  4
+  [ 5] .rel.dyn          REL             00004f44 004f44 000278 08   A  2   0  4
+  [ 6] .rel.plt          REL             000051bc 0051bc 0002b8 08   A  2   0  4
+  [ 7] .plt              PROGBITS        00005474 005474 000428 00  AX  0   0  4
+  [ 8] .text             PROGBITS        0000589c 00589c 020a20 00  AX  0   0  4
+  [ 9] .note.android.ident PROGBITS        000262bc 0262bc 000018 00   A  0   0  4
+  [10] .rodata           PROGBITS        000262d4 0262d4 001448 00   A  0   0  4
+  [11] .preinit_array    PREINIT_ARRAY   00028c20 027c20 000008 00  WA  0   0  4
+  [12] .init_array       INIT_ARRAY      00028c28 027c28 000008 00  WA  0   0  4
+  [13] .fini_array       FINI_ARRAY      00028c30 027c30 000008 00  WA  0   0  4
+  [14] .dynamic          DYNAMIC         00028c38 027c38 000130 08  WA  3   0  4
+  [15] .got              PROGBITS        00028d68 027d68 000298 00  WA  0   0  4
+  [16] .data             PROGBITS        00029000 028000 000278 00  WA  0   0  4
+  [17] .bss              NOBITS          00029278 028278 000320 00  WA  0   0  4
+  [18] .comment          PROGBITS        00000000 028278 000010 01  MS  0   0  1
+  [19] .note.gnu.gold-version NOTE            00000000 028288 00001c 00      0   0  4
+  [20] .ARM.attributes   ARM_ATTRIBUTES  00000000 0282a4 000036 00      0   0  1
+  [21] .symtab           SYMTAB          00000000 0282dc 004ad0 10     22 725  4
+  [22] .strtab           STRTAB          00000000 02cdac 002b93 00      0   0  1
+  [23] .shstrtab         STRTAB          00000000 02f93f 0000dd 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  PHDR           0x000034 0x00000034 0x00000034 0x000e0 0x000e0 R   0x4
+  INTERP         0x000114 0x00000114 0x00000114 0x00013 0x00013 R   0x1
+      [Requesting program interpreter: /system/bin/linker]
+  LOAD           0x000000 0x00000000 0x00000000 0x2771c 0x2771c R E 0x1000
+  LOAD           0x027c20 0x00028c20 0x00028c20 0x00658 0x00978 RW  0x1000
+  DYNAMIC        0x027c38 0x00028c38 0x00028c38 0x00130 0x00130 RW  0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0
+  GNU_RELRO      0x027c20 0x00028c20 0x00028c20 0x003e0 0x003e0 RW  0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .interp 
+   02     .interp .dynsym .dynstr .hash .rel.dyn .rel.plt .plt .text .note.android.ident .rodata 
+   03     .preinit_array .init_array .fini_array .dynamic .got .data .bss 
+   04     .dynamic 
+   05     
+   06     .preinit_array .init_array .fini_array .dynamic .got 
+
+Dynamic section at offset 0x27c38 contains 33 entries:
+  Tag        Type                         Name/Value
+ 0x00000003 (PLTGOT)                     0x28e98
+ 0x00000002 (PLTRELSZ)                   696 (bytes)
+ 0x00000017 (JMPREL)                     0x51bc
+ 0x00000014 (PLTREL)                     REL
+ 0x00000011 (REL)                        0x4f44
+ 0x00000012 (RELSZ)                      632 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   75
+ 0x00000006 (SYMTAB)                     0x128
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x1eb8
+ 0x0000000a (STRSZ)                      9476 (bytes)
+ 0x00000004 (HASH)                       0x43bc
+ 0x00000001 (NEEDED)                     Shared library: [libvchiq_arm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libvcos.so]
+ 0x00000001 (NEEDED)                     Shared library: [libbcm_host.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstlport.so]
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x0000000e (SONAME)                     Library soname: [libEGL.so]
+ 0x00000020 (PREINIT_ARRAY)              0x28c20
+ 0x00000021 (PREINIT_ARRAYSZ)            0x8
+ 0x00000019 (INIT_ARRAY)                 0x28c28
+ 0x0000001b (INIT_ARRAYSZ)               8 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x28c30
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x00000010 (SYMBOLIC)                   0x0
+ 0x0000001e (FLAGS)                      SYMBOLIC BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x00000000 (NULL)                       0x0
+
+Relocation section '.rel.dyn' at offset 0x4f44 contains 79 entries:
+ Offset     Info    Type                Sym. Value  Symbol's Name
+00028d68  00000017 R_ARM_RELATIVE        
+00028d6c  00000017 R_ARM_RELATIVE        
+00028d70  00000017 R_ARM_RELATIVE        
+00028d78  00000017 R_ARM_RELATIVE        
+00028d7c  00000017 R_ARM_RELATIVE        
+00028d80  00000017 R_ARM_RELATIVE        
+00028d84  00000017 R_ARM_RELATIVE        
+00028d88  00000017 R_ARM_RELATIVE        
+00028d8c  00000017 R_ARM_RELATIVE        
+00028d90  00000017 R_ARM_RELATIVE        
+00028d94  00000017 R_ARM_RELATIVE        
+00028d98  00000017 R_ARM_RELATIVE        
+00028d9c  00000017 R_ARM_RELATIVE        
+00028da0  00000017 R_ARM_RELATIVE        
+00028da4  00000017 R_ARM_RELATIVE        
+00028dac  00000017 R_ARM_RELATIVE        
+00028db4  00000017 R_ARM_RELATIVE        
+00028db8  00000017 R_ARM_RELATIVE        
+00028dbc  00000017 R_ARM_RELATIVE        
+00028dc0  00000017 R_ARM_RELATIVE        
+00028dc4  00000017 R_ARM_RELATIVE        
+00028dc8  00000017 R_ARM_RELATIVE        
+00028dcc  00000017 R_ARM_RELATIVE        
+00028dd0  00000017 R_ARM_RELATIVE        
+00028dd4  00000017 R_ARM_RELATIVE        
+00028dd8  00000017 R_ARM_RELATIVE        
+00028ddc  00000017 R_ARM_RELATIVE        
+00028de0  00000017 R_ARM_RELATIVE        
+00028de4  00000017 R_ARM_RELATIVE        
+00028de8  00000017 R_ARM_RELATIVE        
+00028dec  00000017 R_ARM_RELATIVE        
+00028df0  00000017 R_ARM_RELATIVE        
+00028df4  00000017 R_ARM_RELATIVE        
+00028df8  00000017 R_ARM_RELATIVE        
+00028dfc  00000017 R_ARM_RELATIVE        
+00028e00  00000017 R_ARM_RELATIVE        
+00028e04  00000017 R_ARM_RELATIVE        
+00028e08  00000017 R_ARM_RELATIVE        
+00028e0c  00000017 R_ARM_RELATIVE        
+00028e10  00000017 R_ARM_RELATIVE        
+00028e14  00000017 R_ARM_RELATIVE        
+00028e18  00000017 R_ARM_RELATIVE        
+00028e1c  00000017 R_ARM_RELATIVE        
+00028e20  00000017 R_ARM_RELATIVE        
+00028e24  00000017 R_ARM_RELATIVE        
+00028e28  00000017 R_ARM_RELATIVE        
+00028e2c  00000017 R_ARM_RELATIVE        
+00028e30  00000017 R_ARM_RELATIVE        
+00028e34  00000017 R_ARM_RELATIVE        
+00028e38  00000017 R_ARM_RELATIVE        
+00028e3c  00000017 R_ARM_RELATIVE        
+00028e40  00000017 R_ARM_RELATIVE        
+00028e44  00000017 R_ARM_RELATIVE        
+00028e48  00000017 R_ARM_RELATIVE        
+00028e4c  00000017 R_ARM_RELATIVE        
+00028e50  00000017 R_ARM_RELATIVE        
+00028e54  00000017 R_ARM_RELATIVE        
+00028e58  00000017 R_ARM_RELATIVE        
+00028e5c  00000017 R_ARM_RELATIVE        
+00028e60  00000017 R_ARM_RELATIVE        
+00028e64  00000017 R_ARM_RELATIVE        
+00028e68  00000017 R_ARM_RELATIVE        
+00028e6c  00000017 R_ARM_RELATIVE        
+00028e70  00000017 R_ARM_RELATIVE        
+00028e74  00000017 R_ARM_RELATIVE        
+00028e78  00000017 R_ARM_RELATIVE        
+00028e80  00000017 R_ARM_RELATIVE        
+00028e84  00000017 R_ARM_RELATIVE        
+00028e88  00000017 R_ARM_RELATIVE        
+00028e8c  00000017 R_ARM_RELATIVE        
+00028e90  00000017 R_ARM_RELATIVE        
+00028e94  00000017 R_ARM_RELATIVE        
+00029234  00000017 R_ARM_RELATIVE        
+0002924c  00000017 R_ARM_RELATIVE        
+00029264  00000017 R_ARM_RELATIVE        
+00028d74  00000515 R_ARM_GLOB_DAT         00000000   main
+00028da8  00008f15 R_ARM_GLOB_DAT         00000000   glDiscardFramebufferEXT
+00028db0  00009115 R_ARM_GLOB_DAT         00000000   glPointSizePointerOES
+00028e7c  0000ef15 R_ARM_GLOB_DAT         00000000   __sF
+
+Relocation section '.rel.plt' at offset 0x51bc contains 87 entries:
+ Offset     Info    Type                Sym. Value  Symbol's Name
+00028ea4  00000416 R_ARM_JUMP_SLOT        00000000   __libc_init
+00028ea8  00000616 R_ARM_JUMP_SLOT        00000000   __cxa_atexit
+00028eac  00002316 R_ARM_JUMP_SLOT        00000000   gl11_client_state_init
+00028eb0  00002e16 R_ARM_JUMP_SLOT        00000000   gl20_client_state_init
+00028eb4  00003016 R_ARM_JUMP_SLOT        00000000   glxx_client_state_free
+00028eb8  00003816 R_ARM_JUMP_SLOT        00000000   __aeabi_idiv
+00028ebc  00004d16 R_ARM_JUMP_SLOT        00000000   vcos_log_register
+00028ec0  00004e16 R_ARM_JUMP_SLOT        00000000   vcos_log_impl
+00028ec4  00005316 R_ARM_JUMP_SLOT        00000000   vcos_log_unregister
+00028ec8  00008516 R_ARM_JUMP_SLOT        00000000   sem_wait
+00028ecc  00008616 R_ARM_JUMP_SLOT        00000000   __errno
+00028ed0  00008a16 R_ARM_JUMP_SLOT        00000000   strcmp
+00028ed4  0000c516 R_ARM_JUMP_SLOT        00000000   vcos_named_semaphore_delete
+00028ed8  0000ca16 R_ARM_JUMP_SLOT        00000000   strlen
+00028edc  0000d416 R_ARM_JUMP_SLOT        00000000   sem_post
+00028ee0  0000d816 R_ARM_JUMP_SLOT        00000000   __aeabi_uidiv
+00028ee4  0000e916 R_ARM_JUMP_SLOT        00000000   getenv
+00028ee8  0000ea16 R_ARM_JUMP_SLOT        00000000   atoi
+00028eec  0000ec16 R_ARM_JUMP_SLOT        00000000   fwrite
+00028ef0  0000ed16 R_ARM_JUMP_SLOT        00000000   fprintf
+00028ef4  0000ee16 R_ARM_JUMP_SLOT        00000000   fflush
+00028ef8  0000f716 R_ARM_JUMP_SLOT        00000000   printf
+00028efc  0000f816 R_ARM_JUMP_SLOT        00000000   vchiq_release_message
+00028f00  0000f916 R_ARM_JUMP_SLOT        00000000   vchiu_queue_pop
+00028f04  0000fa16 R_ARM_JUMP_SLOT        00000000   memcpy
+00028f08  0000fb16 R_ARM_JUMP_SLOT        00000000   vchiq_queue_bulk_receive
+00028f0c  0000fd16 R_ARM_JUMP_SLOT        00000000   pthread_mutex_lock
+00028f10  0000fe16 R_ARM_JUMP_SLOT        00000000   sem_getvalue
+00028f14  0000ff16 R_ARM_JUMP_SLOT        00000000   pthread_mutex_unlock
+00028f18  00010016 R_ARM_JUMP_SLOT        00000000   vchiu_queue_push
+00028f1c  00010316 R_ARM_JUMP_SLOT        00000000   sem_init
+00028f20  00010416 R_ARM_JUMP_SLOT        00000000   pthread_mutex_init
+00028f24  00010516 R_ARM_JUMP_SLOT        00000000   vchiq_initialise
+00028f28  00010616 R_ARM_JUMP_SLOT        00000000   vchiq_connect
+00028f2c  00010716 R_ARM_JUMP_SLOT        00000000   vchiq_open_service
+00028f30  00010816 R_ARM_JUMP_SLOT        00000000   vchiu_queue_init
+00028f34  00010916 R_ARM_JUMP_SLOT        00000000   vcos_pthreads_map_errno
+00028f38  00010a16 R_ARM_JUMP_SLOT        00000000   sem_destroy
+00028f3c  00010b16 R_ARM_JUMP_SLOT        00000000   exit
+00028f40  00010e16 R_ARM_JUMP_SLOT        00000000   vcos_generic_reentrant_mutex_create
+00028f44  00011016 R_ARM_JUMP_SLOT        00000000   vcos_generic_reentrant_mutex_delete
+00028f48  00011216 R_ARM_JUMP_SLOT        00000000   vcos_generic_reentrant_mutex_lock
+00028f4c  00011316 R_ARM_JUMP_SLOT        00000000   vcos_generic_reentrant_mutex_unlock
+00028f50  00011416 R_ARM_JUMP_SLOT        00000000   vchiq_queue_bulk_transmit
+00028f54  00011516 R_ARM_JUMP_SLOT        00000000   vchiq_queue_message
+00028f58  00011b16 R_ARM_JUMP_SLOT        00000000   vc_dispmanx_display_open
+00028f5c  00011c16 R_ARM_JUMP_SLOT        00000000   vc_dispmanx_display_get_info
+00028f60  00011d16 R_ARM_JUMP_SLOT        00000000   vc_dispmanx_update_start
+00028f64  00011e16 R_ARM_JUMP_SLOT        00000000   vc_dispmanx_element_add
+00028f68  00011f16 R_ARM_JUMP_SLOT        00000000   vc_dispmanx_update_submit_sync
+00028f6c  00012016 R_ARM_JUMP_SLOT        00000000   vcos_snprintf
+00028f70  00012116 R_ARM_JUMP_SLOT        00000000   vcos_generic_named_semaphore_create
+00028f74  00012216 R_ARM_JUMP_SLOT        00000000   getpid
+00028f78  00012416 R_ARM_JUMP_SLOT        00000000   pthread_getspecific
+00028f7c  00012616 R_ARM_JUMP_SLOT        00000000   vcos_thread_at_exit
+00028f80  00012816 R_ARM_JUMP_SLOT        00000000   vcos_generic_mem_alloc
+00028f84  00012916 R_ARM_JUMP_SLOT        00000000   vcos_generic_mem_free
+00028f88  00013016 R_ARM_JUMP_SLOT        00000000   memcmp
+00028f8c  00013d16 R_ARM_JUMP_SLOT        00000000   sincosf
+00028f90  00014e16 R_ARM_JUMP_SLOT        00000000   atan2f
+00028f94  00014f16 R_ARM_JUMP_SLOT        00000000   sqrtf
+00028f98  00015116 R_ARM_JUMP_SLOT        00000000   floorf
+00028f9c  0001b016 R_ARM_JUMP_SLOT        00000000   memset
+00028fa0  0001bb16 R_ARM_JUMP_SLOT        00000000   pthread_key_create
+00028fa4  0001bc16 R_ARM_JUMP_SLOT        00000000   pthread_key_delete
+00028fa8  0001bd16 R_ARM_JUMP_SLOT        00000000   pthread_setspecific
+00028fac  0001c016 R_ARM_JUMP_SLOT        00000000   glxx_client_IsRenderbuffer
+00028fb0  0001c116 R_ARM_JUMP_SLOT        00000000   glxx_client_BindRenderbuffer
+00028fb4  0001c216 R_ARM_JUMP_SLOT        00000000   glxx_client_DeleteRenderbuffers
+00028fb8  0001c316 R_ARM_JUMP_SLOT        00000000   glxx_client_GenRenderbuffers
+00028fbc  0001c416 R_ARM_JUMP_SLOT        00000000   glxx_client_RenderbufferStorage
+00028fc0  0001c516 R_ARM_JUMP_SLOT        00000000   glxx_client_GetRenderbufferParameteriv
+00028fc4  0001c616 R_ARM_JUMP_SLOT        00000000   glxx_client_IsFramebuffer
+00028fc8  0001c716 R_ARM_JUMP_SLOT        00000000   glxx_client_BindFramebuffer
+00028fcc  0001c816 R_ARM_JUMP_SLOT        00000000   glxx_client_DeleteFramebuffers
+00028fd0  0001c916 R_ARM_JUMP_SLOT        00000000   glxx_client_GenFramebuffers
+00028fd4  0001ca16 R_ARM_JUMP_SLOT        00000000   glxx_client_CheckFramebufferStatus
+00028fd8  0001cb16 R_ARM_JUMP_SLOT        00000000   glxx_client_FramebufferRenderbuffer
+00028fdc  0001cc16 R_ARM_JUMP_SLOT        00000000   glxx_client_FramebufferTexture2D
+00028fe0  0001cd16 R_ARM_JUMP_SLOT        00000000   glxx_client_GetFramebufferAttachmentParameteriv
+00028fe4  0001ce16 R_ARM_JUMP_SLOT        00000000   glxx_client_GenerateMipmap
+00028fe8  0001cf16 R_ARM_JUMP_SLOT        00000000   glxx_buffer_info_get
+00028fec  0001d016 R_ARM_JUMP_SLOT        00000000   glxx_set_error
+00028ff0  0001d116 R_ARM_JUMP_SLOT        00000000   glxx_buffer_info_set
+00028ff4  0001d216 R_ARM_JUMP_SLOT        00000000   glBufferSubData
+00028ff8  0001d316 R_ARM_JUMP_SLOT        00000000   glxx_set_error_api
+00028ffc  0001d416 R_ARM_JUMP_SLOT        00000000   glintAttribPointer
+
+There are no unwind sections in this file.
+
+Symbol table '.dynsym' contains 473 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00028c20     4 OBJECT  GLOBAL DEFAULT   11 __PREINIT_ARRAY__
+     2: 00028c28     4 OBJECT  GLOBAL DEFAULT   12 __INIT_ARRAY__
+     3: 00028c30     4 OBJECT  GLOBAL DEFAULT   13 __FINI_ARRAY__
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_init
+     5: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND main
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit
+     7: 00005950   108 FUNC    GLOBAL DEFAULT    8 egl_config_install_configs
+     8: 000059bc   860 FUNC    GLOBAL DEFAULT    8 egl_config_check_attribs
+     9: 000111d8   104 FUNC    GLOBAL DEFAULT    8 platform_get_pixmap_info
+    10: 00011240     4 FUNC    GLOBAL DEFAULT    8 khrn_platform_release_pixmap_info
+    11: 00005d18   548 FUNC    GLOBAL DEFAULT    8 egl_config_sort
+    12: 00005f3c    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_color_format
+    13: 00005f58    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_depth_format
+    14: 00005f74    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_mask_format
+    15: 00005f90    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_multisample_format
+    16: 00005fac    32 FUNC    GLOBAL DEFAULT    8 egl_config_get_multisample
+    17: 00005fcc   140 FUNC    GLOBAL DEFAULT    8 egl_config_bindable
+    18: 00006058   132 FUNC    GLOBAL DEFAULT    8 egl_config_match_pixmap_info
+    19: 0000e628   132 FUNC    GLOBAL DEFAULT    8 khrn_image_get_red_size
+    20: 0000e6ac   140 FUNC    GLOBAL DEFAULT    8 khrn_image_get_green_size
+    21: 0000e738   132 FUNC    GLOBAL DEFAULT    8 khrn_image_get_blue_size
+    22: 0000e7bc   148 FUNC    GLOBAL DEFAULT    8 khrn_image_get_alpha_size
+    23: 000060dc   164 FUNC    GLOBAL DEFAULT    8 egl_config_bpps_match
+    24: 00006180     4 FUNC    GLOBAL DEFAULT    8 egl_config_get_mapped_format
+    25: 00006184    32 FUNC    GLOBAL DEFAULT    8 egl_config_is_lockable
+    26: 000061a4   164 FUNC    GLOBAL DEFAULT    8 egl_config_get_api_support
+    27: 00006248    52 FUNC    GLOBAL DEFAULT    8 egl_config_get_api_conformance
+    28: 0000627c   924 FUNC    GLOBAL DEFAULT    8 egl_config_get_attrib
+    29: 0001218c     4 FUNC    GLOBAL DEFAULT    8 platform_get_color_format
+    30: 00006618   560 FUNC    GLOBAL DEFAULT    8 egl_config_filter
+    31: 00011258   112 FUNC    GLOBAL DEFAULT    8 platform_match_pixmap_api_support
+    32: 00006848   112 FUNC    GLOBAL DEFAULT    8 egl_context_check_attribs
+    33: 000068b8   836 FUNC    GLOBAL DEFAULT    8 egl_context_create
+    34: 000111c8     4 FUNC    GLOBAL DEFAULT    8 khrn_platform_malloc
+    35: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND gl11_client_state_init
+    36: 0001725c   464 FUNC    GLOBAL DEFAULT    8 vg_client_state_alloc
+    37: 00010f84   188 FUNC    GLOBAL DEFAULT    8 platform_tls_get
+    38: 0000fdd4    20 FUNC    GLOBAL DEFAULT    8 rpc_begin
+    39: 00010a64   304 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_begin
+    40: 0000fd94    60 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_write
+    41: 0000fdd0     4 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_end
+    42: 0001041c  1124 FUNC    GLOBAL DEFAULT    8 rpc_recv
+    43: 0000fde8    20 FUNC    GLOBAL DEFAULT    8 rpc_end
+    44: 0001742c    48 FUNC    GLOBAL DEFAULT    8 vg_client_state_free
+    45: 000111cc    12 FUNC    GLOBAL DEFAULT    8 khrn_platform_free
+    46: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND gl20_client_state_init
+    47: 0001721c    64 FUNC    GLOBAL DEFAULT    8 vg_client_shared_state_free
+    48: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_state_free
+    49: 00017194   136 FUNC    GLOBAL DEFAULT    8 vg_client_shared_state_alloc
+    50: 00029594     4 OBJECT  GLOBAL DEFAULT   17 client_tls
+    51: 00006bfc   252 FUNC    GLOBAL DEFAULT    8 egl_context_term
+    52: 00010118   252 FUNC    GLOBAL DEFAULT    8 rpc_flush
+    53: 00006cf8   216 FUNC    GLOBAL DEFAULT    8 egl_context_get_attrib
+    54: 00006dd0    56 FUNC    GLOBAL DEFAULT    8 egl_context_set_callbacks
+    55: 00006e08    48 FUNC    GLOBAL DEFAULT    8 egl_context_maybe_free
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_idiv
+    57: 00010880   484 FUNC    GLOBAL DEFAULT    8 rpc_send_bulk
+    58: 0001132c    28 FUNC    GLOBAL DEFAULT    8 platform_client_lock
+    59: 00024cc0    96 FUNC    GLOBAL DEFAULT    8 client_egl_get_process_state
+    60: 00011348    28 FUNC    GLOBAL DEFAULT    8 platform_client_release
+    61: 00007370   212 FUNC    GLOBAL DEFAULT    8 egl_vg_render_callback
+    62: 00011c5c     4 FUNC    GLOBAL DEFAULT    8 platform_send_pixmap_completed
+    63: 00007444   208 FUNC    GLOBAL DEFAULT    8 egl_vg_flush_callback
+    64: 00011c58     4 FUNC    GLOBAL DEFAULT    8 platform_retrieve_pixmap_completed
+    65: 00007514   212 FUNC    GLOBAL DEFAULT    8 egl_gl_render_callback
+    66: 000075e8   208 FUNC    GLOBAL DEFAULT    8 egl_gl_flush_callback
+    67: 000076b8    60 FUNC    GLOBAL DEFAULT    8 eglGetError
+    68: 000111c0     4 FUNC    GLOBAL DEFAULT    8 platform_tls_get_check
+    69: 000076f4    64 FUNC    GLOBAL DEFAULT    8 eglGetDisplay
+    70: 00011c68    12 FUNC    GLOBAL DEFAULT    8 khrn_platform_set_display_id
+    71: 00007734   268 FUNC    GLOBAL DEFAULT    8 eglGetConfigs
+    72: 00007840    36 FUNC    GLOBAL DEFAULT    8 eglChooseConfig
+    73: 00007864    36 FUNC    GLOBAL DEFAULT    8 eglSaneChooseConfigBRCM
+    74: 00007888   244 FUNC    GLOBAL DEFAULT    8 eglGetConfigAttrib
+    75: 0000797c   268 FUNC    GLOBAL DEFAULT    8 eglInitialize
+    76: 00024bcc   244 FUNC    GLOBAL DEFAULT    8 client_process_state_init
+    77: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_register
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_impl
+    79: 00029560    24 OBJECT  GLOBAL DEFAULT   17 egl_client_log_cat
+    80: 00007a88   244 FUNC    GLOBAL DEFAULT    8 eglTerminate
+    81: 00024d20   148 FUNC    GLOBAL DEFAULT    8 client_process_state_term
+    82: 00024b0c   192 FUNC    GLOBAL DEFAULT    8 client_try_unload_server
+    83: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_unregister
+    84: 00007b7c   264 FUNC    GLOBAL DEFAULT    8 eglQueryString
+    85: 00007c84   732 FUNC    GLOBAL DEFAULT    8 eglCreateWindowSurface
+    86: 00012178    20 FUNC    GLOBAL DEFAULT    8 platform_get_handle
+    87: 0000b0c0   696 FUNC    GLOBAL DEFAULT    8 egl_surface_check_attribs
+    88: 00012144    52 FUNC    GLOBAL DEFAULT    8 platform_get_dimensions
+    89: 0000b378  1164 FUNC    GLOBAL DEFAULT    8 egl_surface_create
+    90: 00025e2c   488 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_insert
+    91: 0000bb10   520 FUNC    GLOBAL DEFAULT    8 egl_surface_free
+    92: 00029578    16 OBJECT  GLOBAL DEFAULT   17 khrn_options
+    93: 00007f60   664 FUNC    GLOBAL DEFAULT    8 eglCreatePbufferSurface
+    94: 000081f8   880 FUNC    GLOBAL DEFAULT    8 eglCreatePixmapSurface
+    95: 00011244    20 FUNC    GLOBAL DEFAULT    8 platform_get_pixmap_server_handle
+    96: 0002611c   108 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_iterate
+    97: 00008568   376 FUNC    GLOBAL DEFAULT    8 eglDestroySurface
+    98: 00024e34    80 FUNC    GLOBAL DEFAULT    8 client_egl_get_surface
+    99: 00026014   156 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_delete
+   100: 0000c378    28 FUNC    GLOBAL DEFAULT    8 egl_surface_maybe_free
+   101: 000086e0   336 FUNC    GLOBAL DEFAULT    8 eglQuerySurface
+   102: 00024e84    40 FUNC    GLOBAL DEFAULT    8 client_egl_get_locked_surface
+   103: 0000bd6c   840 FUNC    GLOBAL DEFAULT    8 egl_surface_get_attrib
+   104: 0000c1d0   424 FUNC    GLOBAL DEFAULT    8 egl_surface_get_mapped_buffer_attrib
+   105: 00008830   120 FUNC    GLOBAL DEFAULT    8 eglBindAPI
+   106: 000088a8    76 FUNC    GLOBAL DEFAULT    8 eglQueryAPI
+   107: 000088f4   252 FUNC    GLOBAL DEFAULT    8 eglWaitClient
+   108: 000089f0   532 FUNC    GLOBAL DEFAULT    8 eglReleaseThread
+   109: 000111c4     4 FUNC    GLOBAL DEFAULT    8 platform_hint_thread_finished
+   110: 000294f4   108 OBJECT  GLOBAL DEFAULT   17 client_process_state
+   111: 00008c04   548 FUNC    GLOBAL DEFAULT    8 eglCreatePbufferFromClientBuffer
+   112: 0000b804   780 FUNC    GLOBAL DEFAULT    8 egl_surface_from_vg_image
+   113: 00008e28   216 FUNC    GLOBAL DEFAULT    8 eglSurfaceAttrib
+   114: 0000c0b4   284 FUNC    GLOBAL DEFAULT    8 egl_surface_set_attrib
+   115: 00008f00   440 FUNC    GLOBAL DEFAULT    8 eglBindTexImage
+   116: 000090b8   376 FUNC    GLOBAL DEFAULT    8 eglReleaseTexImage
+   117: 00009230   272 FUNC    GLOBAL DEFAULT    8 eglSwapInterval
+   118: 00009340   672 FUNC    GLOBAL DEFAULT    8 eglCreateContext
+   119: 00024e0c    40 FUNC    GLOBAL DEFAULT    8 client_egl_get_context
+   120: 000095e0   268 FUNC    GLOBAL DEFAULT    8 eglDestroyContext
+   121: 000096ec  1536 FUNC    GLOBAL DEFAULT    8 eglMakeCurrent
+   122: 00024eb8   532 FUNC    GLOBAL DEFAULT    8 client_send_make_current
+   123: 0000bd18    84 FUNC    GLOBAL DEFAULT    8 egl_surface_get_render_buffer
+   124: 00009cec   132 FUNC    GLOBAL DEFAULT    8 eglGetCurrentContext
+   125: 00009d70   196 FUNC    GLOBAL DEFAULT    8 eglGetCurrentSurface
+   126: 00009e34   132 FUNC    GLOBAL DEFAULT    8 eglGetCurrentDisplay
+   127: 00009eb8   260 FUNC    GLOBAL DEFAULT    8 eglQueryContext
+   128: 00009fbc   192 FUNC    GLOBAL DEFAULT    8 eglWaitGL
+   129: 0000a07c   108 FUNC    GLOBAL DEFAULT    8 eglWaitNative
+   130: 0000a0e8   776 FUNC    GLOBAL DEFAULT    8 eglSwapBuffers
+   131: 00011374  2272 FUNC    GLOBAL DEFAULT    8 platform_surface_update
+   132: 00011c74     8 FUNC    GLOBAL DEFAULT    8 khrn_platform_get_window_position
+   133: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_wait
+   134: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno
+   135: 0000a3f0   532 FUNC    GLOBAL DEFAULT    8 eglCopyBuffers
+   136: 0000a604   212 FUNC    GLOBAL DEFAULT    8 eglProcStateValid
+   137: 0000a6d8  2536 FUNC    GLOBAL DEFAULT    8 eglGetProcAddress
+   138: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp
+   139: 0000caf0   212 FUNC    GLOBAL DEFAULT    8 eglQueryGlobalImageBRCM
+   140: 0000d338   484 FUNC    GLOBAL DEFAULT    8 eglDestroyImageKHR
+   141: 0000cc10  1832 FUNC    GLOBAL DEFAULT    8 eglCreateImageKHR
+   142: 0000e5c0     4 FUNC    GLOBAL DEFAULT    8 glInsertEventMarkerEXT
+   143: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glDiscardFramebufferEXT
+   144: 0000e5c4     4 FUNC    GLOBAL DEFAULT    8 glPushGroupMarkerEXT
+   145: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glPointSizePointerOES
+   146: 0000e5c8     4 FUNC    GLOBAL DEFAULT    8 glPopGroupMarkerEXT
+   147: 0000def8   436 FUNC    GLOBAL DEFAULT    8 glEGLImageTargetTexture2DOES
+   148: 0000e0ac   472 FUNC    GLOBAL DEFAULT    8 glEGLImageTargetRenderbufferStorageOES
+   149: 00025a74   240 FUNC    GLOBAL DEFAULT    8 glCurrentPaletteMatrixOES
+   150: 00025b64   164 FUNC    GLOBAL DEFAULT    8 glLoadPaletteFromModelViewMatrixOES
+   151: 00025c08   132 FUNC    GLOBAL DEFAULT    8 glMatrixIndexPointerOES
+   152: 00025c8c   300 FUNC    GLOBAL DEFAULT    8 glWeightPointerOES
+   153: 000246ec  1024 FUNC    GLOBAL DEFAULT    8 vgCreateEGLImageTargetKHR
+   154: 0000e284   360 FUNC    GLOBAL DEFAULT    8 eglLockSurfaceKHR
+   155: 0000d780   832 FUNC    GLOBAL DEFAULT    8 eglCreateSyncKHR
+   156: 0000e3ec   468 FUNC    GLOBAL DEFAULT    8 eglUnlockSurfaceKHR
+   157: 0000dac0   328 FUNC    GLOBAL DEFAULT    8 eglDestroySyncKHR
+   158: 0000c918   264 FUNC    GLOBAL DEFAULT    8 eglCreateCopyGlobalImageBRCM
+   159: 0000c6d0   584 FUNC    GLOBAL DEFAULT    8 eglCreateGlobalImageBRCM
+   160: 0000ca20   208 FUNC    GLOBAL DEFAULT    8 eglDestroyGlobalImageBRCM
+   161: 0000dc08   284 FUNC    GLOBAL DEFAULT    8 eglClientWaitSyncKHR
+   162: 0000ddbc   296 FUNC    GLOBAL DEFAULT    8 eglGetSyncAttribKHR
+   163: 0000dd24   152 FUNC    GLOBAL DEFAULT    8 eglSignalSyncKHR
+   164: 0000cbc4    76 FUNC    GLOBAL DEFAULT    8 eglFlushBRCM
+   165: 000258a4   256 FUNC    GLOBAL DEFAULT    8 glUnmapBufferOES
+   166: 00025740   356 FUNC    GLOBAL DEFAULT    8 glMapBufferOES
+   167: 000259a4   208 FUNC    GLOBAL DEFAULT    8 glGetBufferPointervOES
+   168: 0002573c     4 FUNC    GLOBAL DEFAULT    8 glGenerateMipmapOES
+   169: 00025738     4 FUNC    GLOBAL DEFAULT    8 glGetFramebufferAttachmentParameterivOES
+   170: 00025734     4 FUNC    GLOBAL DEFAULT    8 glFramebufferTexture2DOES
+   171: 00025730     4 FUNC    GLOBAL DEFAULT    8 glFramebufferRenderbufferOES
+   172: 0002572c     4 FUNC    GLOBAL DEFAULT    8 glCheckFramebufferStatusOES
+   173: 00025728     4 FUNC    GLOBAL DEFAULT    8 glGenFramebuffersOES
+   174: 00025724     4 FUNC    GLOBAL DEFAULT    8 glDeleteFramebuffersOES
+   175: 00025720     4 FUNC    GLOBAL DEFAULT    8 glBindFramebufferOES
+   176: 0002571c     4 FUNC    GLOBAL DEFAULT    8 glIsFramebufferOES
+   177: 00025718     4 FUNC    GLOBAL DEFAULT    8 glGetRenderbufferParameterivOES
+   178: 00025714     4 FUNC    GLOBAL DEFAULT    8 glRenderbufferStorageOES
+   179: 00025710     4 FUNC    GLOBAL DEFAULT    8 glGenRenderbuffersOES
+   180: 0002570c     4 FUNC    GLOBAL DEFAULT    8 glDeleteRenderbuffersOES
+   181: 00025708     4 FUNC    GLOBAL DEFAULT    8 glBindRenderbufferOES
+   182: 00025704     4 FUNC    GLOBAL DEFAULT    8 glIsRenderbufferOES
+   183: 000255e8   284 FUNC    GLOBAL DEFAULT    8 glQueryMatrixxOES
+   184: 000255b8    48 FUNC    GLOBAL DEFAULT    8 glDrawTexfvOES
+   185: 00025310   188 FUNC    GLOBAL DEFAULT    8 glDrawTexfOES
+   186: 000253cc   108 FUNC    GLOBAL DEFAULT    8 glDrawTexxvOES
+   187: 00025438    88 FUNC    GLOBAL DEFAULT    8 glDrawTexivOES
+   188: 00025490   100 FUNC    GLOBAL DEFAULT    8 glDrawTexsvOES
+   189: 000254f4    80 FUNC    GLOBAL DEFAULT    8 glDrawTexxOES
+   190: 00025544    56 FUNC    GLOBAL DEFAULT    8 glDrawTexiOES
+   191: 0002557c    60 FUNC    GLOBAL DEFAULT    8 glDrawTexsOES
+   192: 0000c64c   132 FUNC    GLOBAL DEFAULT    8 eglTermDriverMonitorBRCM
+   193: 0000c550   252 FUNC    GLOBAL DEFAULT    8 eglGetDriverMonitorXMLBRCM
+   194: 0000c394   288 FUNC    GLOBAL DEFAULT    8 eglInitDriverMonitorBRCM
+   195: 00010f74    16 FUNC    GLOBAL DEFAULT    8 khronos_platform_get_process_id
+   196: 00010f24    80 FUNC    GLOBAL DEFAULT    8 khronos_platform_semaphore_create
+   197: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_named_semaphore_delete
+   198: 00011370     4 FUNC    GLOBAL DEFAULT    8 platform_destroy_winhandle
+   199: 0000ea78    40 FUNC    GLOBAL DEFAULT    8 khrn_image_get_size
+   200: 0000ea54    36 FUNC    GLOBAL DEFAULT    8 khrn_image_get_stride
+   201: 0000c4b4   156 FUNC    GLOBAL DEFAULT    8 egl_driver_monitor_term
+   202: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen
+   203: 0000fdfc   796 FUNC    GLOBAL DEFAULT    8 rpc_send_bulk_gather
+   204: 000112c8     8 FUNC    GLOBAL DEFAULT    8 platform_use_global_image_as_egl_image
+   205: 0000f348   700 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_insert
+   206: 00011c7c   580 FUNC    GLOBAL DEFAULT    8 khrn_platform_bind_pixmap_to_egl_image
+   207: 0000f6a8   116 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_lookup
+   208: 00011ec0   644 FUNC    GLOBAL DEFAULT    8 khrn_platform_unbind_pixmap_from_egl_image
+   209: 0000f604   156 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_delete
+   210: 0000d51c   440 FUNC    GLOBAL DEFAULT    8 eglIntImageSetColorData
+   211: 000260b8   100 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_lookup
+   212: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_post
+   213: 0000dee4    20 FUNC    GLOBAL DEFAULT    8 egl_sync_destroy_all
+   214: 000112d8    84 FUNC    GLOBAL DEFAULT    8 platform_get_global_image_info
+   215: 00029248    24 OBJECT  GLOBAL DEFAULT   16 gl_oes_egl_image_client_log
+   216: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidiv
+   217: 0000e5cc    92 FUNC    GLOBAL DEFAULT    8 khrn_image_get_bpp
+   218: 0000e850    32 FUNC    GLOBAL DEFAULT    8 khrn_image_get_z_size
+   219: 0000e870    36 FUNC    GLOBAL DEFAULT    8 khrn_image_get_stencil_size
+   220: 0000e894    88 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm2_width
+   221: 0000e8ec    96 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm2_height
+   222: 0000e94c    16 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm1_width
+   223: 0000e95c    16 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm1_height
+   224: 0000e96c   116 FUNC    GLOBAL DEFAULT    8 khrn_image_pad_width
+   225: 0000e9e0   116 FUNC    GLOBAL DEFAULT    8 khrn_image_pad_height
+   226: 0000eaa0    40 FUNC    GLOBAL DEFAULT    8 khrn_image_wrap
+   227: 0000eac8   192 FUNC    GLOBAL DEFAULT    8 khrn_clip_range
+   228: 0000eb88   608 FUNC    GLOBAL DEFAULT    8 khrn_clip_range2
+   229: 0000ede8    60 FUNC    GLOBAL DEFAULT    8 khrn_clip_rect
+   230: 0000ee24   116 FUNC    GLOBAL DEFAULT    8 khrn_clip_rect2
+   231: 0000ee98   116 FUNC    GLOBAL DEFAULT    8 khrn_get_type_size
+   232: 0000ef0c   552 FUNC    GLOBAL DEFAULT    8 khrn_init_options
+   233: 00000000     0 FUNC    GLOBAL DEFAULT  UND getenv
+   234: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi
+   235: 0000f134   272 FUNC    GLOBAL DEFAULT    8 khrn_error_assist
+   236: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite
+   237: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf
+   238: 00000000     0 FUNC    GLOBAL DEFAULT  UND fflush
+   239: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __sF
+   240: 0000f244   112 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_init
+   241: 0000f2b4   148 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_term
+   242: 000112d4     4 FUNC    GLOBAL DEFAULT    8 platform_release_global_image
+   243: 000112d0     4 FUNC    GLOBAL DEFAULT    8 platform_acquire_global_image
+   244: 0000f6a0     8 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_get_count
+   245: 0000f71c   144 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_iterate
+   246: 0000f7ac   212 FUNC    GLOBAL DEFAULT    8 khan_callback
+   247: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf
+   248: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_release_message
+   249: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_pop
+   250: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy
+   251: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_bulk_receive
+   252: 0000f994   152 FUNC    GLOBAL DEFAULT    8 khhn_callback
+   253: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock
+   254: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_getvalue
+   255: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock
+   256: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_push
+   257: 0000fa2c   156 FUNC    GLOBAL DEFAULT    8 khrn_callback
+   258: 0000fac8   580 FUNC    GLOBAL DEFAULT    8 vc_vchi_khronos_init
+   259: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_init
+   260: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init
+   261: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_initialise
+   262: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_connect
+   263: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_open_service
+   264: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_init
+   265: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_pthreads_map_errno
+   266: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_destroy
+   267: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit
+   268: 00029260    24 OBJECT  GLOBAL DEFAULT   16 khrn_client_log
+   269: 0000fd0c    48 FUNC    GLOBAL DEFAULT    8 khclient_rpc_init
+   270: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_create
+   271: 0000fd3c    56 FUNC    GLOBAL DEFAULT    8 rpc_term
+   272: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_delete
+   273: 0000fd74    32 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_longest
+   274: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_lock
+   275: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_unlock
+   276: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_bulk_transmit
+   277: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_message
+   278: 00010214   260 FUNC    GLOBAL DEFAULT    8 rpc_high_priority_end
+   279: 00010318   260 FUNC    GLOBAL DEFAULT    8 rpc_high_priority_begin
+   280: 00010b94     4 FUNC    GLOBAL DEFAULT    8 rpc_use
+   281: 00010b98     4 FUNC    GLOBAL DEFAULT    8 rpc_release
+   282: 00010b9c   364 FUNC    GLOBAL DEFAULT    8 rpc_call8_makecurrent
+   283: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_display_open
+   284: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_display_get_info
+   285: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_update_start
+   286: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_element_add
+   287: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_update_submit_sync
+   288: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_snprintf
+   289: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_named_semaphore_create
+   290: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid
+   291: 000250cc   132 FUNC    GLOBAL DEFAULT    8 client_process_attach
+   292: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_getspecific
+   293: 00025150   100 FUNC    GLOBAL DEFAULT    8 client_thread_attach
+   294: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_thread_at_exit
+   295: 000251b4   104 FUNC    GLOBAL DEFAULT    8 client_thread_detach
+   296: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_mem_alloc
+   297: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_mem_free
+   298: 00029588    12 OBJECT  GLOBAL DEFAULT   17 client_mutex
+   299: 00011364     4 FUNC    GLOBAL DEFAULT    8 platform_init_rpc
+   300: 00011368     4 FUNC    GLOBAL DEFAULT    8 platform_term_rpc
+   301: 0001136c     4 FUNC    GLOBAL DEFAULT    8 platform_maybe_free_process
+   302: 00011c54     4 FUNC    GLOBAL DEFAULT    8 egl_gce_win_change_image
+   303: 00011c60     4 FUNC    GLOBAL DEFAULT    8 platform_memcmp
+   304: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp
+   305: 00011c64     4 FUNC    GLOBAL DEFAULT    8 platform_memcpy
+   306: 00012190     4 FUNC    GLOBAL DEFAULT    8 platform_dequeue
+   307: 00012194    48 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_set_identity
+   308: 000121c4   596 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_set_clean
+   309: 00012418    76 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_get
+   310: 00012464   160 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_identical
+   311: 00012504   364 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_mul
+   312: 00012670    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_translate
+   313: 000126d0    84 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_scale
+   314: 00012724    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_shear
+   315: 00012784   108 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_rotate_sc
+   316: 000127f0    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_rotate
+   317: 00000000     0 FUNC    GLOBAL DEFAULT  UND sincosf
+   318: 00012824    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_translate
+   319: 00012884    84 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_scale
+   320: 000128d8    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_shear
+   321: 00012938   108 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_rotate_sc
+   322: 000129a4    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_rotate
+   323: 000129d8    72 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_affine
+   324: 00012a20   192 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_affine_or_nans
+   325: 00012ae0    80 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_det
+   326: 00012b30    32 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_det
+   327: 00012b50    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_invertible
+   328: 00012b84    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_is_invertible
+   329: 00012bb8   220 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_invert
+   330: 00012c94   136 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_invert
+   331: 00012d1c    68 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_transform
+   332: 00012d60    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_transform_t
+   333: 00012d94   420 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_rsq
+   334: 00000000     0 FUNC    GLOBAL DEFAULT  UND atan2f
+   335: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrtf
+   336: 000261d0    16 FUNC    GLOBAL DEFAULT    8 khrn_vector_term
+   337: 00000000     0 FUNC    GLOBAL DEFAULT  UND floorf
+   338: 00025db8   108 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_init
+   339: 00025e24     8 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_term
+   340: 0001745c   248 FUNC    GLOBAL DEFAULT    8 vgGetError
+   341: 00017554   184 FUNC    GLOBAL DEFAULT    8 vgFlush
+   342: 0001760c   212 FUNC    GLOBAL DEFAULT    8 vgFinish
+   343: 000176e0   296 FUNC    GLOBAL DEFAULT    8 vgSetf
+   344: 00017808   300 FUNC    GLOBAL DEFAULT    8 vgSeti
+   345: 00017934   280 FUNC    GLOBAL DEFAULT    8 vgSetfv
+   346: 00017a4c   280 FUNC    GLOBAL DEFAULT    8 vgSetiv
+   347: 00017b64   316 FUNC    GLOBAL DEFAULT    8 vgGetf
+   348: 00017ca0   312 FUNC    GLOBAL DEFAULT    8 vgGeti
+   349: 00017dd8   636 FUNC    GLOBAL DEFAULT    8 vgGetVectorSize
+   350: 00018054   252 FUNC    GLOBAL DEFAULT    8 vgGetfv
+   351: 00018150   248 FUNC    GLOBAL DEFAULT    8 vgGetiv
+   352: 00018248   272 FUNC    GLOBAL DEFAULT    8 vgSetParameterf
+   353: 00018358   280 FUNC    GLOBAL DEFAULT    8 vgSetParameteri
+   354: 00018470   284 FUNC    GLOBAL DEFAULT    8 vgSetParameterfv
+   355: 0001858c   288 FUNC    GLOBAL DEFAULT    8 vgSetParameteriv
+   356: 000186ac   296 FUNC    GLOBAL DEFAULT    8 vgGetParameterf
+   357: 000187d4   292 FUNC    GLOBAL DEFAULT    8 vgGetParameteri
+   358: 000188f8   392 FUNC    GLOBAL DEFAULT    8 vgGetParameterVectorSize
+   359: 00018a80   260 FUNC    GLOBAL DEFAULT    8 vgGetParameterfv
+   360: 00018b84   256 FUNC    GLOBAL DEFAULT    8 vgGetParameteriv
+   361: 00018c84   120 FUNC    GLOBAL DEFAULT    8 vgLoadIdentity
+   362: 00018cfc   264 FUNC    GLOBAL DEFAULT    8 vgLoadMatrix
+   363: 00018e04   248 FUNC    GLOBAL DEFAULT    8 vgGetMatrix
+   364: 00018efc   320 FUNC    GLOBAL DEFAULT    8 vgMultMatrix
+   365: 0001903c   264 FUNC    GLOBAL DEFAULT    8 vgTranslate
+   366: 00019144   264 FUNC    GLOBAL DEFAULT    8 vgScale
+   367: 0001924c   264 FUNC    GLOBAL DEFAULT    8 vgShear
+   368: 00019354   208 FUNC    GLOBAL DEFAULT    8 vgRotate
+   369: 00019424   188 FUNC    GLOBAL DEFAULT    8 vgMask
+   370: 000194e0   180 FUNC    GLOBAL DEFAULT    8 vgRenderToMask
+   371: 00019594   748 FUNC    GLOBAL DEFAULT    8 vgCreateMaskLayer
+   372: 00019880   244 FUNC    GLOBAL DEFAULT    8 vgDestroyMaskLayer
+   373: 00019974   260 FUNC    GLOBAL DEFAULT    8 vgFillMaskLayer
+   374: 00019a78   196 FUNC    GLOBAL DEFAULT    8 vgCopyMask
+   375: 00019b3c   196 FUNC    GLOBAL DEFAULT    8 vgClear
+   376: 00019c00   800 FUNC    GLOBAL DEFAULT    8 vgCreatePath
+   377: 00026188    72 FUNC    GLOBAL DEFAULT    8 khrn_vector_init
+   378: 00019f20   320 FUNC    GLOBAL DEFAULT    8 vgClearPath
+   379: 00026290    44 FUNC    GLOBAL DEFAULT    8 khrn_vector_clear
+   380: 0001a060   244 FUNC    GLOBAL DEFAULT    8 vgDestroyPath
+   381: 0001a154   288 FUNC    GLOBAL DEFAULT    8 vgRemovePathCapabilities
+   382: 0001a274   284 FUNC    GLOBAL DEFAULT    8 vgGetPathCapabilities
+   383: 0001a390   388 FUNC    GLOBAL DEFAULT    8 vgAppendPath
+   384: 000261e0   176 FUNC    GLOBAL DEFAULT    8 khrn_vector_extend
+   385: 0001a514  1104 FUNC    GLOBAL DEFAULT    8 vgAppendPathData
+   386: 0001a964   776 FUNC    GLOBAL DEFAULT    8 vgModifyPathCoords
+   387: 0001ac6c   520 FUNC    GLOBAL DEFAULT    8 vgTransformPath
+   388: 0001ae74   804 FUNC    GLOBAL DEFAULT    8 vgInterpolatePath
+   389: 0001b198   216 FUNC    GLOBAL DEFAULT    8 vgPathLength
+   390: 0001b270   580 FUNC    GLOBAL DEFAULT    8 vgPointAlongPath
+   391: 0001b4b4   416 FUNC    GLOBAL DEFAULT    8 vgPathBounds
+   392: 0001b654   424 FUNC    GLOBAL DEFAULT    8 vgPathTransformedBounds
+   393: 0001b7fc   252 FUNC    GLOBAL DEFAULT    8 vgDrawPath
+   394: 0001b8f8   484 FUNC    GLOBAL DEFAULT    8 vgCreatePaint
+   395: 0001badc   244 FUNC    GLOBAL DEFAULT    8 vgDestroyPaint
+   396: 0001bbd0   436 FUNC    GLOBAL DEFAULT    8 vgSetPaint
+   397: 0001bd84   236 FUNC    GLOBAL DEFAULT    8 vgGetPaint
+   398: 0001be70   936 FUNC    GLOBAL DEFAULT    8 vgSetColor
+   399: 0001c218   684 FUNC    GLOBAL DEFAULT    8 vgGetColor
+   400: 0001c4c4   524 FUNC    GLOBAL DEFAULT    8 vgPaintPattern
+   401: 0001c6d0   888 FUNC    GLOBAL DEFAULT    8 vgCreateImage
+   402: 0001ca48   244 FUNC    GLOBAL DEFAULT    8 vgDestroyImage
+   403: 0001cb3c   180 FUNC    GLOBAL DEFAULT    8 vgClearImage
+   404: 0001cbf0  3644 FUNC    GLOBAL DEFAULT    8 vgImageSubData
+   405: 0001da2c  3716 FUNC    GLOBAL DEFAULT    8 vgGetImageSubData
+   406: 0001e8b0  1024 FUNC    GLOBAL DEFAULT    8 vgChildImage
+   407: 0001ecb0   204 FUNC    GLOBAL DEFAULT    8 vgGetParent
+   408: 0001ed7c   220 FUNC    GLOBAL DEFAULT    8 vgCopyImage
+   409: 0001ee58   204 FUNC    GLOBAL DEFAULT    8 vgDrawImage
+   410: 0001ef24   220 FUNC    GLOBAL DEFAULT    8 vgSetPixels
+   411: 0001f000  3500 FUNC    GLOBAL DEFAULT    8 vgWritePixels
+   412: 0001fdac   196 FUNC    GLOBAL DEFAULT    8 vgGetPixels
+   413: 0001fe70  3520 FUNC    GLOBAL DEFAULT    8 vgReadPixels
+   414: 00020c30   212 FUNC    GLOBAL DEFAULT    8 vgCopyPixels
+   415: 00020d04   484 FUNC    GLOBAL DEFAULT    8 vgCreateFont
+   416: 00020ee8   244 FUNC    GLOBAL DEFAULT    8 vgDestroyFont
+   417: 00020fdc   704 FUNC    GLOBAL DEFAULT    8 vgSetGlyphToPath
+   418: 0002129c   920 FUNC    GLOBAL DEFAULT    8 vgSetGlyphToImage
+   419: 00021634   236 FUNC    GLOBAL DEFAULT    8 vgClearGlyph
+   420: 00021720   264 FUNC    GLOBAL DEFAULT    8 vgDrawGlyph
+   421: 00021828   692 FUNC    GLOBAL DEFAULT    8 vgDrawGlyphs
+   422: 00021adc   296 FUNC    GLOBAL DEFAULT    8 vgColorMatrix
+   423: 00021c04   508 FUNC    GLOBAL DEFAULT    8 vgConvolve
+   424: 00021e00   568 FUNC    GLOBAL DEFAULT    8 vgSeparableConvolve
+   425: 00022038   316 FUNC    GLOBAL DEFAULT    8 vgGaussianBlur
+   426: 00022174   400 FUNC    GLOBAL DEFAULT    8 vgLookup
+   427: 00022304   344 FUNC    GLOBAL DEFAULT    8 vgLookupSingle
+   428: 0002245c   400 FUNC    GLOBAL DEFAULT    8 vgHardwareQuery
+   429: 000225ec   200 FUNC    GLOBAL DEFAULT    8 vgGetString
+   430: 000226b4   856 FUNC    GLOBAL DEFAULT    8 vguLine
+   431: 00022a0c   692 FUNC    GLOBAL DEFAULT    8 vguPolygon
+   432: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset
+   433: 00022cc0   764 FUNC    GLOBAL DEFAULT    8 vguRect
+   434: 00022fbc   948 FUNC    GLOBAL DEFAULT    8 vguRoundRect
+   435: 00023370   752 FUNC    GLOBAL DEFAULT    8 vguEllipse
+   436: 00023660  1172 FUNC    GLOBAL DEFAULT    8 vguArc
+   437: 00023af4   760 FUNC    GLOBAL DEFAULT    8 vguComputeWarpQuadToSquare
+   438: 00023dec   760 FUNC    GLOBAL DEFAULT    8 vguComputeWarpSquareToQuad
+   439: 000240e4  1544 FUNC    GLOBAL DEFAULT    8 vguComputeWarpQuadToQuad
+   440: 00024db4    84 FUNC    GLOBAL DEFAULT    8 client_thread_state_init
+   441: 00024e08     4 FUNC    GLOBAL DEFAULT    8 client_thread_state_term
+   442: 00024eac    12 FUNC    GLOBAL DEFAULT    8 client_egl_get_window
+   443: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_create
+   444: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_delete
+   445: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_setspecific
+   446: 0002521c    60 FUNC    GLOBAL DEFAULT    8 client_process_detach
+   447: 00025258   184 FUNC    GLOBAL DEFAULT    8 eglIntOpenMAXILDoneMarker
+   448: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_IsRenderbuffer
+   449: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_BindRenderbuffer
+   450: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_DeleteRenderbuffers
+   451: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenRenderbuffers
+   452: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_RenderbufferStorage
+   453: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GetRenderbufferParameteriv
+   454: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_IsFramebuffer
+   455: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_BindFramebuffer
+   456: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_DeleteFramebuffers
+   457: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenFramebuffers
+   458: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_CheckFramebufferStatus
+   459: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_FramebufferRenderbuffer
+   460: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_FramebufferTexture2D
+   461: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GetFramebufferAttachmentParameteriv
+   462: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenerateMipmap
+   463: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_buffer_info_get
+   464: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_set_error
+   465: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_buffer_info_set
+   466: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glBufferSubData
+   467: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_set_error_api
+   468: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glintAttribPointer
+   469: 000260b0     8 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_get_count
+   470: 00029278     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   471: 00029278     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   472: 00029598     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+
+Symbol table '.symtab' contains 1197 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtbegin.c
+     2: 00028c20     0 NOTYPE  LOCAL  DEFAULT   11 $d
+     3: 00028c28     0 NOTYPE  LOCAL  DEFAULT   12 $d
+     4: 00028c30     0 NOTYPE  LOCAL  DEFAULT   13 $d
+     5: 0000589c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+     6: 00005900     0 NOTYPE  LOCAL  DEFAULT    8 $d
+     7: 00029278     0 NOTYPE  LOCAL  DEFAULT   17 $d
+     8: 00005914     0 NOTYPE  LOCAL  DEFAULT    8 $a
+     9: 0000594c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    10: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtbrand.c
+    11: 000262bc     0 NOTYPE  LOCAL  DEFAULT    9 $d
+    12: 000262bc    24 OBJECT  LOCAL  DEFAULT    9 abitag
+    13: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_client_config.c
+    14: 00005950     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    15: 000059b4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    16: 000059bc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    17: 00005cfc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    18: 00005d18     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    19: 00005f38     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    20: 00005f3c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    21: 00005f54     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    22: 00005f58     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    23: 00005f70     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    24: 00005f74     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    25: 00005f8c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    26: 00005f90     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    27: 00005fa8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    28: 00005fac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    29: 00005fc8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    30: 00005fcc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    31: 00006048     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    32: 00006058     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    33: 000060d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    34: 000060dc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    35: 0000617c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    36: 00006180     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    37: 000061a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    38: 000061a4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    39: 00006240     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    40: 00006248     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    41: 00006278     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    42: 0000627c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    43: 000065fc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    44: 00006618     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    45: 00006838     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    46: 00029000     0 NOTYPE  LOCAL  DEFAULT   16 $d
+    47: 00029000   560 OBJECT  LOCAL  DEFAULT   16 formats
+    48: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_client_context.c
+    49: 00006848     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    50: 000068b0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    51: 000068b8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    52: 00006bd4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    53: 00006bfc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    54: 00006ce4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    55: 00006cf8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    56: 00006dc0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    57: 00006dd0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    58: 000262d4     0 NOTYPE  LOCAL  DEFAULT   10 $d
+    59: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_client.c
+    60: 00006e38     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    61: 00006e38   344 FUNC    LOCAL  DEFAULT    8 get_color_data
+    62: 00006f80     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    63: 00006f90     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    64: 00006f90   376 FUNC    LOCAL  DEFAULT    8 set_color_data
+    65: 000070f8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    66: 00007108     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    67: 00007108   484 FUNC    LOCAL  DEFAULT    8 choose_config
+    68: 000072d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    69: 000072ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    70: 000072ec   132 FUNC    LOCAL  DEFAULT    8 callback_check_duplicate_pixmap
+    71: 00007438     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    72: 00007444     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    73: 00007508     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    74: 00007514     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    75: 000075dc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    76: 000075e8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    77: 000076ac     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    78: 000076b8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    79: 000076ec     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    80: 000076f4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    81: 0000772c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    82: 00007734     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    83: 00007830     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    84: 00007840     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    85: 00007964     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    86: 0000797c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    87: 00007a6c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    88: 00007a88     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    89: 00007b64     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    90: 00007b7c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    91: 00007c5c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    92: 00007c84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    93: 00007f30     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    94: 00007f60     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    95: 000081d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    96: 000081f8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    97: 00008534     0 NOTYPE  LOCAL  DEFAULT    8 $d
+    98: 00008568     0 NOTYPE  LOCAL  DEFAULT    8 $a
+    99: 000086c0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   100: 000086e0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   101: 0000881c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   102: 00008830     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   103: 00008898     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   104: 000088a8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   105: 000088e8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   106: 000088f4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   107: 000089d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   108: 000089f0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   109: 00008be4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   110: 00008c04     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   111: 00008e00     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   112: 00008e28     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   113: 00008ef4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   114: 00008f00     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   115: 00009094     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   116: 000090b8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   117: 00009210     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   118: 00009230     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   119: 00009328     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   120: 00009340     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   121: 000095ac     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   122: 000095e0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   123: 000096d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   124: 000096ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   125: 00009ca4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   126: 00009cec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   127: 00009d60     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   128: 00009d70     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   129: 00009e1c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   130: 00009e34     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   131: 00009ea8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   132: 00009eb8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   133: 00009fa8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   134: 00009fbc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   135: 0000a06c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   136: 0000a07c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   137: 0000a0d8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   138: 0000a0e8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   139: 0000a3c0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   140: 0000a3f0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   141: 0000a5e0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   142: 0000a604     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   143: 0000a6c0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   144: 000262f8     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   145: 000262f8    12 OBJECT  LOCAL  DEFAULT   10 CSWTCH.149
+   146: 00026304     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   147: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_client_get_proc.c
+   148: 0000a6d8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   149: 0000aef4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   150: 0002671c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   151: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_client_surface.c
+   152: 0000b0c0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   153: 0000b360     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   154: 0000b378     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   155: 0000b7cc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   156: 0000b804     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   157: 0000bae0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   158: 0000bb10     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   159: 0000bce8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   160: 0000bd18     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   161: 0000bd60     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   162: 0000bd6c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   163: 0000c0a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   164: 0000c0b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   165: 0000c1b4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   166: 0000c1d0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   167: 0000c360     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   168: 0000c378     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   169: 00026c60     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   170: 0002927c     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   171: 0002927c   252 OBJECT  LOCAL  DEFAULT   17 surface_pool
+   172: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_brcm_driver_monitor_client.c
+   173: 0000c394     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   174: 0000c4a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   175: 0000c4b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   176: 0000c540     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   177: 0000c550     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   178: 0000c63c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   179: 0000c64c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   180: 0000c6c4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   181: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_brcm_perf_monitor_client.c
+   182: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_brcm_global_image_client.c
+   183: 0000c6d0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   184: 0000c8f4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   185: 0000c918     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   186: 0000ca08     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   187: 0000ca20     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   188: 0000cadc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   189: 0000caf0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   190: 0000cbb0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   191: 00026d88     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   192: 00026d88    20 OBJECT  LOCAL  DEFAULT   10 CSWTCH.15
+   193: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_brcm_flush_client.c
+   194: 0000cbc4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   195: 0000cc04     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   196: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_khr_image_client.c
+   197: 0000cc10     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   198: 0000d280     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   199: 0000d338     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   200: 0000d4e8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   201: 0000d51c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   202: 0000d6b8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   203: 00026d9c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   204: 00026d9c    18 OBJECT  LOCAL  DEFAULT   10 __FUNCTION__.12716
+   205: 00026db0    19 OBJECT  LOCAL  DEFAULT   10 __FUNCTION__.12737
+   206: 00026dc4    24 OBJECT  LOCAL  DEFAULT   10 __FUNCTION__.12755
+   207: 00029230     0 NOTYPE  LOCAL  DEFAULT   16 $d
+   208: 00029230    24 OBJECT  LOCAL  DEFAULT   16 egl_khr_image_client_log
+   209: 00026ddc     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   210: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_khr_sync_client.c
+   211: 0000d6d4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   212: 0000d6d4   172 FUNC    LOCAL  DEFAULT    8 egl_sync_destroy_iterator
+   213: 0000d76c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   214: 0000d780     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   215: 0000da90     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   216: 0000dac0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   217: 0000dbf0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   218: 0000dc08     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   219: 0000dd0c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   220: 0000dd24     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   221: 0000dda8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   222: 0000ddbc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   223: 0000decc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   224: 0000dee4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   225: 0000def4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   226: 0002708c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   227: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_egl_image_client.c
+   228: 0000def8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   229: 0000e090     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   230: 0000e0ac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   231: 0000e264     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   232: 00029248     0 NOTYPE  LOCAL  DEFAULT   16 $d
+   233: 00027098     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   234: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_khr_lock_surface_client.c
+   235: 0000e284     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   236: 0000e3cc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   237: 0000e3ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   238: 0000e5ac     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   239: 00000000     0 FILE    LOCAL  DEFAULT  ABS ext_gl_debug_marker.c
+   240: 0000e5c0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   241: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_int_image.c
+   242: 0000e5cc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   243: 0000e624     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   244: 0000e628     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   245: 0000e6a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   246: 0000e6ac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   247: 0000e72c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   248: 0000e738     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   249: 0000e7b0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   250: 0000e7bc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   251: 0000e840     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   252: 0000e850     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   253: 0000e8e8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   254: 0000e8ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   255: 0000e948     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   256: 0000e94c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   257: 000270ac     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   258: 000270ac    49 OBJECT  LOCAL  DEFAULT   10 CSWTCH.5
+   259: 000270e0    41 OBJECT  LOCAL  DEFAULT   10 CSWTCH.14
+   260: 0002710c    41 OBJECT  LOCAL  DEFAULT   10 CSWTCH.17
+   261: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_int_util.c
+   262: 0000eac8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   263: 0000eefc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   264: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_options.c
+   265: 0000ef0c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   266: 0000f10c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   267: 0000f134     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   268: 0000f220     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   269: 00027138     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   270: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client_global_image_map.c
+   271: 0000f244     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   272: 0000f2b0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   273: 0000f2b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   274: 0002727c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   275: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client_rpc_linux.c
+   276: 0000f7ac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   277: 0000f87c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   278: 0000f880     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   279: 0000f880   276 FUNC    LOCAL  DEFAULT    8 recv_bulk
+   280: 0000f978     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   281: 0000f994     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   282: 0000fa20     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   283: 0000fa2c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   284: 0000fabc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   285: 0000fac8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   286: 0000fccc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   287: 0000fd0c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   288: 0000fd38     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   289: 0000fd3c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   290: 0000fd6c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   291: 0000fd74     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   292: 0000fd90     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   293: 0000fd94     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   294: 0000fdcc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   295: 0000fdd0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   296: 0000fde4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   297: 0000fde8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   298: 0000fdf8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   299: 0000fdfc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   300: 000100cc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   301: 00010118     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   302: 000101f8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   303: 00010214     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   304: 000102fc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   305: 00010318     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   306: 00010400     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   307: 0001041c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   308: 00010848     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   309: 00010880     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   310: 00010a34     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   311: 00010a64     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   312: 00010b74     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   313: 00010b94     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   314: 00010cf4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   315: 0002729c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   316: 00029378     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   317: 00029378    32 OBJECT  LOCAL  DEFAULT   17 khhn_queue
+   318: 00029398    32 OBJECT  LOCAL  DEFAULT   17 khrn_queue
+   319: 000293b8     4 OBJECT  LOCAL  DEFAULT   17 vchiq_khhn_service
+   320: 000293bc     4 OBJECT  LOCAL  DEFAULT   17 vchiq_khrn_service
+   321: 000293c0     8 OBJECT  LOCAL  DEFAULT   17 bulk_event
+   322: 000293c8     4 OBJECT  LOCAL  DEFAULT   17 khrn_vchiq_instance
+   323: 000293cc     4 OBJECT  LOCAL  DEFAULT   17 vchiq_khan_service
+   324: 000293d0     4 OBJECT  LOCAL  DEFAULT   17 workspace
+   325: 000293d4    12 OBJECT  LOCAL  DEFAULT   17 mutex
+   326: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client_platform_linux.c
+   327: 00010d08     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   328: 00010d08   540 FUNC    LOCAL  DEFAULT    8 check_default
+   329: 00010f10     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   330: 00010f24     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   331: 00010f70     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   332: 00010f74     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   333: 00011024     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   334: 00011040     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   335: 00011040   384 FUNC    LOCAL  DEFAULT    8 set_egl_image_color_data
+   336: 000111b0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   337: 000111c0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   338: 0001123c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   339: 00011240     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   340: 00011340     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   341: 00011348     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   342: 0001135c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   343: 00011364     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   344: 00011b8c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   345: 00011c54     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   346: 00011ea0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   347: 00011ec0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   348: 00012104     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   349: 00012144     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   350: 000273d8     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   351: 000273e4    20 OBJECT  LOCAL  DEFAULT   10 CSWTCH.20
+   352: 000273f8     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   353: 000293e0     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   354: 000293e0     6 OBJECT  LOCAL  DEFAULT   17 have_default_dwin
+   355: 000293e8    72 OBJECT  LOCAL  DEFAULT   17 default_dwin
+   356: 00029430     1 OBJECT  LOCAL  DEFAULT   17 process_attached
+   357: 00029434   192 OBJECT  LOCAL  DEFAULT   17 pixmap_binding
+   358: 00000000     0 FILE    LOCAL  DEFAULT  ABS vg_int_mat3x3.c
+   359: 00012194     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   360: 0001240c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   361: 00012418     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   362: 00012a1c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   363: 00012a20     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   364: 00012ad8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   365: 00012ae0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   366: 00012b80     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   367: 00012b84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   368: 00012bb4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   369: 00012bb8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   370: 00012c90     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   371: 00012c94     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   372: 00012d18     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   373: 00012d1c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   374: 00012f28     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   375: 00000000     0 FILE    LOCAL  DEFAULT  ABS vg_client.c
+   376: 00012f38     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   377: 00012f38   204 FUNC    LOCAL  DEFAULT    8 warp_square_to_quad
+   378: 00012ffc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   379: 00013004     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   380: 00013004   132 FUNC    LOCAL  DEFAULT    8 set_error
+   381: 00013078     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   382: 00013088     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   383: 00013088   132 FUNC    LOCAL  DEFAULT    8 destroy_stem
+   384: 000130fc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   385: 0001310c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   386: 0001310c   164 FUNC    LOCAL  DEFAULT    8 set_iv_server
+   387: 000131a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   388: 000131b0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   389: 000131b0   164 FUNC    LOCAL  DEFAULT    8 set_fv_server
+   390: 00013244     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   391: 00013254     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   392: 00013254   176 FUNC    LOCAL  DEFAULT    8 get_error
+   393: 000132f4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   394: 00013304     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   395: 00013304    92 FUNC    LOCAL  DEFAULT    8 paint_free
+   396: 00013360   280 FUNC    LOCAL  DEFAULT    8 get_stem
+   397: 00013468     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   398: 00013478     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   399: 00013478   220 FUNC    LOCAL  DEFAULT    8 sync_matrix
+   400: 00013544     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   401: 00013554     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   402: 00013554   180 FUNC    LOCAL  DEFAULT    8 set_parameter_fv_server.constprop.10
+   403: 000135f8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   404: 00013608     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   405: 00013608   136 FUNC    LOCAL  DEFAULT    8 set_error.constprop.12
+   406: 00013680     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   407: 00013690     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   408: 00013690   192 FUNC    LOCAL  DEFAULT    8 insert_object
+   409: 00013750   232 FUNC    LOCAL  DEFAULT    8 warp_quad_to_square
+   410: 00013830     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   411: 00013838     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   412: 00013838   140 FUNC    LOCAL  DEFAULT    8 object_free
+   413: 000138c4   144 FUNC    LOCAL  DEFAULT    8 object_free_callback
+   414: 00013954   276 FUNC    LOCAL  DEFAULT    8 floats_to_params
+   415: 00013a50     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   416: 00013a68     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   417: 00013a68  2692 FUNC    LOCAL  DEFAULT    8 set_parameter_ifv.isra.5.constprop.8
+   418: 00013f0c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   419: 00013f5c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   420: 000144c8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   421: 000144ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   422: 000144ec  3320 FUNC    LOCAL  DEFAULT    8 set_parameter_ifv.isra.5
+   423: 000149d4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   424: 00014a1c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   425: 000151b0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   426: 000151e4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   427: 000151e4  2000 FUNC    LOCAL  DEFAULT    8 get_ifv.isra.3
+   428: 00015964     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   429: 000159b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   430: 000159b4  1696 FUNC    LOCAL  DEFAULT    8 get_parameter_ifv.isra.4
+   431: 00016008     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   432: 00016054     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   433: 00016054  4416 FUNC    LOCAL  DEFAULT    8 set_ifv.isra.2
+   434: 00016538     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   435: 000165b8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   436: 000170c0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   437: 000170f0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   438: 00017218     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   439: 0001721c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   440: 00017258     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   441: 0001725c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   442: 00017410     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   443: 0001742c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   444: 00017540     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   445: 00017554     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   446: 000175fc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   447: 0001760c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   448: 000176d0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   449: 000176e0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   450: 000177f0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   451: 00017808     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   452: 0001791c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   453: 00017934     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   454: 00017a3c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   455: 00017a4c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   456: 00017b54     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   457: 00017b64     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   458: 00017c88     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   459: 00017ca0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   460: 00017dc0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   461: 00017dd8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   462: 00018048     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   463: 00018054     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   464: 00018140     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   465: 00018150     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   466: 00018238     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   467: 00018248     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   468: 00018344     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   469: 00018358     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   470: 0001845c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   471: 00018470     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   472: 0001857c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   473: 0001858c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   474: 0001869c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   475: 000186ac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   476: 000187c0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   477: 000187d4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   478: 000188e4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   479: 000188f8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   480: 00018a74     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   481: 00018a80     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   482: 00018b74     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   483: 00018b84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   484: 00018c74     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   485: 00018c84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   486: 00018cf0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   487: 00018cfc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   488: 00018df0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   489: 00018e04     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   490: 00018eec     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   491: 00018efc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   492: 00019028     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   493: 0001903c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   494: 0001912c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   495: 00019144     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   496: 00019234     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   497: 0001924c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   498: 0001933c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   499: 00019354     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   500: 00019408     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   501: 00019424     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   502: 000194d0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   503: 000194e0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   504: 00019584     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   505: 00019594     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   506: 00019860     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   507: 00019880     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   508: 00019964     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   509: 00019974     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   510: 00019a5c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   511: 00019a78     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   512: 00019b2c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   513: 00019b3c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   514: 00019bf0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   515: 00019c00     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   516: 00019ef4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   517: 00019f20     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   518: 0001a050     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   519: 0001a060     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   520: 0001a144     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   521: 0001a154     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   522: 0001a264     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   523: 0001a274     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   524: 0001a380     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   525: 0001a390     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   526: 0001a500     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   527: 0001a514     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   528: 0001a93c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   529: 0001a964     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   530: 0001ac48     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   531: 0001ac6c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   532: 0001ae5c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   533: 0001ae74     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   534: 0001b16c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   535: 0001b198     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   536: 0001b260     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   537: 0001b270     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   538: 0001b494     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   539: 0001b4b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   540: 0001b640     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   541: 0001b654     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   542: 0001b7e8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   543: 0001b7fc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   544: 0001b8e0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   545: 0001b8f8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   546: 0001bac0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   547: 0001badc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   548: 0001bbc0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   549: 0001bbd0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   550: 0001bd70     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   551: 0001bd84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   552: 0001be60     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   553: 0001be70     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   554: 0001c1e8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   555: 0001c218     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   556: 0001c4a0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   557: 0001c4c4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   558: 0001c6bc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   559: 0001c6d0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   560: 0001ca24     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   561: 0001ca48     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   562: 0001cb2c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   563: 0001cb3c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   564: 0001cbe0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   565: 0001cbf0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   566: 0001da14     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   567: 0001da2c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   568: 0001e898     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   569: 0001e8b0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   570: 0001ec90     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   571: 0001ecb0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   572: 0001ed6c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   573: 0001ed7c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   574: 0001ee48     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   575: 0001ee58     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   576: 0001ef0c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   577: 0001ef24     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   578: 0001eff0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   579: 0001f000     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   580: 0001fd94     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   581: 0001fdac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   582: 0001fe60     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   583: 0001fe70     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   584: 00020c18     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   585: 00020c30     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   586: 00020cf4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   587: 00020d04     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   588: 00020ecc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   589: 00020ee8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   590: 00020fcc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   591: 00020fdc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   592: 0002127c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   593: 0002129c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   594: 00021610     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   595: 00021634     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   596: 00021710     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   597: 00021720     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   598: 0002180c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   599: 00021828     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   600: 00021abc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   601: 00021adc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   602: 00021bf0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   603: 00021c04     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   604: 00021de0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   605: 00021e00     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   606: 00022018     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   607: 00022038     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   608: 00022158     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   609: 00022174     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   610: 000222f0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   611: 00022304     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   612: 00022444     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   613: 0002245c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   614: 000225dc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   615: 000225ec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   616: 00022698     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   617: 000226b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   618: 000229e4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   619: 00022a0c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   620: 00022ca4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   621: 00022cc0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   622: 00022f94     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   623: 00022fbc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   624: 00023348     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   625: 00023370     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   626: 00023638     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   627: 00023660     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   628: 00023a50     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   629: 00023a8c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   630: 00023dcc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   631: 00023dec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   632: 000240c4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   633: 000240e4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   634: 0002445c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   635: 0002447c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   636: 00024ac0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   637: 0002746c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   638: 0002746c    92 OBJECT  LOCAL  DEFAULT   10 CSWTCH.328
+   639: 000274c8    16 OBJECT  LOCAL  DEFAULT   10 CSWTCH.325
+   640: 000274d8    92 OBJECT  LOCAL  DEFAULT   10 CSWTCH.349
+   641: 00027534    16 OBJECT  LOCAL  DEFAULT   10 CSWTCH.377
+   642: 00027544     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   643: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client.c
+   644: 00024aec     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   645: 00024aec    16 FUNC    LOCAL  DEFAULT    8 callback_destroy_surface
+   646: 00024afc    16 FUNC    LOCAL  DEFAULT    8 callback_destroy_context
+   647: 00024bc0     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   648: 00024bcc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   649: 00024d10     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   650: 00024d20     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   651: 00024dac     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   652: 00024db4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   653: 00024e04     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   654: 00024e08     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   655: 00024e30     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   656: 00024e34     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   657: 00024e7c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   658: 00024e84     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   659: 00024ea8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   660: 00024eac     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   661: 0002509c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   662: 000250cc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   663: 00025144     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   664: 00025150     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   665: 000251a4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   666: 000251b4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   667: 00025210     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   668: 0002521c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   669: 0002524c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   670: 00027654     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   671: 00027654     8 OBJECT  LOCAL  DEFAULT   10 CSWTCH.24
+   672: 00029260     0 NOTYPE  LOCAL  DEFAULT   16 $d
+   673: 0002765c     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   674: 000294f4     0 NOTYPE  LOCAL  DEFAULT   17 $d
+   675: 00000000     0 FILE    LOCAL  DEFAULT  ABS egl_openmaxil_client.c
+   676: 00025258     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   677: 00025300     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   678: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_draw_texture_client.c
+   679: 00025310     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   680: 000253bc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   681: 000253cc     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   682: 00025434     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   683: 00025438     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   684: 00025540     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   685: 00025544     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   686: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_query_matrix_client.c
+   687: 000255e8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   688: 000256f4     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   689: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_framebuffer_object.c
+   690: 00025704     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   691: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_map_buffer.c
+   692: 00025740     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   693: 00025888     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   694: 000258a4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   695: 00025998     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   696: 000259a4     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   697: 00025a64     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   698: 000276d8     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   699: 00000000     0 FILE    LOCAL  DEFAULT  ABS gl_oes_matrix_palette_client.c
+   700: 00025a74     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   701: 00025b50     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   702: 00025b64     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   703: 00025bf8     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   704: 00025c08     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   705: 00025c84     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   706: 00025c8c     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   707: 00025dac     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   708: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client_pointermap.c
+   709: 00025db8     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   710: 00025e20     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   711: 00025e24     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   712: 000276ec     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   713: 00000000     0 FILE    LOCAL  DEFAULT  ABS khrn_client_vector.c
+   714: 00026188     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   715: 000261cc     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   716: 000261d0     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   717: 0002628c     0 NOTYPE  LOCAL  DEFAULT    8 $d
+   718: 00026290     0 NOTYPE  LOCAL  DEFAULT    8 $a
+   719: 00027708     0 NOTYPE  LOCAL  DEFAULT   10 $d
+   720: 0000589c   120 FUNC    LOCAL  HIDDEN     8 _start
+   721: 00029278     4 OBJECT  LOCAL  HIDDEN    17 __dso_handle
+   722: 00005914    60 FUNC    LOCAL  HIDDEN     8 atexit
+   723: 00028c38   304 OBJECT  LOCAL  HIDDEN    14 _DYNAMIC
+   724: 00028e98     0 OBJECT  LOCAL  HIDDEN    15 _GLOBAL_OFFSET_TABLE_
+   725: 00028c20     4 OBJECT  GLOBAL DEFAULT   11 __PREINIT_ARRAY__
+   726: 00028c28     4 OBJECT  GLOBAL DEFAULT   12 __INIT_ARRAY__
+   727: 00028c30     4 OBJECT  GLOBAL DEFAULT   13 __FINI_ARRAY__
+   728: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_init
+   729: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND main
+   730: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit
+   731: 00005950   108 FUNC    GLOBAL DEFAULT    8 egl_config_install_configs
+   732: 000059bc   860 FUNC    GLOBAL DEFAULT    8 egl_config_check_attribs
+   733: 000111d8   104 FUNC    GLOBAL DEFAULT    8 platform_get_pixmap_info
+   734: 00011240     4 FUNC    GLOBAL DEFAULT    8 khrn_platform_release_pixmap_info
+   735: 00005d18   548 FUNC    GLOBAL DEFAULT    8 egl_config_sort
+   736: 00005f3c    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_color_format
+   737: 00005f58    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_depth_format
+   738: 00005f74    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_mask_format
+   739: 00005f90    28 FUNC    GLOBAL DEFAULT    8 egl_config_get_multisample_format
+   740: 00005fac    32 FUNC    GLOBAL DEFAULT    8 egl_config_get_multisample
+   741: 00005fcc   140 FUNC    GLOBAL DEFAULT    8 egl_config_bindable
+   742: 00006058   132 FUNC    GLOBAL DEFAULT    8 egl_config_match_pixmap_info
+   743: 0000e628   132 FUNC    GLOBAL DEFAULT    8 khrn_image_get_red_size
+   744: 0000e6ac   140 FUNC    GLOBAL DEFAULT    8 khrn_image_get_green_size
+   745: 0000e738   132 FUNC    GLOBAL DEFAULT    8 khrn_image_get_blue_size
+   746: 0000e7bc   148 FUNC    GLOBAL DEFAULT    8 khrn_image_get_alpha_size
+   747: 000060dc   164 FUNC    GLOBAL DEFAULT    8 egl_config_bpps_match
+   748: 00006180     4 FUNC    GLOBAL DEFAULT    8 egl_config_get_mapped_format
+   749: 00006184    32 FUNC    GLOBAL DEFAULT    8 egl_config_is_lockable
+   750: 000061a4   164 FUNC    GLOBAL DEFAULT    8 egl_config_get_api_support
+   751: 00006248    52 FUNC    GLOBAL DEFAULT    8 egl_config_get_api_conformance
+   752: 0000627c   924 FUNC    GLOBAL DEFAULT    8 egl_config_get_attrib
+   753: 0001218c     4 FUNC    GLOBAL DEFAULT    8 platform_get_color_format
+   754: 00006618   560 FUNC    GLOBAL DEFAULT    8 egl_config_filter
+   755: 00011258   112 FUNC    GLOBAL DEFAULT    8 platform_match_pixmap_api_support
+   756: 00006848   112 FUNC    GLOBAL DEFAULT    8 egl_context_check_attribs
+   757: 000068b8   836 FUNC    GLOBAL DEFAULT    8 egl_context_create
+   758: 000111c8     4 FUNC    GLOBAL DEFAULT    8 khrn_platform_malloc
+   759: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND gl11_client_state_init
+   760: 0001725c   464 FUNC    GLOBAL DEFAULT    8 vg_client_state_alloc
+   761: 00010f84   188 FUNC    GLOBAL DEFAULT    8 platform_tls_get
+   762: 0000fdd4    20 FUNC    GLOBAL DEFAULT    8 rpc_begin
+   763: 00010a64   304 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_begin
+   764: 0000fd94    60 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_write
+   765: 0000fdd0     4 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_end
+   766: 0001041c  1124 FUNC    GLOBAL DEFAULT    8 rpc_recv
+   767: 0000fde8    20 FUNC    GLOBAL DEFAULT    8 rpc_end
+   768: 0001742c    48 FUNC    GLOBAL DEFAULT    8 vg_client_state_free
+   769: 000111cc    12 FUNC    GLOBAL DEFAULT    8 khrn_platform_free
+   770: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND gl20_client_state_init
+   771: 0001721c    64 FUNC    GLOBAL DEFAULT    8 vg_client_shared_state_free
+   772: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_state_free
+   773: 00017194   136 FUNC    GLOBAL DEFAULT    8 vg_client_shared_state_alloc
+   774: 00029594     4 OBJECT  GLOBAL DEFAULT   17 client_tls
+   775: 00006bfc   252 FUNC    GLOBAL DEFAULT    8 egl_context_term
+   776: 00010118   252 FUNC    GLOBAL DEFAULT    8 rpc_flush
+   777: 00006cf8   216 FUNC    GLOBAL DEFAULT    8 egl_context_get_attrib
+   778: 00006dd0    56 FUNC    GLOBAL DEFAULT    8 egl_context_set_callbacks
+   779: 00006e08    48 FUNC    GLOBAL DEFAULT    8 egl_context_maybe_free
+   780: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_idiv
+   781: 00010880   484 FUNC    GLOBAL DEFAULT    8 rpc_send_bulk
+   782: 0001132c    28 FUNC    GLOBAL DEFAULT    8 platform_client_lock
+   783: 00024cc0    96 FUNC    GLOBAL DEFAULT    8 client_egl_get_process_state
+   784: 00011348    28 FUNC    GLOBAL DEFAULT    8 platform_client_release
+   785: 00007370   212 FUNC    GLOBAL DEFAULT    8 egl_vg_render_callback
+   786: 00011c5c     4 FUNC    GLOBAL DEFAULT    8 platform_send_pixmap_completed
+   787: 00007444   208 FUNC    GLOBAL DEFAULT    8 egl_vg_flush_callback
+   788: 00011c58     4 FUNC    GLOBAL DEFAULT    8 platform_retrieve_pixmap_completed
+   789: 00007514   212 FUNC    GLOBAL DEFAULT    8 egl_gl_render_callback
+   790: 000075e8   208 FUNC    GLOBAL DEFAULT    8 egl_gl_flush_callback
+   791: 000076b8    60 FUNC    GLOBAL DEFAULT    8 eglGetError
+   792: 000111c0     4 FUNC    GLOBAL DEFAULT    8 platform_tls_get_check
+   793: 000076f4    64 FUNC    GLOBAL DEFAULT    8 eglGetDisplay
+   794: 00011c68    12 FUNC    GLOBAL DEFAULT    8 khrn_platform_set_display_id
+   795: 00007734   268 FUNC    GLOBAL DEFAULT    8 eglGetConfigs
+   796: 00007840    36 FUNC    GLOBAL DEFAULT    8 eglChooseConfig
+   797: 00007864    36 FUNC    GLOBAL DEFAULT    8 eglSaneChooseConfigBRCM
+   798: 00007888   244 FUNC    GLOBAL DEFAULT    8 eglGetConfigAttrib
+   799: 0000797c   268 FUNC    GLOBAL DEFAULT    8 eglInitialize
+   800: 00024bcc   244 FUNC    GLOBAL DEFAULT    8 client_process_state_init
+   801: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_register
+   802: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_impl
+   803: 00029560    24 OBJECT  GLOBAL DEFAULT   17 egl_client_log_cat
+   804: 00007a88   244 FUNC    GLOBAL DEFAULT    8 eglTerminate
+   805: 00024d20   148 FUNC    GLOBAL DEFAULT    8 client_process_state_term
+   806: 00024b0c   192 FUNC    GLOBAL DEFAULT    8 client_try_unload_server
+   807: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_log_unregister
+   808: 00007b7c   264 FUNC    GLOBAL DEFAULT    8 eglQueryString
+   809: 00007c84   732 FUNC    GLOBAL DEFAULT    8 eglCreateWindowSurface
+   810: 00012178    20 FUNC    GLOBAL DEFAULT    8 platform_get_handle
+   811: 0000b0c0   696 FUNC    GLOBAL DEFAULT    8 egl_surface_check_attribs
+   812: 00012144    52 FUNC    GLOBAL DEFAULT    8 platform_get_dimensions
+   813: 0000b378  1164 FUNC    GLOBAL DEFAULT    8 egl_surface_create
+   814: 00025e2c   488 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_insert
+   815: 0000bb10   520 FUNC    GLOBAL DEFAULT    8 egl_surface_free
+   816: 00029578    16 OBJECT  GLOBAL DEFAULT   17 khrn_options
+   817: 00007f60   664 FUNC    GLOBAL DEFAULT    8 eglCreatePbufferSurface
+   818: 000081f8   880 FUNC    GLOBAL DEFAULT    8 eglCreatePixmapSurface
+   819: 00011244    20 FUNC    GLOBAL DEFAULT    8 platform_get_pixmap_server_handle
+   820: 0002611c   108 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_iterate
+   821: 00008568   376 FUNC    GLOBAL DEFAULT    8 eglDestroySurface
+   822: 00024e34    80 FUNC    GLOBAL DEFAULT    8 client_egl_get_surface
+   823: 00026014   156 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_delete
+   824: 0000c378    28 FUNC    GLOBAL DEFAULT    8 egl_surface_maybe_free
+   825: 000086e0   336 FUNC    GLOBAL DEFAULT    8 eglQuerySurface
+   826: 00024e84    40 FUNC    GLOBAL DEFAULT    8 client_egl_get_locked_surface
+   827: 0000bd6c   840 FUNC    GLOBAL DEFAULT    8 egl_surface_get_attrib
+   828: 0000c1d0   424 FUNC    GLOBAL DEFAULT    8 egl_surface_get_mapped_buffer_attrib
+   829: 00008830   120 FUNC    GLOBAL DEFAULT    8 eglBindAPI
+   830: 000088a8    76 FUNC    GLOBAL DEFAULT    8 eglQueryAPI
+   831: 000088f4   252 FUNC    GLOBAL DEFAULT    8 eglWaitClient
+   832: 000089f0   532 FUNC    GLOBAL DEFAULT    8 eglReleaseThread
+   833: 000111c4     4 FUNC    GLOBAL DEFAULT    8 platform_hint_thread_finished
+   834: 000294f4   108 OBJECT  GLOBAL DEFAULT   17 client_process_state
+   835: 00008c04   548 FUNC    GLOBAL DEFAULT    8 eglCreatePbufferFromClientBuffer
+   836: 0000b804   780 FUNC    GLOBAL DEFAULT    8 egl_surface_from_vg_image
+   837: 00008e28   216 FUNC    GLOBAL DEFAULT    8 eglSurfaceAttrib
+   838: 0000c0b4   284 FUNC    GLOBAL DEFAULT    8 egl_surface_set_attrib
+   839: 00008f00   440 FUNC    GLOBAL DEFAULT    8 eglBindTexImage
+   840: 000090b8   376 FUNC    GLOBAL DEFAULT    8 eglReleaseTexImage
+   841: 00009230   272 FUNC    GLOBAL DEFAULT    8 eglSwapInterval
+   842: 00009340   672 FUNC    GLOBAL DEFAULT    8 eglCreateContext
+   843: 00024e0c    40 FUNC    GLOBAL DEFAULT    8 client_egl_get_context
+   844: 000095e0   268 FUNC    GLOBAL DEFAULT    8 eglDestroyContext
+   845: 000096ec  1536 FUNC    GLOBAL DEFAULT    8 eglMakeCurrent
+   846: 00024eb8   532 FUNC    GLOBAL DEFAULT    8 client_send_make_current
+   847: 0000bd18    84 FUNC    GLOBAL DEFAULT    8 egl_surface_get_render_buffer
+   848: 00009cec   132 FUNC    GLOBAL DEFAULT    8 eglGetCurrentContext
+   849: 00009d70   196 FUNC    GLOBAL DEFAULT    8 eglGetCurrentSurface
+   850: 00009e34   132 FUNC    GLOBAL DEFAULT    8 eglGetCurrentDisplay
+   851: 00009eb8   260 FUNC    GLOBAL DEFAULT    8 eglQueryContext
+   852: 00009fbc   192 FUNC    GLOBAL DEFAULT    8 eglWaitGL
+   853: 0000a07c   108 FUNC    GLOBAL DEFAULT    8 eglWaitNative
+   854: 0000a0e8   776 FUNC    GLOBAL DEFAULT    8 eglSwapBuffers
+   855: 00011374  2272 FUNC    GLOBAL DEFAULT    8 platform_surface_update
+   856: 00011c74     8 FUNC    GLOBAL DEFAULT    8 khrn_platform_get_window_position
+   857: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_wait
+   858: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno
+   859: 0000a3f0   532 FUNC    GLOBAL DEFAULT    8 eglCopyBuffers
+   860: 0000a604   212 FUNC    GLOBAL DEFAULT    8 eglProcStateValid
+   861: 0000a6d8  2536 FUNC    GLOBAL DEFAULT    8 eglGetProcAddress
+   862: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp
+   863: 0000caf0   212 FUNC    GLOBAL DEFAULT    8 eglQueryGlobalImageBRCM
+   864: 0000d338   484 FUNC    GLOBAL DEFAULT    8 eglDestroyImageKHR
+   865: 0000cc10  1832 FUNC    GLOBAL DEFAULT    8 eglCreateImageKHR
+   866: 0000e5c0     4 FUNC    GLOBAL DEFAULT    8 glInsertEventMarkerEXT
+   867: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glDiscardFramebufferEXT
+   868: 0000e5c4     4 FUNC    GLOBAL DEFAULT    8 glPushGroupMarkerEXT
+   869: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glPointSizePointerOES
+   870: 0000e5c8     4 FUNC    GLOBAL DEFAULT    8 glPopGroupMarkerEXT
+   871: 0000def8   436 FUNC    GLOBAL DEFAULT    8 glEGLImageTargetTexture2DOES
+   872: 0000e0ac   472 FUNC    GLOBAL DEFAULT    8 glEGLImageTargetRenderbufferStorageOES
+   873: 00025a74   240 FUNC    GLOBAL DEFAULT    8 glCurrentPaletteMatrixOES
+   874: 00025b64   164 FUNC    GLOBAL DEFAULT    8 glLoadPaletteFromModelViewMatrixOES
+   875: 00025c08   132 FUNC    GLOBAL DEFAULT    8 glMatrixIndexPointerOES
+   876: 00025c8c   300 FUNC    GLOBAL DEFAULT    8 glWeightPointerOES
+   877: 000246ec  1024 FUNC    GLOBAL DEFAULT    8 vgCreateEGLImageTargetKHR
+   878: 0000e284   360 FUNC    GLOBAL DEFAULT    8 eglLockSurfaceKHR
+   879: 0000d780   832 FUNC    GLOBAL DEFAULT    8 eglCreateSyncKHR
+   880: 0000e3ec   468 FUNC    GLOBAL DEFAULT    8 eglUnlockSurfaceKHR
+   881: 0000dac0   328 FUNC    GLOBAL DEFAULT    8 eglDestroySyncKHR
+   882: 0000c918   264 FUNC    GLOBAL DEFAULT    8 eglCreateCopyGlobalImageBRCM
+   883: 0000c6d0   584 FUNC    GLOBAL DEFAULT    8 eglCreateGlobalImageBRCM
+   884: 0000ca20   208 FUNC    GLOBAL DEFAULT    8 eglDestroyGlobalImageBRCM
+   885: 0000dc08   284 FUNC    GLOBAL DEFAULT    8 eglClientWaitSyncKHR
+   886: 0000ddbc   296 FUNC    GLOBAL DEFAULT    8 eglGetSyncAttribKHR
+   887: 0000dd24   152 FUNC    GLOBAL DEFAULT    8 eglSignalSyncKHR
+   888: 0000cbc4    76 FUNC    GLOBAL DEFAULT    8 eglFlushBRCM
+   889: 000258a4   256 FUNC    GLOBAL DEFAULT    8 glUnmapBufferOES
+   890: 00025740   356 FUNC    GLOBAL DEFAULT    8 glMapBufferOES
+   891: 000259a4   208 FUNC    GLOBAL DEFAULT    8 glGetBufferPointervOES
+   892: 0002573c     4 FUNC    GLOBAL DEFAULT    8 glGenerateMipmapOES
+   893: 00025738     4 FUNC    GLOBAL DEFAULT    8 glGetFramebufferAttachmentParameterivOES
+   894: 00025734     4 FUNC    GLOBAL DEFAULT    8 glFramebufferTexture2DOES
+   895: 00025730     4 FUNC    GLOBAL DEFAULT    8 glFramebufferRenderbufferOES
+   896: 0002572c     4 FUNC    GLOBAL DEFAULT    8 glCheckFramebufferStatusOES
+   897: 00025728     4 FUNC    GLOBAL DEFAULT    8 glGenFramebuffersOES
+   898: 00025724     4 FUNC    GLOBAL DEFAULT    8 glDeleteFramebuffersOES
+   899: 00025720     4 FUNC    GLOBAL DEFAULT    8 glBindFramebufferOES
+   900: 0002571c     4 FUNC    GLOBAL DEFAULT    8 glIsFramebufferOES
+   901: 00025718     4 FUNC    GLOBAL DEFAULT    8 glGetRenderbufferParameterivOES
+   902: 00025714     4 FUNC    GLOBAL DEFAULT    8 glRenderbufferStorageOES
+   903: 00025710     4 FUNC    GLOBAL DEFAULT    8 glGenRenderbuffersOES
+   904: 0002570c     4 FUNC    GLOBAL DEFAULT    8 glDeleteRenderbuffersOES
+   905: 00025708     4 FUNC    GLOBAL DEFAULT    8 glBindRenderbufferOES
+   906: 00025704     4 FUNC    GLOBAL DEFAULT    8 glIsRenderbufferOES
+   907: 000255e8   284 FUNC    GLOBAL DEFAULT    8 glQueryMatrixxOES
+   908: 000255b8    48 FUNC    GLOBAL DEFAULT    8 glDrawTexfvOES
+   909: 00025310   188 FUNC    GLOBAL DEFAULT    8 glDrawTexfOES
+   910: 000253cc   108 FUNC    GLOBAL DEFAULT    8 glDrawTexxvOES
+   911: 00025438    88 FUNC    GLOBAL DEFAULT    8 glDrawTexivOES
+   912: 00025490   100 FUNC    GLOBAL DEFAULT    8 glDrawTexsvOES
+   913: 000254f4    80 FUNC    GLOBAL DEFAULT    8 glDrawTexxOES
+   914: 00025544    56 FUNC    GLOBAL DEFAULT    8 glDrawTexiOES
+   915: 0002557c    60 FUNC    GLOBAL DEFAULT    8 glDrawTexsOES
+   916: 0000c64c   132 FUNC    GLOBAL DEFAULT    8 eglTermDriverMonitorBRCM
+   917: 0000c550   252 FUNC    GLOBAL DEFAULT    8 eglGetDriverMonitorXMLBRCM
+   918: 0000c394   288 FUNC    GLOBAL DEFAULT    8 eglInitDriverMonitorBRCM
+   919: 00010f74    16 FUNC    GLOBAL DEFAULT    8 khronos_platform_get_process_id
+   920: 00010f24    80 FUNC    GLOBAL DEFAULT    8 khronos_platform_semaphore_create
+   921: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_named_semaphore_delete
+   922: 00011370     4 FUNC    GLOBAL DEFAULT    8 platform_destroy_winhandle
+   923: 0000ea78    40 FUNC    GLOBAL DEFAULT    8 khrn_image_get_size
+   924: 0000ea54    36 FUNC    GLOBAL DEFAULT    8 khrn_image_get_stride
+   925: 0000c4b4   156 FUNC    GLOBAL DEFAULT    8 egl_driver_monitor_term
+   926: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen
+   927: 0000fdfc   796 FUNC    GLOBAL DEFAULT    8 rpc_send_bulk_gather
+   928: 000112c8     8 FUNC    GLOBAL DEFAULT    8 platform_use_global_image_as_egl_image
+   929: 0000f348   700 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_insert
+   930: 00011c7c   580 FUNC    GLOBAL DEFAULT    8 khrn_platform_bind_pixmap_to_egl_image
+   931: 0000f6a8   116 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_lookup
+   932: 00011ec0   644 FUNC    GLOBAL DEFAULT    8 khrn_platform_unbind_pixmap_from_egl_image
+   933: 0000f604   156 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_delete
+   934: 0000d51c   440 FUNC    GLOBAL DEFAULT    8 eglIntImageSetColorData
+   935: 000260b8   100 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_lookup
+   936: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_post
+   937: 0000dee4    20 FUNC    GLOBAL DEFAULT    8 egl_sync_destroy_all
+   938: 000112d8    84 FUNC    GLOBAL DEFAULT    8 platform_get_global_image_info
+   939: 00029248    24 OBJECT  GLOBAL DEFAULT   16 gl_oes_egl_image_client_log
+   940: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidiv
+   941: 0000e5cc    92 FUNC    GLOBAL DEFAULT    8 khrn_image_get_bpp
+   942: 0000e850    32 FUNC    GLOBAL DEFAULT    8 khrn_image_get_z_size
+   943: 0000e870    36 FUNC    GLOBAL DEFAULT    8 khrn_image_get_stencil_size
+   944: 0000e894    88 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm2_width
+   945: 0000e8ec    96 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm2_height
+   946: 0000e94c    16 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm1_width
+   947: 0000e95c    16 FUNC    GLOBAL DEFAULT    8 khrn_image_get_log2_brcm1_height
+   948: 0000e96c   116 FUNC    GLOBAL DEFAULT    8 khrn_image_pad_width
+   949: 0000e9e0   116 FUNC    GLOBAL DEFAULT    8 khrn_image_pad_height
+   950: 0000eaa0    40 FUNC    GLOBAL DEFAULT    8 khrn_image_wrap
+   951: 0000eac8   192 FUNC    GLOBAL DEFAULT    8 khrn_clip_range
+   952: 0000eb88   608 FUNC    GLOBAL DEFAULT    8 khrn_clip_range2
+   953: 0000ede8    60 FUNC    GLOBAL DEFAULT    8 khrn_clip_rect
+   954: 0000ee24   116 FUNC    GLOBAL DEFAULT    8 khrn_clip_rect2
+   955: 0000ee98   116 FUNC    GLOBAL DEFAULT    8 khrn_get_type_size
+   956: 0000ef0c   552 FUNC    GLOBAL DEFAULT    8 khrn_init_options
+   957: 00000000     0 FUNC    GLOBAL DEFAULT  UND getenv
+   958: 00000000     0 FUNC    GLOBAL DEFAULT  UND atoi
+   959: 0000f134   272 FUNC    GLOBAL DEFAULT    8 khrn_error_assist
+   960: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite
+   961: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf
+   962: 00000000     0 FUNC    GLOBAL DEFAULT  UND fflush
+   963: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __sF
+   964: 0000f244   112 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_init
+   965: 0000f2b4   148 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_term
+   966: 000112d4     4 FUNC    GLOBAL DEFAULT    8 platform_release_global_image
+   967: 000112d0     4 FUNC    GLOBAL DEFAULT    8 platform_acquire_global_image
+   968: 0000f6a0     8 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_get_count
+   969: 0000f71c   144 FUNC    GLOBAL DEFAULT    8 khrn_global_image_map_iterate
+   970: 0000f7ac   212 FUNC    GLOBAL DEFAULT    8 khan_callback
+   971: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf
+   972: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_release_message
+   973: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_pop
+   974: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy
+   975: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_bulk_receive
+   976: 0000f994   152 FUNC    GLOBAL DEFAULT    8 khhn_callback
+   977: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock
+   978: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_getvalue
+   979: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock
+   980: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_push
+   981: 0000fa2c   156 FUNC    GLOBAL DEFAULT    8 khrn_callback
+   982: 0000fac8   580 FUNC    GLOBAL DEFAULT    8 vc_vchi_khronos_init
+   983: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_init
+   984: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init
+   985: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_initialise
+   986: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_connect
+   987: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_open_service
+   988: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiu_queue_init
+   989: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_pthreads_map_errno
+   990: 00000000     0 FUNC    GLOBAL DEFAULT  UND sem_destroy
+   991: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit
+   992: 00029260    24 OBJECT  GLOBAL DEFAULT   16 khrn_client_log
+   993: 0000fd0c    48 FUNC    GLOBAL DEFAULT    8 khclient_rpc_init
+   994: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_create
+   995: 0000fd3c    56 FUNC    GLOBAL DEFAULT    8 rpc_term
+   996: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_delete
+   997: 0000fd74    32 FUNC    GLOBAL DEFAULT    8 rpc_send_ctrl_longest
+   998: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_lock
+   999: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_reentrant_mutex_unlock
+  1000: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_bulk_transmit
+  1001: 00000000     0 FUNC    GLOBAL DEFAULT  UND vchiq_queue_message
+  1002: 00010214   260 FUNC    GLOBAL DEFAULT    8 rpc_high_priority_end
+  1003: 00010318   260 FUNC    GLOBAL DEFAULT    8 rpc_high_priority_begin
+  1004: 00010b94     4 FUNC    GLOBAL DEFAULT    8 rpc_use
+  1005: 00010b98     4 FUNC    GLOBAL DEFAULT    8 rpc_release
+  1006: 00010b9c   364 FUNC    GLOBAL DEFAULT    8 rpc_call8_makecurrent
+  1007: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_display_open
+  1008: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_display_get_info
+  1009: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_update_start
+  1010: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_element_add
+  1011: 00000000     0 FUNC    GLOBAL DEFAULT  UND vc_dispmanx_update_submit_sync
+  1012: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_snprintf
+  1013: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_named_semaphore_create
+  1014: 00000000     0 FUNC    GLOBAL DEFAULT  UND getpid
+  1015: 000250cc   132 FUNC    GLOBAL DEFAULT    8 client_process_attach
+  1016: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_getspecific
+  1017: 00025150   100 FUNC    GLOBAL DEFAULT    8 client_thread_attach
+  1018: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_thread_at_exit
+  1019: 000251b4   104 FUNC    GLOBAL DEFAULT    8 client_thread_detach
+  1020: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_mem_alloc
+  1021: 00000000     0 FUNC    GLOBAL DEFAULT  UND vcos_generic_mem_free
+  1022: 00029588    12 OBJECT  GLOBAL DEFAULT   17 client_mutex
+  1023: 00011364     4 FUNC    GLOBAL DEFAULT    8 platform_init_rpc
+  1024: 00011368     4 FUNC    GLOBAL DEFAULT    8 platform_term_rpc
+  1025: 0001136c     4 FUNC    GLOBAL DEFAULT    8 platform_maybe_free_process
+  1026: 00011c54     4 FUNC    GLOBAL DEFAULT    8 egl_gce_win_change_image
+  1027: 00011c60     4 FUNC    GLOBAL DEFAULT    8 platform_memcmp
+  1028: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp
+  1029: 00011c64     4 FUNC    GLOBAL DEFAULT    8 platform_memcpy
+  1030: 00012190     4 FUNC    GLOBAL DEFAULT    8 platform_dequeue
+  1031: 00012194    48 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_set_identity
+  1032: 000121c4   596 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_set_clean
+  1033: 00012418    76 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_get
+  1034: 00012464   160 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_identical
+  1035: 00012504   364 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_mul
+  1036: 00012670    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_translate
+  1037: 000126d0    84 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_scale
+  1038: 00012724    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_shear
+  1039: 00012784   108 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_rotate_sc
+  1040: 000127f0    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_postmul_rotate
+  1041: 00000000     0 FUNC    GLOBAL DEFAULT  UND sincosf
+  1042: 00012824    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_translate
+  1043: 00012884    84 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_scale
+  1044: 000128d8    96 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_shear
+  1045: 00012938   108 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_rotate_sc
+  1046: 000129a4    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_premul_rotate
+  1047: 000129d8    72 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_affine
+  1048: 00012a20   192 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_affine_or_nans
+  1049: 00012ae0    80 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_det
+  1050: 00012b30    32 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_det
+  1051: 00012b50    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_is_invertible
+  1052: 00012b84    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_is_invertible
+  1053: 00012bb8   220 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_invert
+  1054: 00012c94   136 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_invert
+  1055: 00012d1c    68 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_transform
+  1056: 00012d60    52 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_affine_transform_t
+  1057: 00012d94   420 FUNC    GLOBAL DEFAULT    8 vg_mat3x3_rsq
+  1058: 00000000     0 FUNC    GLOBAL DEFAULT  UND atan2f
+  1059: 00000000     0 FUNC    GLOBAL DEFAULT  UND sqrtf
+  1060: 000261d0    16 FUNC    GLOBAL DEFAULT    8 khrn_vector_term
+  1061: 00000000     0 FUNC    GLOBAL DEFAULT  UND floorf
+  1062: 00025db8   108 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_init
+  1063: 00025e24     8 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_term
+  1064: 0001745c   248 FUNC    GLOBAL DEFAULT    8 vgGetError
+  1065: 00017554   184 FUNC    GLOBAL DEFAULT    8 vgFlush
+  1066: 0001760c   212 FUNC    GLOBAL DEFAULT    8 vgFinish
+  1067: 000176e0   296 FUNC    GLOBAL DEFAULT    8 vgSetf
+  1068: 00017808   300 FUNC    GLOBAL DEFAULT    8 vgSeti
+  1069: 00017934   280 FUNC    GLOBAL DEFAULT    8 vgSetfv
+  1070: 00017a4c   280 FUNC    GLOBAL DEFAULT    8 vgSetiv
+  1071: 00017b64   316 FUNC    GLOBAL DEFAULT    8 vgGetf
+  1072: 00017ca0   312 FUNC    GLOBAL DEFAULT    8 vgGeti
+  1073: 00017dd8   636 FUNC    GLOBAL DEFAULT    8 vgGetVectorSize
+  1074: 00018054   252 FUNC    GLOBAL DEFAULT    8 vgGetfv
+  1075: 00018150   248 FUNC    GLOBAL DEFAULT    8 vgGetiv
+  1076: 00018248   272 FUNC    GLOBAL DEFAULT    8 vgSetParameterf
+  1077: 00018358   280 FUNC    GLOBAL DEFAULT    8 vgSetParameteri
+  1078: 00018470   284 FUNC    GLOBAL DEFAULT    8 vgSetParameterfv
+  1079: 0001858c   288 FUNC    GLOBAL DEFAULT    8 vgSetParameteriv
+  1080: 000186ac   296 FUNC    GLOBAL DEFAULT    8 vgGetParameterf
+  1081: 000187d4   292 FUNC    GLOBAL DEFAULT    8 vgGetParameteri
+  1082: 000188f8   392 FUNC    GLOBAL DEFAULT    8 vgGetParameterVectorSize
+  1083: 00018a80   260 FUNC    GLOBAL DEFAULT    8 vgGetParameterfv
+  1084: 00018b84   256 FUNC    GLOBAL DEFAULT    8 vgGetParameteriv
+  1085: 00018c84   120 FUNC    GLOBAL DEFAULT    8 vgLoadIdentity
+  1086: 00018cfc   264 FUNC    GLOBAL DEFAULT    8 vgLoadMatrix
+  1087: 00018e04   248 FUNC    GLOBAL DEFAULT    8 vgGetMatrix
+  1088: 00018efc   320 FUNC    GLOBAL DEFAULT    8 vgMultMatrix
+  1089: 0001903c   264 FUNC    GLOBAL DEFAULT    8 vgTranslate
+  1090: 00019144   264 FUNC    GLOBAL DEFAULT    8 vgScale
+  1091: 0001924c   264 FUNC    GLOBAL DEFAULT    8 vgShear
+  1092: 00019354   208 FUNC    GLOBAL DEFAULT    8 vgRotate
+  1093: 00019424   188 FUNC    GLOBAL DEFAULT    8 vgMask
+  1094: 000194e0   180 FUNC    GLOBAL DEFAULT    8 vgRenderToMask
+  1095: 00019594   748 FUNC    GLOBAL DEFAULT    8 vgCreateMaskLayer
+  1096: 00019880   244 FUNC    GLOBAL DEFAULT    8 vgDestroyMaskLayer
+  1097: 00019974   260 FUNC    GLOBAL DEFAULT    8 vgFillMaskLayer
+  1098: 00019a78   196 FUNC    GLOBAL DEFAULT    8 vgCopyMask
+  1099: 00019b3c   196 FUNC    GLOBAL DEFAULT    8 vgClear
+  1100: 00019c00   800 FUNC    GLOBAL DEFAULT    8 vgCreatePath
+  1101: 00026188    72 FUNC    GLOBAL DEFAULT    8 khrn_vector_init
+  1102: 00019f20   320 FUNC    GLOBAL DEFAULT    8 vgClearPath
+  1103: 00026290    44 FUNC    GLOBAL DEFAULT    8 khrn_vector_clear
+  1104: 0001a060   244 FUNC    GLOBAL DEFAULT    8 vgDestroyPath
+  1105: 0001a154   288 FUNC    GLOBAL DEFAULT    8 vgRemovePathCapabilities
+  1106: 0001a274   284 FUNC    GLOBAL DEFAULT    8 vgGetPathCapabilities
+  1107: 0001a390   388 FUNC    GLOBAL DEFAULT    8 vgAppendPath
+  1108: 000261e0   176 FUNC    GLOBAL DEFAULT    8 khrn_vector_extend
+  1109: 0001a514  1104 FUNC    GLOBAL DEFAULT    8 vgAppendPathData
+  1110: 0001a964   776 FUNC    GLOBAL DEFAULT    8 vgModifyPathCoords
+  1111: 0001ac6c   520 FUNC    GLOBAL DEFAULT    8 vgTransformPath
+  1112: 0001ae74   804 FUNC    GLOBAL DEFAULT    8 vgInterpolatePath
+  1113: 0001b198   216 FUNC    GLOBAL DEFAULT    8 vgPathLength
+  1114: 0001b270   580 FUNC    GLOBAL DEFAULT    8 vgPointAlongPath
+  1115: 0001b4b4   416 FUNC    GLOBAL DEFAULT    8 vgPathBounds
+  1116: 0001b654   424 FUNC    GLOBAL DEFAULT    8 vgPathTransformedBounds
+  1117: 0001b7fc   252 FUNC    GLOBAL DEFAULT    8 vgDrawPath
+  1118: 0001b8f8   484 FUNC    GLOBAL DEFAULT    8 vgCreatePaint
+  1119: 0001badc   244 FUNC    GLOBAL DEFAULT    8 vgDestroyPaint
+  1120: 0001bbd0   436 FUNC    GLOBAL DEFAULT    8 vgSetPaint
+  1121: 0001bd84   236 FUNC    GLOBAL DEFAULT    8 vgGetPaint
+  1122: 0001be70   936 FUNC    GLOBAL DEFAULT    8 vgSetColor
+  1123: 0001c218   684 FUNC    GLOBAL DEFAULT    8 vgGetColor
+  1124: 0001c4c4   524 FUNC    GLOBAL DEFAULT    8 vgPaintPattern
+  1125: 0001c6d0   888 FUNC    GLOBAL DEFAULT    8 vgCreateImage
+  1126: 0001ca48   244 FUNC    GLOBAL DEFAULT    8 vgDestroyImage
+  1127: 0001cb3c   180 FUNC    GLOBAL DEFAULT    8 vgClearImage
+  1128: 0001cbf0  3644 FUNC    GLOBAL DEFAULT    8 vgImageSubData
+  1129: 0001da2c  3716 FUNC    GLOBAL DEFAULT    8 vgGetImageSubData
+  1130: 0001e8b0  1024 FUNC    GLOBAL DEFAULT    8 vgChildImage
+  1131: 0001ecb0   204 FUNC    GLOBAL DEFAULT    8 vgGetParent
+  1132: 0001ed7c   220 FUNC    GLOBAL DEFAULT    8 vgCopyImage
+  1133: 0001ee58   204 FUNC    GLOBAL DEFAULT    8 vgDrawImage
+  1134: 0001ef24   220 FUNC    GLOBAL DEFAULT    8 vgSetPixels
+  1135: 0001f000  3500 FUNC    GLOBAL DEFAULT    8 vgWritePixels
+  1136: 0001fdac   196 FUNC    GLOBAL DEFAULT    8 vgGetPixels
+  1137: 0001fe70  3520 FUNC    GLOBAL DEFAULT    8 vgReadPixels
+  1138: 00020c30   212 FUNC    GLOBAL DEFAULT    8 vgCopyPixels
+  1139: 00020d04   484 FUNC    GLOBAL DEFAULT    8 vgCreateFont
+  1140: 00020ee8   244 FUNC    GLOBAL DEFAULT    8 vgDestroyFont
+  1141: 00020fdc   704 FUNC    GLOBAL DEFAULT    8 vgSetGlyphToPath
+  1142: 0002129c   920 FUNC    GLOBAL DEFAULT    8 vgSetGlyphToImage
+  1143: 00021634   236 FUNC    GLOBAL DEFAULT    8 vgClearGlyph
+  1144: 00021720   264 FUNC    GLOBAL DEFAULT    8 vgDrawGlyph
+  1145: 00021828   692 FUNC    GLOBAL DEFAULT    8 vgDrawGlyphs
+  1146: 00021adc   296 FUNC    GLOBAL DEFAULT    8 vgColorMatrix
+  1147: 00021c04   508 FUNC    GLOBAL DEFAULT    8 vgConvolve
+  1148: 00021e00   568 FUNC    GLOBAL DEFAULT    8 vgSeparableConvolve
+  1149: 00022038   316 FUNC    GLOBAL DEFAULT    8 vgGaussianBlur
+  1150: 00022174   400 FUNC    GLOBAL DEFAULT    8 vgLookup
+  1151: 00022304   344 FUNC    GLOBAL DEFAULT    8 vgLookupSingle
+  1152: 0002245c   400 FUNC    GLOBAL DEFAULT    8 vgHardwareQuery
+  1153: 000225ec   200 FUNC    GLOBAL DEFAULT    8 vgGetString
+  1154: 000226b4   856 FUNC    GLOBAL DEFAULT    8 vguLine
+  1155: 00022a0c   692 FUNC    GLOBAL DEFAULT    8 vguPolygon
+  1156: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset
+  1157: 00022cc0   764 FUNC    GLOBAL DEFAULT    8 vguRect
+  1158: 00022fbc   948 FUNC    GLOBAL DEFAULT    8 vguRoundRect
+  1159: 00023370   752 FUNC    GLOBAL DEFAULT    8 vguEllipse
+  1160: 00023660  1172 FUNC    GLOBAL DEFAULT    8 vguArc
+  1161: 00023af4   760 FUNC    GLOBAL DEFAULT    8 vguComputeWarpQuadToSquare
+  1162: 00023dec   760 FUNC    GLOBAL DEFAULT    8 vguComputeWarpSquareToQuad
+  1163: 000240e4  1544 FUNC    GLOBAL DEFAULT    8 vguComputeWarpQuadToQuad
+  1164: 00024db4    84 FUNC    GLOBAL DEFAULT    8 client_thread_state_init
+  1165: 00024e08     4 FUNC    GLOBAL DEFAULT    8 client_thread_state_term
+  1166: 00024eac    12 FUNC    GLOBAL DEFAULT    8 client_egl_get_window
+  1167: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_create
+  1168: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_key_delete
+  1169: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_setspecific
+  1170: 0002521c    60 FUNC    GLOBAL DEFAULT    8 client_process_detach
+  1171: 00025258   184 FUNC    GLOBAL DEFAULT    8 eglIntOpenMAXILDoneMarker
+  1172: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_IsRenderbuffer
+  1173: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_BindRenderbuffer
+  1174: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_DeleteRenderbuffers
+  1175: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenRenderbuffers
+  1176: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_RenderbufferStorage
+  1177: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GetRenderbufferParameteriv
+  1178: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_IsFramebuffer
+  1179: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_BindFramebuffer
+  1180: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_DeleteFramebuffers
+  1181: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenFramebuffers
+  1182: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_CheckFramebufferStatus
+  1183: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_FramebufferRenderbuffer
+  1184: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_FramebufferTexture2D
+  1185: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GetFramebufferAttachmentParameteriv
+  1186: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_client_GenerateMipmap
+  1187: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_buffer_info_get
+  1188: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_set_error
+  1189: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_buffer_info_set
+  1190: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glBufferSubData
+  1191: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glxx_set_error_api
+  1192: 00000000     0 NOTYPE  GLOBAL DEFAULT  UND glintAttribPointer
+  1193: 000260b0     8 FUNC    GLOBAL DEFAULT    8 khrn_pointer_map_get_count
+  1194: 00029278     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+  1195: 00029278     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+  1196: 00029598     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+
+Histogram for bucket list length (total of 263 buckets):
+ Length  Number     % of total  Coverage
+      0  42         ( 16.0%)
+      1  77         ( 29.3%)     16.3%
+      2  74         ( 28.1%)     47.7%
+      3  42         ( 16.0%)     74.4%
+      4  22         (  8.4%)     93.0%
+      5  3          (  1.1%)     96.2%
+      6  3          (  1.1%)    100.0%
+
+No version information found in this file.
+
+Displaying notes found at file offset 0x00028288 with length 0x0000001c:
+  Owner                 Data size	Description
+  GNU                  0x00000009	NT_GNU_GOLD_VERSION (gold version)
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "ARM v6KZ"
+  Tag_CPU_arch: v6KZ
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-1
+  Tag_FP_arch: VFPv2
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_enum_size: int
+  Tag_ABI_HardFP_use: SP and DP
+  Tag_ABI_optimization_goals: Aggressive Debug
+  Tag_CPU_unaligned_access: v6
+  Tag_Virtualization_use: TrustZone
