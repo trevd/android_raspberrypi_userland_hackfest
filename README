@@ -1,0 +1,41 @@
+android_raspberrypi_userland_hackfest
+=====================================
+
+First of all, I'm not proud of this but sometimes you have to play dirty 
+to get shit done!
+
+
+When your done here, you'll probably want to do this
+https://www.youtube.com/watch?v=PN0XRkSyhwM because 
+
+
+This repository contains the raspberrypi/userland repo which 
+grossly hacked to compile against bionic using the native cmake build 
+system hopefully with the android options turned on.
+
+Don't expect this to compile as all the paths are hardcoded
+Yes even in the GCC specs file!!
+
+I have no knowledge of how cmake works I just sort of hacked it til
+it smelt right and whatd'ya know we got a successfull compilation :)
+
+Pre-compiled version of the libraries can be found in build/lib
+Check libGLESv2_readelf.txt for abi stuff etc.
+Everything looks like it's ready for android
+
+
+What the fuck is this for?
+==========================
+
+Mainly for sanity testing to see if using the official build system
+make any difference. 
+
+
+Miss-anti-alias
+================
+Probably need to add the egl extensions required by kitkats surface
+flinger.
+A Gralloc will no doubt need providing which "respects" broadcoms 
+callback functions
+
+

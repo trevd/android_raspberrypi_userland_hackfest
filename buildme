@@ -1,0 +1,26 @@
+#/bin/bash
+
+if [ "armv6l" = `arch` ]; then
+	# Native compile on the Raspberry Pi
+	mkdir -p build/raspberry/release
+	pushd build/raspberry/release
+	cmake -DCMAKE_BUILD_TYPE=Release ../../..
+	make
+	if [ "$1" != "" ]; then
+	 sudo make install DESTDIR=$1
+	else
+	 sudo make install
+	fi
+else
+	# Cross compile on a more capable machine
+	mkdir -p build/arm-linux/release/
+	pushd build/arm-linux/release/
+	cmake -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib LD=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-ld -DANDROID=1 -DCMAKE_TOOLCHAIN_FILE=../../../makefiles/cmake/toolchains/arm-linux.cmake -DCMAKE_BUILD_TYPE=Release ../../..
+	LD=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-ld make  --debug
+
+	if [ "$1" != "" ]; then
+	 sudo make install DESTDIR=$1
+	fi
+fi
+popd
+
