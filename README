@@ -4,10 +4,8 @@ android_raspberrypi_userland_hackfest
 First of all, I'm not proud of this but sometimes you have to play dirty 
 to get shit done!
 
-
 When your done here, you'll probably want to do this
-https://www.youtube.com/watch?v=PN0XRkSyhwM because 
-
+https://www.youtube.com/watch?v=PN0XRkSyhwM
 
 This repository contains the raspberrypi/userland repo which 
 grossly hacked to compile against bionic using the native cmake build 
@@ -23,19 +21,38 @@ Pre-compiled version of the libraries can be found in build/lib
 Check libGLESv2_readelf.txt for abi stuff etc.
 Everything looks like it's ready for android
 
-
 What the fuck is this for?
 ==========================
 
 Mainly for sanity testing to see if using the official build system
 make any difference. 
 
-
 Miss-anti-alias
 ================
-Probably need to add the egl extensions required by kitkats surface
-flinger.
 A Gralloc will no doubt need providing which "respects" broadcoms 
 callback functions
 
+Changes
+=======
+I've added support for the ANDROID_NATIVE_FRAMEBUFFER_TARGET configuration
+attributes in the EGL implementation this is required by Kitkats Surfaceflinger 
+although if I can get away with using a v1.0 hwcomposer then the need for 
+more concrete support should not be required.
+
+Removed the ./vcos/glibc/vcos_backtrace.c from the vcos library as we are
+obviously not using glibc.
+
+Removed Raspicam, Raspistill etc from the host_applications build as it is
+currently required and more importantly was causing the build to fail
+
+Still Hungry?
+=============
+This repo is an temporary place for this stuff. The main project -
+Which incase you haven't already figured it out is to Port Android 4.4 ( CM11 ) 
+to the RaspberryPI. It's about 85% of the way there and the Missing piece
+of the Jigsaw is the Graphics Stack.
+If you want to hack on that please follow the instructions found in the 
+Readme file of the https://github.com/trevd/android_vendor_broadcom_rpi repository
+to setup an RaspberryPI compatible version of CM11 which is based off the 
+Androidarmv6 project ( http://github.com/androidarmv6 )
 
