@@ -4,15 +4,15 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_component_wrapper.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_component_wrapper.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_connection.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_connection.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_graph.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_graph.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_il.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_il.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_list.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_list.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_param_convert.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_params.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_rational.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_rational.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_component_wrapper.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_component_wrapper.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_connection.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_connection.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_graph.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_graph.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_il.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_il.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_list.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_list.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_param_convert.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_params.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_rational.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_rational.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -36,7 +36,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

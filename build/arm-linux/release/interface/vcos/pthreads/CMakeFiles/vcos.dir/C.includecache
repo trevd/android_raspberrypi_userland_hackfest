@@ -1042,61 +1042,61 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_abort.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_abort.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 host_support/include/vc_debug_sym.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/host_support/include/vc_debug_sym.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/host_support/include/vc_debug_sym.h
 vcfw/vclib/vclib.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcfw/vclib/vclib.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcfw/vclib/vclib.h
 stdlib.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_cmd.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_cmd.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/vcos_build_info.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_build_info.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_build_info.h
 vcfw/logging/logging.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcfw/logging/logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcfw/logging/logging.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_deprecated.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_deprecated.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_blockpool.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_blockpool.c
 stddef.h
 -
 string.h
 -
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/generic/vcos_generic_blockpool.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_blockpool.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_blockpool.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_event_flags.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_event_flags.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/generic/vcos_generic_event_flags.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_event_flags.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_event_flags.h
 stddef.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_named_sem.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_named_sem.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/generic/vcos_generic_named_sem.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_named_sem.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/generic/vcos_generic_named_sem.h
 interface/vcos/vcos_blockpool.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_blockpool.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_blockpool.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_reentrant_mtx.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_reentrant_mtx.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/vcos_reentrant_mutex.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_reentrant_mutex.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_reentrant_mutex.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_safe_string.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_safe_string.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 linux/string.h
 -
 linux/module.h
@@ -1106,33 +1106,33 @@ string.h
 stdarg.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_init.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_init.c
 vcos_deprecated.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_deprecated.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_deprecated.h
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_logcat.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_logcat.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/vcos_ctype.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_ctype.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_ctype.h
 interface/vcos/vcos_string.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_string.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_string.h
 interface/vcos/vcos_inttypes.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_inttypes.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_inttypes.h
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_mem_from_malloc.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_mem_from_malloc.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 stdlib.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_msgqueue.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_msgqueue.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos.h
 interface/vcos/vcos_msgqueue.h
-/android/build/android-cm-armv6/userland/interface/vcos/generic/interface/vcos/vcos_msgqueue.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/interface/vcos/vcos_msgqueue.h
 stddef.h
 -
 string.h
@@ -1140,11 +1140,11 @@ string.h
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/glibc/vcos_backtrace.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/glibc/vcos_backtrace.c
 interface/vcos/vcos.h
 -
 cmake_config.h
-/android/build/android-cm-armv6/userland/interface/vcos/glibc/cmake_config.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/glibc/cmake_config.h
 execinfo.h
 -
 stdio.h
@@ -1154,19 +1154,19 @@ stdlib.h
 sys/types.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/vcos_dlfcn.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/vcos_dlfcn.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/interface/vcos/vcos.h
 interface/vcos/vcos_dlfcn.h
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/interface/vcos/vcos_dlfcn.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/interface/vcos/vcos_dlfcn.h
 dlfcn.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/vcos_pthreads.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/vcos_pthreads.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/interface/vcos/vcos.h
 interface/vcos/vcos_msgqueue.h
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/interface/vcos/vcos_msgqueue.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/interface/vcos/vcos_msgqueue.h
 string.h
 -
 stdarg.h
@@ -1182,7 +1182,7 @@ sys/param.h
 sys/prctl.h
 -
 cmake_config.h
-/android/build/android-cm-armv6/userland/interface/vcos/pthreads/cmake_config.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/pthreads/cmake_config.h
 mcheck.h
 -
 android/log.h

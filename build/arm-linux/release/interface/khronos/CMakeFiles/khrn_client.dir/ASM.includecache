@@ -6,5 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_hash_asm.s
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_hash_asm.s
 

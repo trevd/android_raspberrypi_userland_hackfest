@@ -122,12 +122,12 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.c
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client_priv.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client_priv.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.h
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o
  ../../../interface/mmal/core/mmal_buffer_private.h
  ../../../interface/mmal/core/mmal_component_private.h
@@ -249,13 +249,13 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.c
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client_priv.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client_priv.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.h
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o
  ../../../interface/mmal/core/mmal_buffer_private.h
  ../../../interface/mmal/core/mmal_component_private.h
@@ -382,10 +382,10 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client.c
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client_priv.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client_priv.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -501,10 +501,10 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.c
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -621,10 +621,10 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client_priv.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client_priv.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -742,4 +742,4 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.c

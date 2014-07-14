@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/vcos
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

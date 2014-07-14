@@ -119,7 +119,7 @@ interface/vchiq_arm/CMakeFiles/vchiq_test.dir/vchiq_test.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test.c
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test_if.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test_if.h

@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_lib.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_lib.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

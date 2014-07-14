@@ -848,99 +848,99 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_component_wrapper.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_component_wrapper.c
 mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal.h
 util/mmal_util.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_util.h
 util/mmal_component_wrapper.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_component_wrapper.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_component_wrapper.h
 mmal_logging.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_logging.h
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_connection.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_connection.c
 mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal.h
 util/mmal_util.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_util.h
 util/mmal_connection.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_connection.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_connection.h
 mmal_logging.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_logging.h
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_graph.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_graph.c
 mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal.h
 util/mmal_util.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_util.h
 util/mmal_graph.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_graph.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_graph.h
 core/mmal_component_private.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/core/mmal_component_private.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/core/mmal_component_private.h
 core/mmal_port_private.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/core/mmal_port_private.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/core/mmal_port_private.h
 mmal_logging.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_logging.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_il.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_il.c
 mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal.h
 util/mmal_il.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/util/mmal_il.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/util/mmal_il.h
 interface/vmcs_host/khronos/IL/OMX_Broadcom.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/vmcs_host/khronos/IL/OMX_Broadcom.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/vmcs_host/khronos/IL/OMX_Broadcom.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_list.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_list.c
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/vcos/vcos.h
 interface/mmal/util/mmal_list.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/util/mmal_list.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/util/mmal_list.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.c
 mmal_param_convert.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.h
 stdlib.h
 -
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.h
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.c
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 mmal_encodings.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_encodings.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_encodings.h
 mmal_util.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h
 mmal_logging.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_logging.h
 string.h
 -
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.c
 mmal_util_params.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.h
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_rational.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_rational.c
 limits.h
 -
 interface/mmal/util/mmal_util_rational.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/util/mmal_util_rational.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/util/mmal_util_rational.h
 

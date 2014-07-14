@@ -196,4 +196,4 @@ interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/glxx/glxx_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/glxx/glxx_client.c

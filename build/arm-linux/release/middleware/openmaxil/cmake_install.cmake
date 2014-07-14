@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/middleware/openmaxil
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/middleware/openmaxil
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenmaxil.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libopenmaxil.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libopenmaxil.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenmaxil.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenmaxil.so")
     FILE(RPATH_REMOVE

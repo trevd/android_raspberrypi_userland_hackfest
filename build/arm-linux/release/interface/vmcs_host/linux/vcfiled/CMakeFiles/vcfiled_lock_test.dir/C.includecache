@@ -248,11 +248,11 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c
 vcfiled_check.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 stdio.h
 -
 unistd.h

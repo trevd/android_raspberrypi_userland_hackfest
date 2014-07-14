@@ -59,8 +59,8 @@ host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/__/__/__/__/interf
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/syslog.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.c
- /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/__/__/__/__/interface/vmcs_host/linux/vcfilesys.c.o
  ../../../interface/vchi/connections/connection.h
  ../../../interface/vchi/message_drivers/message.h
@@ -183,7 +183,7 @@ host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/__/__/__/__/interf
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/vfs.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c
 host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/bcm_host.c.o
  ../../../interface/vchi/connections/connection.h
  ../../../interface/vchi/message_drivers/message.h
@@ -308,4 +308,4 @@ host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/bcm_host.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/bcm_host.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/bcm_host.c

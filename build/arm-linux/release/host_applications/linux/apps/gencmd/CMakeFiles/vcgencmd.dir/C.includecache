@@ -684,7 +684,7 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/host_applications/linux/apps/gencmd/gencmd.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/gencmd/gencmd.c
 stdio.h
 -
 stdlib.h
@@ -696,5 +696,5 @@ string.h
 time.h
 -
 interface/vmcs_host/vc_vchi_gencmd.h
-/android/build/android-cm-armv6/userland/host_applications/linux/apps/gencmd/interface/vmcs_host/vc_vchi_gencmd.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/gencmd/interface/vmcs_host/vc_vchi_gencmd.h
 

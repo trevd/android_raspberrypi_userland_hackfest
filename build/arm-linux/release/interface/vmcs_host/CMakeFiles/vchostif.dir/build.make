@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/vmcs_host/CMakeFiles/vchostif.dir/depend.make
@@ -51,17 +51,17 @@ include interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o: ../../../interface/vmcs_host/linux/vcfilesys.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/linux/vcfilesys.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/linux/vcfilesys.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/linux/vcfilesys.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c > CMakeFiles/vchostif.dir/linux/vcfilesys.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c > CMakeFiles/vchostif.dir/linux/vcfilesys.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/linux/vcfilesys.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c -o CMakeFiles/vchostif.dir/linux/vcfilesys.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c -o CMakeFiles/vchostif.dir/linux/vcfilesys.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o.requires
@@ -74,17 +74,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o.provides.build: 
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o: ../../../interface/vmcs_host/linux/vcmisc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/linux/vcmisc.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcmisc.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/linux/vcmisc.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcmisc.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/linux/vcmisc.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcmisc.c > CMakeFiles/vchostif.dir/linux/vcmisc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcmisc.c > CMakeFiles/vchostif.dir/linux/vcmisc.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/linux/vcmisc.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcmisc.c -o CMakeFiles/vchostif.dir/linux/vcmisc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcmisc.c -o CMakeFiles/vchostif.dir/linux/vcmisc.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o.requires
@@ -97,17 +97,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o.provides.build: int
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o: ../../../interface/vmcs_host/vc_vchi_gencmd.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_gencmd.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_gencmd.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_gencmd.c > CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_gencmd.c > CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_gencmd.c -o CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_gencmd.c -o CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o.requires
@@ -120,17 +120,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o.provides.build: i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o: ../../../interface/vmcs_host/vc_vchi_filesys.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_filesys.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_filesys.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_vchi_filesys.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_filesys.c > CMakeFiles/vchostif.dir/vc_vchi_filesys.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_filesys.c > CMakeFiles/vchostif.dir/vc_vchi_filesys.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_vchi_filesys.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_filesys.c -o CMakeFiles/vchostif.dir/vc_vchi_filesys.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_filesys.c -o CMakeFiles/vchostif.dir/vc_vchi_filesys.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o.requires
@@ -143,17 +143,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o.provides.build: 
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o: ../../../interface/vmcs_host/vc_vchi_tvservice.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_tvservice.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_tvservice.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_tvservice.c > CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_tvservice.c > CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_tvservice.c -o CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_tvservice.c -o CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o.requires
@@ -166,17 +166,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o.provides.build
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o: ../../../interface/vmcs_host/vc_vchi_cecservice.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_cecservice.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_cecservice.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_cecservice.c > CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_cecservice.c > CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_cecservice.c -o CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_cecservice.c -o CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o.requires
@@ -189,17 +189,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o.provides.buil
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o: ../../../interface/vmcs_host/vc_vchi_dispmanx.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_dispmanx.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_dispmanx.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_dispmanx.c > CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_dispmanx.c > CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_dispmanx.c -o CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_dispmanx.c -o CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o.requires
@@ -212,17 +212,17 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o.provides.build:
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o: interface/vmcs_host/CMakeFiles/vchostif.dir/flags.make
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o: ../../../interface/vmcs_host/vc_service_common.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_service_common.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_service_common.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchostif.dir/vc_service_common.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_service_common.c
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchostif.dir/vc_service_common.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_service_common.c > CMakeFiles/vchostif.dir/vc_service_common.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_service_common.c > CMakeFiles/vchostif.dir/vc_service_common.c.i
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchostif.dir/vc_service_common.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vc_service_common.c -o CMakeFiles/vchostif.dir/vc_service_common.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_service_common.c -o CMakeFiles/vchostif.dir/vc_service_common.c.s
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o.requires
@@ -258,8 +258,8 @@ vchostif_EXTERNAL_OBJECTS =
 ../../lib/libvchostif.a: interface/vmcs_host/CMakeFiles/vchostif.dir/build.make
 ../../lib/libvchostif.a: interface/vmcs_host/CMakeFiles/vchostif.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../../../../lib/libvchostif.a"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vchostif.dir/cmake_clean_target.cmake
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vchostif.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vchostif.dir/cmake_clean_target.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vchostif.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/vmcs_host/CMakeFiles/vchostif.dir/build: ../../lib/libvchostif.a
@@ -276,10 +276,10 @@ interface/vmcs_host/CMakeFiles/vchostif.dir/requires: interface/vmcs_host/CMakeF
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/requires
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vchostif.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vchostif.dir/cmake_clean.cmake
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/clean
 
 interface/vmcs_host/CMakeFiles/vchostif.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/vmcs_host /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/vmcs_host/CMakeFiles/vchostif.dir/depend
 

@@ -4,16 +4,16 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_buffer.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_buffer.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_clock.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_clock.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_component.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_component.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_events.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_events.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_format.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_format.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_logging.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_logging.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_pool.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_pool.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_port.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_port_clock.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port_clock.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_queue.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_queue.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_buffer.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_buffer.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_clock.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_clock.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_component.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_component.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_events.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_events.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_format.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_format.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_logging.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_logging.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_pool.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_pool.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_port.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_port_clock.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port_clock.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_queue.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_queue.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -37,7 +37,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

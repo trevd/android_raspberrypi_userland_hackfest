@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/khronos/CMakeFiles/OpenVG.dir/depend.make
@@ -51,17 +51,17 @@ include interface/khronos/CMakeFiles/OpenVG.dir/flags.make
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o: interface/khronos/CMakeFiles/OpenVG.dir/flags.make
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o: ../../../interface/khronos/vg/vg_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/OpenVG.dir/vg/vg_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/OpenVG.dir/vg/vg_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OpenVG.dir/vg/vg_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c > CMakeFiles/OpenVG.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c > CMakeFiles/OpenVG.dir/vg/vg_client.c.i
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OpenVG.dir/vg/vg_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c -o CMakeFiles/OpenVG.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c -o CMakeFiles/OpenVG.dir/vg/vg_client.c.s
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o.requires
@@ -74,17 +74,17 @@ interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o.provides.build: interfa
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o: interface/khronos/CMakeFiles/OpenVG.dir/flags.make
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o: ../../../interface/khronos/vg/vg_int_mat3x3.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c > CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c > CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c -o CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c -o CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s
 
 interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o.requires
@@ -115,7 +115,7 @@ OpenVG_EXTERNAL_OBJECTS =
 ../../lib/libOpenVG.so: ../../lib/libvcfiled_check.a
 ../../lib/libOpenVG.so: interface/khronos/CMakeFiles/OpenVG.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../../../../lib/libOpenVG.so"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenVG.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenVG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/khronos/CMakeFiles/OpenVG.dir/build: ../../lib/libOpenVG.so
@@ -126,10 +126,10 @@ interface/khronos/CMakeFiles/OpenVG.dir/requires: interface/khronos/CMakeFiles/O
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/requires
 
 interface/khronos/CMakeFiles/OpenVG.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/OpenVG.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/OpenVG.dir/cmake_clean.cmake
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/clean
 
 interface/khronos/CMakeFiles/OpenVG.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/khronos /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/OpenVG.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/OpenVG.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/depend
 

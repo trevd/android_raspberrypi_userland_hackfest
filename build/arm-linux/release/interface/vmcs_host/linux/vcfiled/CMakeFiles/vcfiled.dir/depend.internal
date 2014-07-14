@@ -126,5 +126,5 @@ interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled.dir/vcfiled.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/syslog.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled.c
- /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h

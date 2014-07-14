@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/khronos/glxx/glxx_client.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/glxx/glxx_client.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

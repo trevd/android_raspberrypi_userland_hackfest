@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/depend.make
@@ -51,17 +51,17 @@ include interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o: ../../../interface/mmal/vc/mmal_vc_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o.requires
@@ -74,17 +74,17 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o.provides.buil
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o: ../../../interface/mmal/vc/mmal_vc_shm.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o.requires
@@ -97,17 +97,17 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o.provides.build: 
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o: ../../../interface/mmal/vc/mmal_vc_api.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o.requires
@@ -120,17 +120,17 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o.provides.build: 
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o: ../../../interface/mmal/vc/mmal_vc_opaque_alloc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o.requires
@@ -143,17 +143,17 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o.provide
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o: ../../../interface/mmal/vc/mmal_vc_msgnames.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o.requires
@@ -166,17 +166,17 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o.provides.bu
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/flags.make
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o: ../../../interface/mmal/vc/mmal_vc_api_drm.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o   -c /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.c
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.c > CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.i
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.c -o CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.s
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o.requires:
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o.requires
@@ -210,7 +210,7 @@ mmal_vc_client_EXTERNAL_OBJECTS =
 ../../lib/libmmal_vc_client.so: ../../lib/libvcos.so
 ../../lib/libmmal_vc_client.so: interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../../../../../lib/libmmal_vc_client.so"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mmal_vc_client.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mmal_vc_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/build: ../../lib/libmmal_vc_client.so
@@ -225,10 +225,10 @@ interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/requires: interface/mmal/vc/CMak
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/requires
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc && $(CMAKE_COMMAND) -P CMakeFiles/mmal_vc_client.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc && $(CMAKE_COMMAND) -P CMakeFiles/mmal_vc_client.dir/cmake_clean.cmake
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/clean
 
 interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/mmal/vc /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/depend
 

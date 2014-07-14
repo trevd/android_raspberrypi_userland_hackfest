@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/host_applications/linux/apps/gencmd
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/gencmd
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/vcgencmd"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/android/build/android-cm-armv6/userland/build/bin/vcgencmd")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/bin/vcgencmd")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/vcgencmd" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/vcgencmd")
     FILE(RPATH_REMOVE

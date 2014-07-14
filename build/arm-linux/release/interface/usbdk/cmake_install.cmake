@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/usbdk
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libvmcs_rpc_client.a")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libvmcs_rpc_client.a")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

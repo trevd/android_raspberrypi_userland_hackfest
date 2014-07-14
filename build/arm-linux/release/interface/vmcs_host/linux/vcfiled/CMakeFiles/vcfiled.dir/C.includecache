@@ -792,7 +792,7 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled.c
 stdio.h
 -
 limits.h
@@ -816,17 +816,17 @@ fcntl.h
 android/log.h
 -
 vchiq.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vchiq.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vchiq.h
 interface/vchi/vchi.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/interface/vchi/vchi.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/interface/vchi/vchi.h
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/interface/vcos/vcos.h
 interface/vmcs_host/vc_vchi_filesys.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/interface/vmcs_host/vc_vchi_filesys.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/interface/vmcs_host/vc_vchi_filesys.h
 vchost.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vchost.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vchost.h
 vcfiled_check.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 

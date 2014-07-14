@@ -120,7 +120,7 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_component_wrapper.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_component_wrapper.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_component_wrapper.c
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_connection.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -240,7 +240,7 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_connection.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_connection.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_connection.c
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_graph.c.o
  ../../../interface/mmal/core/mmal_component_private.h
  ../../../interface/mmal/core/mmal_port_private.h
@@ -363,7 +363,7 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_graph.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_graph.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_graph.c
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_il.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -490,7 +490,7 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_il.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_il.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_il.c
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_list.c.o
  ../../../interface/mmal/util/mmal_list.h
  ../../../interface/vcos/pthreads/vcos_futex_mutex.h
@@ -589,7 +589,7 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_list.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_list.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_list.c
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_param_convert.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -706,8 +706,8 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_param_convert.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.c
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.h
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -825,8 +825,8 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.c
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_params.c.o
  ../../../interface/mmal/mmal.h
  ../../../interface/mmal/mmal_buffer.h
@@ -942,8 +942,8 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_params.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.c
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.h
 interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_rational.c.o
  ../../../interface/mmal/mmal_common.h
  ../../../interface/mmal/mmal_types.h
@@ -1044,4 +1044,4 @@ interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_rational.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_rational.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_rational.c

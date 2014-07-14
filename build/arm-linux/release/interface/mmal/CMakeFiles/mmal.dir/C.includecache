@@ -754,21 +754,21 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.c
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 mmal_encodings.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_encodings.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_encodings.h
 mmal_util.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h
 mmal_logging.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_logging.h
 string.h
 -
 stdio.h
 -
 
-/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h
 interface/mmal/mmal.h
-/android/build/android-cm-armv6/userland/interface/mmal/util/interface/mmal/mmal.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/interface/mmal/mmal.h
 

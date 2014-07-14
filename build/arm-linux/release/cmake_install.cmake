@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,7 +41,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/src" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/host_applications/linux/apps/hello_pi")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/src" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/hello_pi")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -53,7 +53,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vcos" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -65,7 +65,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vchiq_arm" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -77,7 +77,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vchi" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchi" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -89,7 +89,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vctypes" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vctypes" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -101,7 +101,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/vcinclude" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/vcinclude" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -113,7 +113,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vmcs_host" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\/android\\/build\\/android\\-cm\\-armv6\\/userland\\/interface\\/vmcs\\_host\\/khronos$" EXCLUDE)
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include/interface" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\/android\\/build\\/android\\-cm\\-armv6\\/vendor\\/rpi\\/rpi\\/userland\\/interface\\/vmcs\\_host\\/khronos$" EXCLUDE)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -125,7 +125,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/khronos/include" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/include" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -137,7 +137,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands/include" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/interface/vmcs_host/khronos/IL" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands/include" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/khronos/IL" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -149,19 +149,19 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-FILE(INSTALL DESTINATION "/vendor/brcm/islands" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/include" FILES_MATCHING REGEX "/[^/]*\\.h$")
+FILE(INSTALL DESTINATION "/vendor/brcm/islands" TYPE DIRECTORY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/include" FILES_MATCHING REGEX "/[^/]*\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/usbdk/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/usbdk/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -171,7 +171,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/android/build/android-cm-armv6/userland/build/arm-linux/release/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/android/build/android-cm-armv6/userland/build/arm-linux/release/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

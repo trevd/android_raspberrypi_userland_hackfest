@@ -118,12 +118,12 @@ interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_cfg.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_if.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_ioctl.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_lib.c
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_cfg.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_if.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_ioctl.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_lib.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.h
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o
  ../../../interface/vchi/vchi_mh.h
  ../../../interface/vcos/pthreads/vcos_futex_mutex.h
@@ -222,6 +222,6 @@ interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_if.h
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.c
- /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_if.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.h

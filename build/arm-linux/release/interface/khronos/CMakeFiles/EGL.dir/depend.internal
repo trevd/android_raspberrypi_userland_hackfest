@@ -202,7 +202,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client.c
 interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/abstract/khrn_client_platform_filler_abstract.h
@@ -342,7 +342,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_global_image_map.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_global_image_map.c
 interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/khrn_int_common.h
@@ -448,7 +448,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_image.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_image.c
 interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/khrn_client_mangle.h
@@ -562,7 +562,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_util.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_util.c
 interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/khrn_client_mangle.h
@@ -612,7 +612,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/syslimits.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/sysmacros.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_options.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_options.c
 interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -804,7 +804,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_platform_linux.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_platform_linux.c
 interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -996,7 +996,7 @@ interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c
 interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -1193,7 +1193,7 @@ interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client.c
 interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/abstract/khrn_client_platform_filler_abstract.h
@@ -1331,7 +1331,7 @@ interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_config.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_config.c
 interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -1529,7 +1529,7 @@ interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_context.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_context.c
 interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -1727,7 +1727,7 @@ interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_get_proc.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_get_proc.c
 interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -1922,7 +1922,7 @@ interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_surface.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_surface.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -2117,7 +2117,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -2309,7 +2309,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_flush_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_flush_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -2503,7 +2503,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_global_image_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_global_image_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -2698,7 +2698,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -2894,7 +2894,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_image_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_image_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -3088,7 +3088,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_lock_surface_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_lock_surface_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -3281,7 +3281,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_sync_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_sync_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -3474,7 +3474,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_openmaxil_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_openmaxil_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -3669,7 +3669,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/ext_gl_debug_marker.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/ext_gl_debug_marker.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -3863,7 +3863,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_draw_texture_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_draw_texture_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -4058,7 +4058,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_egl_image_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_egl_image_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -4252,7 +4252,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_framebuffer_object.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_framebuffer_object.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -4446,7 +4446,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_map_buffer.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_map_buffer.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -4640,7 +4640,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c
 interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -4834,7 +4834,7 @@ interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_query_matrix_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_query_matrix_client.c
 interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../helpers/vc_image/metadata_fourcc.h
@@ -5035,7 +5035,7 @@ interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c
 interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.o
  ../../../helpers/v3d/v3d_ver.h
  ../../../interface/khronos/common/khrn_int_common.h
@@ -5142,4 +5142,4 @@ interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c

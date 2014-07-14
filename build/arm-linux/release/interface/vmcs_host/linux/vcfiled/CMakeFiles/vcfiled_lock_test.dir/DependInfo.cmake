@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -28,7 +28,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

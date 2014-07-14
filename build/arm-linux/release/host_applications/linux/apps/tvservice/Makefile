@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/userland/build/arm-linux/release/CPackSourceConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +130,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/CMakeFiles/progress.marks
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/CMakeFiles/progress.marks
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/clean
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +146,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/rule
 .PHONY : host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ tvservice: host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/rule
 
 # fast build rule for target.
 tvservice/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build
 .PHONY : tvservice/fast
 
 tvservice.o: tvservice.c.o
@@ -178,7 +178,7 @@ tvservice.o: tvservice.c.o
 
 # target to build an object file
 tvservice.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.o
 .PHONY : tvservice.c.o
 
 tvservice.i: tvservice.c.i
@@ -186,7 +186,7 @@ tvservice.i: tvservice.c.i
 
 # target to preprocess a source file
 tvservice.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.i
 .PHONY : tvservice.c.i
 
 tvservice.s: tvservice.c.s
@@ -194,7 +194,7 @@ tvservice.s: tvservice.c.s
 
 # target to generate assembly for a file
 tvservice.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/build.make host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.s
 .PHONY : tvservice.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

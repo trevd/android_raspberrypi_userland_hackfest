@@ -141,7 +141,7 @@ static void cmd_log_results( VCOS_CMD_PARAM_T *param )
         {
             if ( vcos_is_log_enabled( cmd_globals.log_category, VCOS_LOG_INFO ))
             {
-                vcos_log_impl( cmd_globals.log_category, VCOS_LOG_INFO, "%s", start );
+                //vcos_log_impl( cmd_globals.log_category, VCOS_LOG_INFO, "%s", start );
             }
         }
         else

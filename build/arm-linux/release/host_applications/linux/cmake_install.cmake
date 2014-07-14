@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/host_applications/linux
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/libs/bcm_host/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/apps/gencmd/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/libs/bcm_host/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/apps/gencmd/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

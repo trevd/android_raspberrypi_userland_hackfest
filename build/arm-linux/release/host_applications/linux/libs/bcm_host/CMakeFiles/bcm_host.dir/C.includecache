@@ -904,25 +904,25 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/bcm_host.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/bcm_host.c
 stdio.h
 -
 interface/vmcs_host/vc_dispmanx.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_dispmanx.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_dispmanx.h
 interface/vmcs_host/vc_vchi_gencmd.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_vchi_gencmd.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_vchi_gencmd.h
 interface/vmcs_host/vc_vchi_bufman.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_vchi_bufman.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_vchi_bufman.h
 interface/vmcs_host/vc_tvservice.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_tvservice.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_tvservice.h
 interface/vmcs_host/vc_cecservice.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_cecservice.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vmcs_host/vc_cecservice.h
 interface/vchiq_arm/vchiq_if.h
-/android/build/android-cm-armv6/userland/host_applications/linux/libs/bcm_host/interface/vchiq_arm/vchiq_if.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/libs/bcm_host/interface/vchiq_arm/vchiq_if.h
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.c
 vcfiled_check.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 errno.h
 -
 stdio.h
@@ -940,9 +940,9 @@ sys/stat.h
 fcntl.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
 
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c
 stdio.h
 -
 stdlib.h
@@ -970,13 +970,13 @@ ctype.h
 limits.h
 -
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/interface/vcos/vcos.h
 vcfilesys_defs.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys_defs.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys_defs.h
 vchost.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vchost.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vchost.h
 dirent.h
 -
 vc_fileservice_defs.h
-/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vc_fileservice_defs.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vc_fileservice_defs.h
 

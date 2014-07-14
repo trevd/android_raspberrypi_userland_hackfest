@@ -726,7 +726,7 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/host_applications/linux/apps/tvservice/tvservice.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/tvservice/tvservice.c
 stdio.h
 -
 stdlib.h
@@ -744,5 +744,5 @@ assert.h
 string.h
 -
 interface/vmcs_host/vc_tvservice.h
-/android/build/android-cm-armv6/userland/host_applications/linux/apps/tvservice/interface/vmcs_host/vc_tvservice.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/tvservice/interface/vmcs_host/vc_tvservice.h
 

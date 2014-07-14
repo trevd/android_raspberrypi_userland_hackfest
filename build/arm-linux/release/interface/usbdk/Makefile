@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/userland/build/arm-linux/release/CPackSourceConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +130,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/usbdk/CMakeFiles/progress.marks
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/usbdk/CMakeFiles/progress.marks
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/clean
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +146,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/rule
 .PHONY : interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ vmcs_rpc_client: interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/rule
 
 # fast build rule for target.
 vmcs_rpc_client/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build
 .PHONY : vmcs_rpc_client/fast
 
 test/stubs.o: test/stubs.c.o
@@ -178,7 +178,7 @@ test/stubs.o: test/stubs.c.o
 
 # target to build an object file
 test/stubs.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.o
 .PHONY : test/stubs.c.o
 
 test/stubs.i: test/stubs.c.i
@@ -186,7 +186,7 @@ test/stubs.i: test/stubs.c.i
 
 # target to preprocess a source file
 test/stubs.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.i
 .PHONY : test/stubs.c.i
 
 test/stubs.s: test/stubs.c.s
@@ -194,7 +194,7 @@ test/stubs.s: test/stubs.c.s
 
 # target to generate assembly for a file
 test/stubs.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.s
 .PHONY : test/stubs.c.s
 
 vmcs_rpc_client/message_dispatch.o: vmcs_rpc_client/message_dispatch.c.o
@@ -202,7 +202,7 @@ vmcs_rpc_client/message_dispatch.o: vmcs_rpc_client/message_dispatch.c.o
 
 # target to build an object file
 vmcs_rpc_client/message_dispatch.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.o
 .PHONY : vmcs_rpc_client/message_dispatch.c.o
 
 vmcs_rpc_client/message_dispatch.i: vmcs_rpc_client/message_dispatch.c.i
@@ -210,7 +210,7 @@ vmcs_rpc_client/message_dispatch.i: vmcs_rpc_client/message_dispatch.c.i
 
 # target to preprocess a source file
 vmcs_rpc_client/message_dispatch.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.i
 .PHONY : vmcs_rpc_client/message_dispatch.c.i
 
 vmcs_rpc_client/message_dispatch.s: vmcs_rpc_client/message_dispatch.c.s
@@ -218,7 +218,7 @@ vmcs_rpc_client/message_dispatch.s: vmcs_rpc_client/message_dispatch.c.s
 
 # target to generate assembly for a file
 vmcs_rpc_client/message_dispatch.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.s
 .PHONY : vmcs_rpc_client/message_dispatch.c.s
 
 vmcs_rpc_client/platform.o: vmcs_rpc_client/platform.c.o
@@ -226,7 +226,7 @@ vmcs_rpc_client/platform.o: vmcs_rpc_client/platform.c.o
 
 # target to build an object file
 vmcs_rpc_client/platform.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.o
 .PHONY : vmcs_rpc_client/platform.c.o
 
 vmcs_rpc_client/platform.i: vmcs_rpc_client/platform.c.i
@@ -234,7 +234,7 @@ vmcs_rpc_client/platform.i: vmcs_rpc_client/platform.c.i
 
 # target to preprocess a source file
 vmcs_rpc_client/platform.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.i
 .PHONY : vmcs_rpc_client/platform.c.i
 
 vmcs_rpc_client/platform.s: vmcs_rpc_client/platform.c.s
@@ -242,7 +242,7 @@ vmcs_rpc_client/platform.s: vmcs_rpc_client/platform.c.s
 
 # target to generate assembly for a file
 vmcs_rpc_client/platform.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/build.make interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.s
 .PHONY : vmcs_rpc_client/platform.c.s
 
 # Help Target
@@ -280,6 +280,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

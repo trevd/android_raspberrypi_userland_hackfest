@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/mmal
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libmmal.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libmmal.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal.so")
     FILE(RPATH_REMOVE
@@ -52,34 +52,34 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/interface/mmal" TYPE FILE FILES
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_buffer.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_clock.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_common.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_component.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_encodings.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_events.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_format.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_logging.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_metadata.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters_audio.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters_camera.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters_clock.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters_common.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_parameters_video.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_pool.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_port.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_queue.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/mmal_types.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_buffer.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_clock.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_common.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_component.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_encodings.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_events.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_format.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_logging.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_metadata.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters_audio.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters_camera.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters_clock.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters_common.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_parameters_video.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_pool.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_port.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_queue.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/mmal_types.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/core/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/util/cmake_install.cmake")
-  INCLUDE("/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/core/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/util/cmake_install.cmake")
+  INCLUDE("/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

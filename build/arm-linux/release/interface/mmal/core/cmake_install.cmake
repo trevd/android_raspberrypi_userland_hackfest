@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/mmal/core
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_core.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libmmal_core.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libmmal_core.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_core.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_core.so")
     FILE(RPATH_REMOVE
@@ -52,11 +52,11 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/interface/mmal/core" TYPE FILE FILES
-    "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_buffer_private.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_clock_private.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_component_private.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_core_private.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/core/mmal_port_private.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_buffer_private.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_clock_private.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_component_private.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_core_private.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/core/mmal_port_private.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

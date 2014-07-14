@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/vcos/generic
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,18 +34,18 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/interface/vcos/generic" TYPE FILE FILES
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_common.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_blockpool.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_event_flags.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_named_sem.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_quickslow_mutex.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_reentrant_mtx.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_generic_tls.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_joinable_thread_from_plain.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_latch_from_sem.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_mem_from_malloc.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_mutexes_are_reentrant.h"
-    "/android/build/android-cm-armv6/userland/interface/vcos/generic/vcos_thread_reaper.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_common.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_blockpool.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_event_flags.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_named_sem.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_quickslow_mutex.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_reentrant_mtx.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_generic_tls.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_joinable_thread_from_plain.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_latch_from_sem.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_mem_from_malloc.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_mutexes_are_reentrant.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vcos/generic/vcos_thread_reaper.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

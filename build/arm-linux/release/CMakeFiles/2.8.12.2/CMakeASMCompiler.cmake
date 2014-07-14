@@ -1,4 +1,4 @@
-set(CMAKE_ASM_COMPILER "/android/build/android-cm-armv6/userland/gcc-wrap")
+set(CMAKE_ASM_COMPILER "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap")
 set(CMAKE_ASM_COMPILER_ARG1 "")
 set(CMAKE_AR "/usr/bin/ar")
 set(CMAKE_RANLIB "/usr/bin/ranlib")

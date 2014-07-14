@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/host_applications/linux/apps/tvservice/tvservice.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/linux/apps/tvservice/tvservice.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -28,10 +28,10 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

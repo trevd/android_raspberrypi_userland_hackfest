@@ -4,14 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfilesys.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcmisc.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_service_common.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_cecservice.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_dispmanx.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_filesys.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_gencmd.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o"
-  "/android/build/android-cm-armv6/userland/interface/vmcs_host/vc_vchi_tvservice.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfilesys.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcmisc.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_service_common.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_cecservice.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_dispmanx.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_filesys.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_gencmd.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vc_vchi_tvservice.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -35,9 +35,9 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

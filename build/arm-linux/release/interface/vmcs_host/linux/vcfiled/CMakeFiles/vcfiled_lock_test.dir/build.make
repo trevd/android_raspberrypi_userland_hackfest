@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/depend.make
@@ -51,17 +51,17 @@ include interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/flags
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o: interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/flags.make
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o: ../../../interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c > CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c > CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.i
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c -o CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled/vcfiled_lock_test.c -o CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.s
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o.requires:
 .PHONY : interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o.requires
@@ -84,7 +84,7 @@ vcfiled_lock_test_EXTERNAL_OBJECTS =
 ../../bin/vcfiled_lock_test: ../../lib/libvcfiled_check.a
 ../../bin/vcfiled_lock_test: interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable ../../../../../../bin/vcfiled_lock_test"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vcfiled_lock_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vcfiled_lock_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/build: ../../bin/vcfiled_lock_test
@@ -94,10 +94,10 @@ interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/requires: int
 .PHONY : interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/requires
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && $(CMAKE_COMMAND) -P CMakeFiles/vcfiled_lock_test.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled && $(CMAKE_COMMAND) -P CMakeFiles/vcfiled_lock_test.dir/cmake_clean.cmake
 .PHONY : interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/clean
 
 interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/vmcs_host/linux/vcfiled /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/linux/vcfiled /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/depend
 

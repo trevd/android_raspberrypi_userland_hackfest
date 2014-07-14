@@ -99,7 +99,7 @@ interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/usbdk/test/stubs.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk/test/stubs.c
 interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.o
  ../../../host_applications/framework/host_app.h
  ../../../host_applications/framework/platform.h
@@ -228,8 +228,8 @@ interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/termios.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.c
- /android/build/android-cm-armv6/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.h
  vmcs_config.h
 interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.o
  ../../../host_applications/framework/platform.h
@@ -344,5 +344,5 @@ interface/usbdk/CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.o
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/sys/types.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/time.h
  /android/build/android-cm-armv6/prebuilts/ndk/current/platforms/android-18/arch-arm/usr/include/unistd.h
- /android/build/android-cm-armv6/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.h
- /android/build/android-cm-armv6/userland/interface/usbdk/vmcs_rpc_client/platform.c
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk/vmcs_rpc_client/message_dispatch.h
+ /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/usbdk/vmcs_rpc_client/platform.c

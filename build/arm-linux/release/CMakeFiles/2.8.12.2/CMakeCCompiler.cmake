@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/android/build/android-cm-armv6/userland/gcc-wrap")
+set(CMAKE_C_COMPILER "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "4.7.0")

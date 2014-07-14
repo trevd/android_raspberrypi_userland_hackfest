@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/khronos/CMakeFiles/EGL_static.dir/depend.make
@@ -51,17 +51,17 @@ include interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o: ../../../interface/khronos/egl/egl_client_config.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_config.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_config.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_config.c > CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_config.c > CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_config.c -o CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_config.c -o CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o.requires
@@ -74,17 +74,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o.provides.b
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o: ../../../interface/khronos/egl/egl_client_context.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_context.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_context.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_context.c > CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_context.c > CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_context.c -o CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_context.c -o CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o.requires
@@ -97,17 +97,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o.provides.
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o: ../../../interface/khronos/egl/egl_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/egl/egl_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client.c > CMakeFiles/EGL_static.dir/egl/egl_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client.c > CMakeFiles/EGL_static.dir/egl/egl_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/egl/egl_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client.c -o CMakeFiles/EGL_static.dir/egl/egl_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client.c -o CMakeFiles/EGL_static.dir/egl/egl_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o.requires
@@ -120,17 +120,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o.provides.build: i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o: ../../../interface/khronos/egl/egl_client_get_proc.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_get_proc.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_get_proc.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_get_proc.c > CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_get_proc.c > CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_get_proc.c -o CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_get_proc.c -o CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o.requires
@@ -143,17 +143,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o.provides
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o: ../../../interface/khronos/egl/egl_client_surface.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_surface.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_surface.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_surface.c > CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_surface.c > CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/egl/egl_client_surface.c -o CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/egl/egl_client_surface.c -o CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o.requires
@@ -166,17 +166,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o.provides.
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o: ../../../interface/khronos/ext/egl_brcm_driver_monitor_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_driver_monitor_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o.requires
@@ -189,17 +189,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o: ../../../interface/khronos/ext/egl_brcm_perf_monitor_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_perf_monitor_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o.requires
@@ -212,17 +212,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o: ../../../interface/khronos/ext/egl_brcm_global_image_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_global_image_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_global_image_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_global_image_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_global_image_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_global_image_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_global_image_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o.requires
@@ -235,17 +235,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o: ../../../interface/khronos/ext/egl_brcm_flush_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_flush_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_flush_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_flush_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_flush_client.c > CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_brcm_flush_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_brcm_flush_client.c -o CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o.requires
@@ -258,17 +258,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o.provid
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o: ../../../interface/khronos/ext/egl_khr_image_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_image_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_image_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_image_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_image_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_image_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_image_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o.requires
@@ -281,17 +281,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o.provide
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o: ../../../interface/khronos/ext/egl_khr_sync_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_sync_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_sync_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_sync_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_sync_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_sync_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_sync_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o.requires
@@ -304,17 +304,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o.provides
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o: ../../../interface/khronos/ext/gl_oes_egl_image_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_egl_image_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_egl_image_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_egl_image_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_egl_image_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_egl_image_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_egl_image_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o.requires
@@ -327,17 +327,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o.prov
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o: ../../../interface/khronos/ext/egl_khr_lock_surface_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_lock_surface_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_lock_surface_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_lock_surface_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_lock_surface_client.c > CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_khr_lock_surface_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_khr_lock_surface_client.c -o CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o.requires
@@ -350,17 +350,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o.
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o: ../../../interface/khronos/ext/ext_gl_debug_marker.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/ext_gl_debug_marker.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/ext_gl_debug_marker.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/ext_gl_debug_marker.c > CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/ext_gl_debug_marker.c > CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/ext_gl_debug_marker.c -o CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/ext_gl_debug_marker.c -o CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o.requires
@@ -373,17 +373,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o.provides
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o: ../../../interface/khronos/common/khrn_int_image.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_image.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_image.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_image.c > CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_image.c > CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_image.c -o CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_image.c -o CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o.requires
@@ -396,17 +396,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o.provides.b
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o: ../../../interface/khronos/common/khrn_int_util.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_util.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_util.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_util.c > CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_util.c > CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_util.c -o CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_util.c -o CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o.requires
@@ -419,17 +419,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o.provides.bu
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o: ../../../interface/khronos/common/khrn_options.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_options.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_options.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_options.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_options.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/khrn_options.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_options.c > CMakeFiles/EGL_static.dir/common/khrn_options.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_options.c > CMakeFiles/EGL_static.dir/common/khrn_options.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/khrn_options.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_options.c -o CMakeFiles/EGL_static.dir/common/khrn_options.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_options.c -o CMakeFiles/EGL_static.dir/common/khrn_options.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o.requires
@@ -442,17 +442,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o.provides.bui
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o: ../../../interface/khronos/common/khrn_client_global_image_map.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_global_image_map.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_global_image_map.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_global_image_map.c > CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_global_image_map.c > CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_global_image_map.c -o CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_global_image_map.c -o CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o.requires
@@ -465,17 +465,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o: ../../../interface/khronos/common/linux/khrn_client_rpc_linux.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c > CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c > CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_rpc_linux.c -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o.requires
@@ -488,17 +488,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o: ../../../interface/khronos/common/linux/khrn_client_platform_linux.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_platform_linux.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_platform_linux.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_platform_linux.c > CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_platform_linux.c > CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/linux/khrn_client_platform_linux.c -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/linux/khrn_client_platform_linux.c -o CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o.requires
@@ -511,17 +511,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_li
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o: ../../../interface/khronos/vg/vg_int_mat3x3.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c > CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c > CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_int_mat3x3.c -o CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_int_mat3x3.c -o CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o.requires
@@ -534,17 +534,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o.provides.build:
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o: ../../../interface/khronos/vg/vg_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/vg/vg_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/vg/vg_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/vg/vg_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c > CMakeFiles/EGL_static.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c > CMakeFiles/EGL_static.dir/vg/vg_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/vg/vg_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/vg/vg_client.c -o CMakeFiles/EGL_static.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/vg/vg_client.c -o CMakeFiles/EGL_static.dir/vg/vg_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o.requires
@@ -557,17 +557,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o.provides.build: int
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o: ../../../interface/khronos/common/khrn_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/common/khrn_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/common/khrn_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client.c > CMakeFiles/EGL_static.dir/common/khrn_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client.c > CMakeFiles/EGL_static.dir/common/khrn_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/common/khrn_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client.c -o CMakeFiles/EGL_static.dir/common/khrn_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client.c -o CMakeFiles/EGL_static.dir/common/khrn_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o.requires
@@ -580,17 +580,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o.provides.buil
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o: ../../../interface/khronos/ext/egl_openmaxil_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_openmaxil_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_openmaxil_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_openmaxil_client.c > CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_openmaxil_client.c > CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/egl_openmaxil_client.c -o CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/egl_openmaxil_client.c -o CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o.requires
@@ -603,17 +603,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o.provide
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o: ../../../interface/khronos/ext/gl_oes_draw_texture_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_draw_texture_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_draw_texture_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_draw_texture_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_draw_texture_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_draw_texture_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_draw_texture_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o.requires
@@ -626,17 +626,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o.p
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o: ../../../interface/khronos/ext/gl_oes_query_matrix_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_query_matrix_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_query_matrix_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_query_matrix_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_query_matrix_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_query_matrix_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_query_matrix_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o.requires
@@ -649,17 +649,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o.p
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o: ../../../interface/khronos/ext/gl_oes_framebuffer_object.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_framebuffer_object.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_framebuffer_object.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_framebuffer_object.c > CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_framebuffer_object.c > CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_framebuffer_object.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_framebuffer_object.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o.requires
@@ -672,17 +672,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o.pr
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o: ../../../interface/khronos/ext/gl_oes_map_buffer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_map_buffer.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_map_buffer.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_map_buffer.c > CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_map_buffer.c > CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_map_buffer.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_map_buffer.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o.requires
@@ -695,17 +695,17 @@ interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o.provides.b
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o: interface/khronos/CMakeFiles/EGL_static.dir/flags.make
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o: ../../../interface/khronos/ext/gl_oes_matrix_palette_client.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o   -c /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c > CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/ext/gl_oes_matrix_palette_client.c -o CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s
 
 interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o.requires:
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o.requires
@@ -783,8 +783,8 @@ EGL_static_EXTERNAL_OBJECTS =
 ../../lib/libEGL_static.a: interface/khronos/CMakeFiles/EGL_static.dir/build.make
 ../../lib/libEGL_static.a: interface/khronos/CMakeFiles/EGL_static.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../../../../lib/libEGL_static.a"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/EGL_static.dir/cmake_clean_target.cmake
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EGL_static.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/EGL_static.dir/cmake_clean_target.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EGL_static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/khronos/CMakeFiles/EGL_static.dir/build: ../../lib/libEGL_static.a
@@ -822,10 +822,10 @@ interface/khronos/CMakeFiles/EGL_static.dir/requires: interface/khronos/CMakeFil
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/requires
 
 interface/khronos/CMakeFiles/EGL_static.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/EGL_static.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos && $(CMAKE_COMMAND) -P CMakeFiles/EGL_static.dir/cmake_clean.cmake
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/clean
 
 interface/khronos/CMakeFiles/EGL_static.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/khronos /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/EGL_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/EGL_static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/depend
 

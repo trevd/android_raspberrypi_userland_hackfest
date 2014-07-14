@@ -784,9 +784,9 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/host_applications/framework/common/host_ilcore.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/host_ilcore.h
 
-/android/build/android-cm-armv6/userland/host_applications/framework/common/ilcore.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/ilcore.c
 stdio.h
 -
 stdarg.h
@@ -800,13 +800,13 @@ stdlib.h
 string.h
 -
 interface/vmcs_host/khronos/IL/OMX_Component.h
-/android/build/android-cm-armv6/userland/host_applications/framework/common/interface/vmcs_host/khronos/IL/OMX_Component.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/interface/vmcs_host/khronos/IL/OMX_Component.h
 interface/vmcs_host/vcilcs.h
-/android/build/android-cm-armv6/userland/host_applications/framework/common/interface/vmcs_host/vcilcs.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/interface/vmcs_host/vcilcs.h
 interface/vmcs_host/vchost.h
-/android/build/android-cm-armv6/userland/host_applications/framework/common/interface/vmcs_host/vchost.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/interface/vmcs_host/vchost.h
 interface/vmcs_host/vcilcs_common.h
-/android/build/android-cm-armv6/userland/host_applications/framework/common/interface/vmcs_host/vcilcs_common.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/interface/vmcs_host/vcilcs_common.h
 host_ilcore.h
-/android/build/android-cm-armv6/userland/host_applications/framework/common/host_ilcore.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/host_ilcore.h
 

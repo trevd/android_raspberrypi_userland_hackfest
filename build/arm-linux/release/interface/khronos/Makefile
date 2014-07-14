@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/userland/build/arm-linux/release/CPackSourceConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +130,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/progress.marks
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/progress.marks
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/clean
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +146,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/EGL.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/EGL.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/EGL.dir/rule
 .PHONY : interface/khronos/CMakeFiles/EGL.dir/rule
 
 # Convenience name for target.
@@ -170,12 +170,12 @@ EGL: interface/khronos/CMakeFiles/EGL.dir/rule
 
 # fast build rule for target.
 EGL/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/build
 .PHONY : EGL/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/EGL_static.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/EGL_static.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/EGL_static.dir/rule
 .PHONY : interface/khronos/CMakeFiles/EGL_static.dir/rule
 
 # Convenience name for target.
@@ -184,12 +184,12 @@ EGL_static: interface/khronos/CMakeFiles/EGL_static.dir/rule
 
 # fast build rule for target.
 EGL_static/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/build
 .PHONY : EGL_static/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/GLESv2.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/GLESv2.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/GLESv2.dir/rule
 .PHONY : interface/khronos/CMakeFiles/GLESv2.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ GLESv2: interface/khronos/CMakeFiles/GLESv2.dir/rule
 
 # fast build rule for target.
 GLESv2/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/build
 .PHONY : GLESv2/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/GLESv2_static.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/GLESv2_static.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/GLESv2_static.dir/rule
 .PHONY : interface/khronos/CMakeFiles/GLESv2_static.dir/rule
 
 # Convenience name for target.
@@ -212,12 +212,12 @@ GLESv2_static: interface/khronos/CMakeFiles/GLESv2_static.dir/rule
 
 # fast build rule for target.
 GLESv2_static/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/build
 .PHONY : GLESv2_static/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/OpenVG.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/OpenVG.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/OpenVG.dir/rule
 .PHONY : interface/khronos/CMakeFiles/OpenVG.dir/rule
 
 # Convenience name for target.
@@ -226,12 +226,12 @@ OpenVG: interface/khronos/CMakeFiles/OpenVG.dir/rule
 
 # fast build rule for target.
 OpenVG/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/build
 .PHONY : OpenVG/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/WFC.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/WFC.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/WFC.dir/rule
 .PHONY : interface/khronos/CMakeFiles/WFC.dir/rule
 
 # Convenience name for target.
@@ -240,12 +240,12 @@ WFC: interface/khronos/CMakeFiles/WFC.dir/rule
 
 # fast build rule for target.
 WFC/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/build
 .PHONY : WFC/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/khrn_client.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/khrn_client.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/khrn_client.dir/rule
 .PHONY : interface/khronos/CMakeFiles/khrn_client.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ khrn_client: interface/khronos/CMakeFiles/khrn_client.dir/rule
 
 # fast build rule for target.
 khrn_client/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/build
 .PHONY : khrn_client/fast
 
 # Convenience name for target.
 interface/khronos/CMakeFiles/khrn_static.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/khrn_static.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 interface/khronos/CMakeFiles/khrn_static.dir/rule
 .PHONY : interface/khronos/CMakeFiles/khrn_static.dir/rule
 
 # Convenience name for target.
@@ -268,7 +268,7 @@ khrn_static: interface/khronos/CMakeFiles/khrn_static.dir/rule
 
 # fast build rule for target.
 khrn_static/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/build
 .PHONY : khrn_static/fast
 
 common/khrn_client.o: common/khrn_client.c.o
@@ -276,9 +276,9 @@ common/khrn_client.o: common/khrn_client.c.o
 
 # target to build an object file
 common/khrn_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.o
 .PHONY : common/khrn_client.c.o
 
 common/khrn_client.i: common/khrn_client.c.i
@@ -286,9 +286,9 @@ common/khrn_client.i: common/khrn_client.c.i
 
 # target to preprocess a source file
 common/khrn_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.i
 .PHONY : common/khrn_client.c.i
 
 common/khrn_client.s: common/khrn_client.c.s
@@ -296,9 +296,9 @@ common/khrn_client.s: common/khrn_client.c.s
 
 # target to generate assembly for a file
 common/khrn_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.s
 .PHONY : common/khrn_client.c.s
 
 common/khrn_client_cache.o: common/khrn_client_cache.c.o
@@ -306,8 +306,8 @@ common/khrn_client_cache.o: common/khrn_client_cache.c.o
 
 # target to build an object file
 common/khrn_client_cache.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.o
 .PHONY : common/khrn_client_cache.c.o
 
 common/khrn_client_cache.i: common/khrn_client_cache.c.i
@@ -315,8 +315,8 @@ common/khrn_client_cache.i: common/khrn_client_cache.c.i
 
 # target to preprocess a source file
 common/khrn_client_cache.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.i
 .PHONY : common/khrn_client_cache.c.i
 
 common/khrn_client_cache.s: common/khrn_client_cache.c.s
@@ -324,8 +324,8 @@ common/khrn_client_cache.s: common/khrn_client_cache.c.s
 
 # target to generate assembly for a file
 common/khrn_client_cache.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.s
 .PHONY : common/khrn_client_cache.c.s
 
 common/khrn_client_global_image_map.o: common/khrn_client_global_image_map.c.o
@@ -333,9 +333,9 @@ common/khrn_client_global_image_map.o: common/khrn_client_global_image_map.c.o
 
 # target to build an object file
 common/khrn_client_global_image_map.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.o
 .PHONY : common/khrn_client_global_image_map.c.o
 
 common/khrn_client_global_image_map.i: common/khrn_client_global_image_map.c.i
@@ -343,9 +343,9 @@ common/khrn_client_global_image_map.i: common/khrn_client_global_image_map.c.i
 
 # target to preprocess a source file
 common/khrn_client_global_image_map.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.i
 .PHONY : common/khrn_client_global_image_map.c.i
 
 common/khrn_client_global_image_map.s: common/khrn_client_global_image_map.c.s
@@ -353,9 +353,9 @@ common/khrn_client_global_image_map.s: common/khrn_client_global_image_map.c.s
 
 # target to generate assembly for a file
 common/khrn_client_global_image_map.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.s
 .PHONY : common/khrn_client_global_image_map.c.s
 
 common/khrn_client_pointermap.o: common/khrn_client_pointermap.c.o
@@ -363,8 +363,8 @@ common/khrn_client_pointermap.o: common/khrn_client_pointermap.c.o
 
 # target to build an object file
 common/khrn_client_pointermap.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.o
 .PHONY : common/khrn_client_pointermap.c.o
 
 common/khrn_client_pointermap.i: common/khrn_client_pointermap.c.i
@@ -372,8 +372,8 @@ common/khrn_client_pointermap.i: common/khrn_client_pointermap.c.i
 
 # target to preprocess a source file
 common/khrn_client_pointermap.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.i
 .PHONY : common/khrn_client_pointermap.c.i
 
 common/khrn_client_pointermap.s: common/khrn_client_pointermap.c.s
@@ -381,8 +381,8 @@ common/khrn_client_pointermap.s: common/khrn_client_pointermap.c.s
 
 # target to generate assembly for a file
 common/khrn_client_pointermap.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.s
 .PHONY : common/khrn_client_pointermap.c.s
 
 common/khrn_client_vector.o: common/khrn_client_vector.c.o
@@ -390,8 +390,8 @@ common/khrn_client_vector.o: common/khrn_client_vector.c.o
 
 # target to build an object file
 common/khrn_client_vector.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.o
 .PHONY : common/khrn_client_vector.c.o
 
 common/khrn_client_vector.i: common/khrn_client_vector.c.i
@@ -399,8 +399,8 @@ common/khrn_client_vector.i: common/khrn_client_vector.c.i
 
 # target to preprocess a source file
 common/khrn_client_vector.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.i
 .PHONY : common/khrn_client_vector.c.i
 
 common/khrn_client_vector.s: common/khrn_client_vector.c.s
@@ -408,8 +408,8 @@ common/khrn_client_vector.s: common/khrn_client_vector.c.s
 
 # target to generate assembly for a file
 common/khrn_client_vector.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.s
 .PHONY : common/khrn_client_vector.c.s
 
 common/khrn_int_hash.o: common/khrn_int_hash.c.o
@@ -417,8 +417,8 @@ common/khrn_int_hash.o: common/khrn_int_hash.c.o
 
 # target to build an object file
 common/khrn_int_hash.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.o
 .PHONY : common/khrn_int_hash.c.o
 
 common/khrn_int_hash.i: common/khrn_int_hash.c.i
@@ -426,8 +426,8 @@ common/khrn_int_hash.i: common/khrn_int_hash.c.i
 
 # target to preprocess a source file
 common/khrn_int_hash.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.i
 .PHONY : common/khrn_int_hash.c.i
 
 common/khrn_int_hash.s: common/khrn_int_hash.c.s
@@ -435,8 +435,8 @@ common/khrn_int_hash.s: common/khrn_int_hash.c.s
 
 # target to generate assembly for a file
 common/khrn_int_hash.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.s
 .PHONY : common/khrn_int_hash.c.s
 
 common/khrn_int_hash_asm.o: common/khrn_int_hash_asm.s.o
@@ -444,8 +444,8 @@ common/khrn_int_hash_asm.o: common/khrn_int_hash_asm.s.o
 
 # target to build an object file
 common/khrn_int_hash_asm.s.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash_asm.s.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash_asm.s.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_client.dir/build.make interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash_asm.s.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash_asm.s.o
 .PHONY : common/khrn_int_hash_asm.s.o
 
 common/khrn_int_image.o: common/khrn_int_image.c.o
@@ -453,9 +453,9 @@ common/khrn_int_image.o: common/khrn_int_image.c.o
 
 # target to build an object file
 common/khrn_int_image.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.o
 .PHONY : common/khrn_int_image.c.o
 
 common/khrn_int_image.i: common/khrn_int_image.c.i
@@ -463,9 +463,9 @@ common/khrn_int_image.i: common/khrn_int_image.c.i
 
 # target to preprocess a source file
 common/khrn_int_image.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.i
 .PHONY : common/khrn_int_image.c.i
 
 common/khrn_int_image.s: common/khrn_int_image.c.s
@@ -473,9 +473,9 @@ common/khrn_int_image.s: common/khrn_int_image.c.s
 
 # target to generate assembly for a file
 common/khrn_int_image.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.s
 .PHONY : common/khrn_int_image.c.s
 
 common/khrn_int_util.o: common/khrn_int_util.c.o
@@ -483,9 +483,9 @@ common/khrn_int_util.o: common/khrn_int_util.c.o
 
 # target to build an object file
 common/khrn_int_util.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.o
 .PHONY : common/khrn_int_util.c.o
 
 common/khrn_int_util.i: common/khrn_int_util.c.i
@@ -493,9 +493,9 @@ common/khrn_int_util.i: common/khrn_int_util.c.i
 
 # target to preprocess a source file
 common/khrn_int_util.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.i
 .PHONY : common/khrn_int_util.c.i
 
 common/khrn_int_util.s: common/khrn_int_util.c.s
@@ -503,9 +503,9 @@ common/khrn_int_util.s: common/khrn_int_util.c.s
 
 # target to generate assembly for a file
 common/khrn_int_util.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.s
 .PHONY : common/khrn_int_util.c.s
 
 common/khrn_options.o: common/khrn_options.c.o
@@ -513,9 +513,9 @@ common/khrn_options.o: common/khrn_options.c.o
 
 # target to build an object file
 common/khrn_options.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.o
 .PHONY : common/khrn_options.c.o
 
 common/khrn_options.i: common/khrn_options.c.i
@@ -523,9 +523,9 @@ common/khrn_options.i: common/khrn_options.c.i
 
 # target to preprocess a source file
 common/khrn_options.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.i
 .PHONY : common/khrn_options.c.i
 
 common/khrn_options.s: common/khrn_options.c.s
@@ -533,9 +533,9 @@ common/khrn_options.s: common/khrn_options.c.s
 
 # target to generate assembly for a file
 common/khrn_options.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.s
 .PHONY : common/khrn_options.c.s
 
 common/linux/khrn_client_platform_linux.o: common/linux/khrn_client_platform_linux.c.o
@@ -543,9 +543,9 @@ common/linux/khrn_client_platform_linux.o: common/linux/khrn_client_platform_lin
 
 # target to build an object file
 common/linux/khrn_client_platform_linux.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.o
 .PHONY : common/linux/khrn_client_platform_linux.c.o
 
 common/linux/khrn_client_platform_linux.i: common/linux/khrn_client_platform_linux.c.i
@@ -553,9 +553,9 @@ common/linux/khrn_client_platform_linux.i: common/linux/khrn_client_platform_lin
 
 # target to preprocess a source file
 common/linux/khrn_client_platform_linux.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.i
 .PHONY : common/linux/khrn_client_platform_linux.c.i
 
 common/linux/khrn_client_platform_linux.s: common/linux/khrn_client_platform_linux.c.s
@@ -563,9 +563,9 @@ common/linux/khrn_client_platform_linux.s: common/linux/khrn_client_platform_lin
 
 # target to generate assembly for a file
 common/linux/khrn_client_platform_linux.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.s
 .PHONY : common/linux/khrn_client_platform_linux.c.s
 
 common/linux/khrn_client_rpc_linux.o: common/linux/khrn_client_rpc_linux.c.o
@@ -573,9 +573,9 @@ common/linux/khrn_client_rpc_linux.o: common/linux/khrn_client_rpc_linux.c.o
 
 # target to build an object file
 common/linux/khrn_client_rpc_linux.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.o
 .PHONY : common/linux/khrn_client_rpc_linux.c.o
 
 common/linux/khrn_client_rpc_linux.i: common/linux/khrn_client_rpc_linux.c.i
@@ -583,9 +583,9 @@ common/linux/khrn_client_rpc_linux.i: common/linux/khrn_client_rpc_linux.c.i
 
 # target to preprocess a source file
 common/linux/khrn_client_rpc_linux.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.i
 .PHONY : common/linux/khrn_client_rpc_linux.c.i
 
 common/linux/khrn_client_rpc_linux.s: common/linux/khrn_client_rpc_linux.c.s
@@ -593,9 +593,9 @@ common/linux/khrn_client_rpc_linux.s: common/linux/khrn_client_rpc_linux.c.s
 
 # target to generate assembly for a file
 common/linux/khrn_client_rpc_linux.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.s
 .PHONY : common/linux/khrn_client_rpc_linux.c.s
 
 common/openwfc/khrn_client_platform_openwfc.o: common/openwfc/khrn_client_platform_openwfc.c.o
@@ -603,8 +603,8 @@ common/openwfc/khrn_client_platform_openwfc.o: common/openwfc/khrn_client_platfo
 
 # target to build an object file
 common/openwfc/khrn_client_platform_openwfc.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.o
 .PHONY : common/openwfc/khrn_client_platform_openwfc.c.o
 
 common/openwfc/khrn_client_platform_openwfc.i: common/openwfc/khrn_client_platform_openwfc.c.i
@@ -612,8 +612,8 @@ common/openwfc/khrn_client_platform_openwfc.i: common/openwfc/khrn_client_platfo
 
 # target to preprocess a source file
 common/openwfc/khrn_client_platform_openwfc.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.i
 .PHONY : common/openwfc/khrn_client_platform_openwfc.c.i
 
 common/openwfc/khrn_client_platform_openwfc.s: common/openwfc/khrn_client_platform_openwfc.c.s
@@ -621,8 +621,8 @@ common/openwfc/khrn_client_platform_openwfc.s: common/openwfc/khrn_client_platfo
 
 # target to generate assembly for a file
 common/openwfc/khrn_client_platform_openwfc.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.s
 .PHONY : common/openwfc/khrn_client_platform_openwfc.c.s
 
 egl/egl_client.o: egl/egl_client.c.o
@@ -630,9 +630,9 @@ egl/egl_client.o: egl/egl_client.c.o
 
 # target to build an object file
 egl/egl_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.o
 .PHONY : egl/egl_client.c.o
 
 egl/egl_client.i: egl/egl_client.c.i
@@ -640,9 +640,9 @@ egl/egl_client.i: egl/egl_client.c.i
 
 # target to preprocess a source file
 egl/egl_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.i
 .PHONY : egl/egl_client.c.i
 
 egl/egl_client.s: egl/egl_client.c.s
@@ -650,9 +650,9 @@ egl/egl_client.s: egl/egl_client.c.s
 
 # target to generate assembly for a file
 egl/egl_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.s
 .PHONY : egl/egl_client.c.s
 
 egl/egl_client_config.o: egl/egl_client_config.c.o
@@ -660,9 +660,9 @@ egl/egl_client_config.o: egl/egl_client_config.c.o
 
 # target to build an object file
 egl/egl_client_config.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.o
 .PHONY : egl/egl_client_config.c.o
 
 egl/egl_client_config.i: egl/egl_client_config.c.i
@@ -670,9 +670,9 @@ egl/egl_client_config.i: egl/egl_client_config.c.i
 
 # target to preprocess a source file
 egl/egl_client_config.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.i
 .PHONY : egl/egl_client_config.c.i
 
 egl/egl_client_config.s: egl/egl_client_config.c.s
@@ -680,9 +680,9 @@ egl/egl_client_config.s: egl/egl_client_config.c.s
 
 # target to generate assembly for a file
 egl/egl_client_config.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.s
 .PHONY : egl/egl_client_config.c.s
 
 egl/egl_client_context.o: egl/egl_client_context.c.o
@@ -690,9 +690,9 @@ egl/egl_client_context.o: egl/egl_client_context.c.o
 
 # target to build an object file
 egl/egl_client_context.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.o
 .PHONY : egl/egl_client_context.c.o
 
 egl/egl_client_context.i: egl/egl_client_context.c.i
@@ -700,9 +700,9 @@ egl/egl_client_context.i: egl/egl_client_context.c.i
 
 # target to preprocess a source file
 egl/egl_client_context.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.i
 .PHONY : egl/egl_client_context.c.i
 
 egl/egl_client_context.s: egl/egl_client_context.c.s
@@ -710,9 +710,9 @@ egl/egl_client_context.s: egl/egl_client_context.c.s
 
 # target to generate assembly for a file
 egl/egl_client_context.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.s
 .PHONY : egl/egl_client_context.c.s
 
 egl/egl_client_get_proc.o: egl/egl_client_get_proc.c.o
@@ -720,9 +720,9 @@ egl/egl_client_get_proc.o: egl/egl_client_get_proc.c.o
 
 # target to build an object file
 egl/egl_client_get_proc.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.o
 .PHONY : egl/egl_client_get_proc.c.o
 
 egl/egl_client_get_proc.i: egl/egl_client_get_proc.c.i
@@ -730,9 +730,9 @@ egl/egl_client_get_proc.i: egl/egl_client_get_proc.c.i
 
 # target to preprocess a source file
 egl/egl_client_get_proc.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.i
 .PHONY : egl/egl_client_get_proc.c.i
 
 egl/egl_client_get_proc.s: egl/egl_client_get_proc.c.s
@@ -740,9 +740,9 @@ egl/egl_client_get_proc.s: egl/egl_client_get_proc.c.s
 
 # target to generate assembly for a file
 egl/egl_client_get_proc.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.s
 .PHONY : egl/egl_client_get_proc.c.s
 
 egl/egl_client_surface.o: egl/egl_client_surface.c.o
@@ -750,9 +750,9 @@ egl/egl_client_surface.o: egl/egl_client_surface.c.o
 
 # target to build an object file
 egl/egl_client_surface.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.o
 .PHONY : egl/egl_client_surface.c.o
 
 egl/egl_client_surface.i: egl/egl_client_surface.c.i
@@ -760,9 +760,9 @@ egl/egl_client_surface.i: egl/egl_client_surface.c.i
 
 # target to preprocess a source file
 egl/egl_client_surface.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.i
 .PHONY : egl/egl_client_surface.c.i
 
 egl/egl_client_surface.s: egl/egl_client_surface.c.s
@@ -770,9 +770,9 @@ egl/egl_client_surface.s: egl/egl_client_surface.c.s
 
 # target to generate assembly for a file
 egl/egl_client_surface.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.s
 .PHONY : egl/egl_client_surface.c.s
 
 ext/egl_brcm_driver_monitor_client.o: ext/egl_brcm_driver_monitor_client.c.o
@@ -780,9 +780,9 @@ ext/egl_brcm_driver_monitor_client.o: ext/egl_brcm_driver_monitor_client.c.o
 
 # target to build an object file
 ext/egl_brcm_driver_monitor_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.o
 .PHONY : ext/egl_brcm_driver_monitor_client.c.o
 
 ext/egl_brcm_driver_monitor_client.i: ext/egl_brcm_driver_monitor_client.c.i
@@ -790,9 +790,9 @@ ext/egl_brcm_driver_monitor_client.i: ext/egl_brcm_driver_monitor_client.c.i
 
 # target to preprocess a source file
 ext/egl_brcm_driver_monitor_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.i
 .PHONY : ext/egl_brcm_driver_monitor_client.c.i
 
 ext/egl_brcm_driver_monitor_client.s: ext/egl_brcm_driver_monitor_client.c.s
@@ -800,9 +800,9 @@ ext/egl_brcm_driver_monitor_client.s: ext/egl_brcm_driver_monitor_client.c.s
 
 # target to generate assembly for a file
 ext/egl_brcm_driver_monitor_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.s
 .PHONY : ext/egl_brcm_driver_monitor_client.c.s
 
 ext/egl_brcm_flush_client.o: ext/egl_brcm_flush_client.c.o
@@ -810,9 +810,9 @@ ext/egl_brcm_flush_client.o: ext/egl_brcm_flush_client.c.o
 
 # target to build an object file
 ext/egl_brcm_flush_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.o
 .PHONY : ext/egl_brcm_flush_client.c.o
 
 ext/egl_brcm_flush_client.i: ext/egl_brcm_flush_client.c.i
@@ -820,9 +820,9 @@ ext/egl_brcm_flush_client.i: ext/egl_brcm_flush_client.c.i
 
 # target to preprocess a source file
 ext/egl_brcm_flush_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.i
 .PHONY : ext/egl_brcm_flush_client.c.i
 
 ext/egl_brcm_flush_client.s: ext/egl_brcm_flush_client.c.s
@@ -830,9 +830,9 @@ ext/egl_brcm_flush_client.s: ext/egl_brcm_flush_client.c.s
 
 # target to generate assembly for a file
 ext/egl_brcm_flush_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.s
 .PHONY : ext/egl_brcm_flush_client.c.s
 
 ext/egl_brcm_global_image_client.o: ext/egl_brcm_global_image_client.c.o
@@ -840,9 +840,9 @@ ext/egl_brcm_global_image_client.o: ext/egl_brcm_global_image_client.c.o
 
 # target to build an object file
 ext/egl_brcm_global_image_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.o
 .PHONY : ext/egl_brcm_global_image_client.c.o
 
 ext/egl_brcm_global_image_client.i: ext/egl_brcm_global_image_client.c.i
@@ -850,9 +850,9 @@ ext/egl_brcm_global_image_client.i: ext/egl_brcm_global_image_client.c.i
 
 # target to preprocess a source file
 ext/egl_brcm_global_image_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.i
 .PHONY : ext/egl_brcm_global_image_client.c.i
 
 ext/egl_brcm_global_image_client.s: ext/egl_brcm_global_image_client.c.s
@@ -860,9 +860,9 @@ ext/egl_brcm_global_image_client.s: ext/egl_brcm_global_image_client.c.s
 
 # target to generate assembly for a file
 ext/egl_brcm_global_image_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.s
 .PHONY : ext/egl_brcm_global_image_client.c.s
 
 ext/egl_brcm_perf_monitor_client.o: ext/egl_brcm_perf_monitor_client.c.o
@@ -870,9 +870,9 @@ ext/egl_brcm_perf_monitor_client.o: ext/egl_brcm_perf_monitor_client.c.o
 
 # target to build an object file
 ext/egl_brcm_perf_monitor_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.o
 .PHONY : ext/egl_brcm_perf_monitor_client.c.o
 
 ext/egl_brcm_perf_monitor_client.i: ext/egl_brcm_perf_monitor_client.c.i
@@ -880,9 +880,9 @@ ext/egl_brcm_perf_monitor_client.i: ext/egl_brcm_perf_monitor_client.c.i
 
 # target to preprocess a source file
 ext/egl_brcm_perf_monitor_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.i
 .PHONY : ext/egl_brcm_perf_monitor_client.c.i
 
 ext/egl_brcm_perf_monitor_client.s: ext/egl_brcm_perf_monitor_client.c.s
@@ -890,9 +890,9 @@ ext/egl_brcm_perf_monitor_client.s: ext/egl_brcm_perf_monitor_client.c.s
 
 # target to generate assembly for a file
 ext/egl_brcm_perf_monitor_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.s
 .PHONY : ext/egl_brcm_perf_monitor_client.c.s
 
 ext/egl_khr_image_client.o: ext/egl_khr_image_client.c.o
@@ -900,9 +900,9 @@ ext/egl_khr_image_client.o: ext/egl_khr_image_client.c.o
 
 # target to build an object file
 ext/egl_khr_image_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.o
 .PHONY : ext/egl_khr_image_client.c.o
 
 ext/egl_khr_image_client.i: ext/egl_khr_image_client.c.i
@@ -910,9 +910,9 @@ ext/egl_khr_image_client.i: ext/egl_khr_image_client.c.i
 
 # target to preprocess a source file
 ext/egl_khr_image_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.i
 .PHONY : ext/egl_khr_image_client.c.i
 
 ext/egl_khr_image_client.s: ext/egl_khr_image_client.c.s
@@ -920,9 +920,9 @@ ext/egl_khr_image_client.s: ext/egl_khr_image_client.c.s
 
 # target to generate assembly for a file
 ext/egl_khr_image_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.s
 .PHONY : ext/egl_khr_image_client.c.s
 
 ext/egl_khr_lock_surface_client.o: ext/egl_khr_lock_surface_client.c.o
@@ -930,9 +930,9 @@ ext/egl_khr_lock_surface_client.o: ext/egl_khr_lock_surface_client.c.o
 
 # target to build an object file
 ext/egl_khr_lock_surface_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.o
 .PHONY : ext/egl_khr_lock_surface_client.c.o
 
 ext/egl_khr_lock_surface_client.i: ext/egl_khr_lock_surface_client.c.i
@@ -940,9 +940,9 @@ ext/egl_khr_lock_surface_client.i: ext/egl_khr_lock_surface_client.c.i
 
 # target to preprocess a source file
 ext/egl_khr_lock_surface_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.i
 .PHONY : ext/egl_khr_lock_surface_client.c.i
 
 ext/egl_khr_lock_surface_client.s: ext/egl_khr_lock_surface_client.c.s
@@ -950,9 +950,9 @@ ext/egl_khr_lock_surface_client.s: ext/egl_khr_lock_surface_client.c.s
 
 # target to generate assembly for a file
 ext/egl_khr_lock_surface_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.s
 .PHONY : ext/egl_khr_lock_surface_client.c.s
 
 ext/egl_khr_sync_client.o: ext/egl_khr_sync_client.c.o
@@ -960,9 +960,9 @@ ext/egl_khr_sync_client.o: ext/egl_khr_sync_client.c.o
 
 # target to build an object file
 ext/egl_khr_sync_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.o
 .PHONY : ext/egl_khr_sync_client.c.o
 
 ext/egl_khr_sync_client.i: ext/egl_khr_sync_client.c.i
@@ -970,9 +970,9 @@ ext/egl_khr_sync_client.i: ext/egl_khr_sync_client.c.i
 
 # target to preprocess a source file
 ext/egl_khr_sync_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.i
 .PHONY : ext/egl_khr_sync_client.c.i
 
 ext/egl_khr_sync_client.s: ext/egl_khr_sync_client.c.s
@@ -980,9 +980,9 @@ ext/egl_khr_sync_client.s: ext/egl_khr_sync_client.c.s
 
 # target to generate assembly for a file
 ext/egl_khr_sync_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.s
 .PHONY : ext/egl_khr_sync_client.c.s
 
 ext/egl_openmaxil_client.o: ext/egl_openmaxil_client.c.o
@@ -990,9 +990,9 @@ ext/egl_openmaxil_client.o: ext/egl_openmaxil_client.c.o
 
 # target to build an object file
 ext/egl_openmaxil_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.o
 .PHONY : ext/egl_openmaxil_client.c.o
 
 ext/egl_openmaxil_client.i: ext/egl_openmaxil_client.c.i
@@ -1000,9 +1000,9 @@ ext/egl_openmaxil_client.i: ext/egl_openmaxil_client.c.i
 
 # target to preprocess a source file
 ext/egl_openmaxil_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.i
 .PHONY : ext/egl_openmaxil_client.c.i
 
 ext/egl_openmaxil_client.s: ext/egl_openmaxil_client.c.s
@@ -1010,9 +1010,9 @@ ext/egl_openmaxil_client.s: ext/egl_openmaxil_client.c.s
 
 # target to generate assembly for a file
 ext/egl_openmaxil_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.s
 .PHONY : ext/egl_openmaxil_client.c.s
 
 ext/ext_gl_debug_marker.o: ext/ext_gl_debug_marker.c.o
@@ -1020,9 +1020,9 @@ ext/ext_gl_debug_marker.o: ext/ext_gl_debug_marker.c.o
 
 # target to build an object file
 ext/ext_gl_debug_marker.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.o
 .PHONY : ext/ext_gl_debug_marker.c.o
 
 ext/ext_gl_debug_marker.i: ext/ext_gl_debug_marker.c.i
@@ -1030,9 +1030,9 @@ ext/ext_gl_debug_marker.i: ext/ext_gl_debug_marker.c.i
 
 # target to preprocess a source file
 ext/ext_gl_debug_marker.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.i
 .PHONY : ext/ext_gl_debug_marker.c.i
 
 ext/ext_gl_debug_marker.s: ext/ext_gl_debug_marker.c.s
@@ -1040,9 +1040,9 @@ ext/ext_gl_debug_marker.s: ext/ext_gl_debug_marker.c.s
 
 # target to generate assembly for a file
 ext/ext_gl_debug_marker.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.s
 .PHONY : ext/ext_gl_debug_marker.c.s
 
 ext/gl_oes_draw_texture_client.o: ext/gl_oes_draw_texture_client.c.o
@@ -1050,9 +1050,9 @@ ext/gl_oes_draw_texture_client.o: ext/gl_oes_draw_texture_client.c.o
 
 # target to build an object file
 ext/gl_oes_draw_texture_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.o
 .PHONY : ext/gl_oes_draw_texture_client.c.o
 
 ext/gl_oes_draw_texture_client.i: ext/gl_oes_draw_texture_client.c.i
@@ -1060,9 +1060,9 @@ ext/gl_oes_draw_texture_client.i: ext/gl_oes_draw_texture_client.c.i
 
 # target to preprocess a source file
 ext/gl_oes_draw_texture_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.i
 .PHONY : ext/gl_oes_draw_texture_client.c.i
 
 ext/gl_oes_draw_texture_client.s: ext/gl_oes_draw_texture_client.c.s
@@ -1070,9 +1070,9 @@ ext/gl_oes_draw_texture_client.s: ext/gl_oes_draw_texture_client.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_draw_texture_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.s
 .PHONY : ext/gl_oes_draw_texture_client.c.s
 
 ext/gl_oes_egl_image_client.o: ext/gl_oes_egl_image_client.c.o
@@ -1080,9 +1080,9 @@ ext/gl_oes_egl_image_client.o: ext/gl_oes_egl_image_client.c.o
 
 # target to build an object file
 ext/gl_oes_egl_image_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.o
 .PHONY : ext/gl_oes_egl_image_client.c.o
 
 ext/gl_oes_egl_image_client.i: ext/gl_oes_egl_image_client.c.i
@@ -1090,9 +1090,9 @@ ext/gl_oes_egl_image_client.i: ext/gl_oes_egl_image_client.c.i
 
 # target to preprocess a source file
 ext/gl_oes_egl_image_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.i
 .PHONY : ext/gl_oes_egl_image_client.c.i
 
 ext/gl_oes_egl_image_client.s: ext/gl_oes_egl_image_client.c.s
@@ -1100,9 +1100,9 @@ ext/gl_oes_egl_image_client.s: ext/gl_oes_egl_image_client.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_egl_image_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.s
 .PHONY : ext/gl_oes_egl_image_client.c.s
 
 ext/gl_oes_framebuffer_object.o: ext/gl_oes_framebuffer_object.c.o
@@ -1110,9 +1110,9 @@ ext/gl_oes_framebuffer_object.o: ext/gl_oes_framebuffer_object.c.o
 
 # target to build an object file
 ext/gl_oes_framebuffer_object.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.o
 .PHONY : ext/gl_oes_framebuffer_object.c.o
 
 ext/gl_oes_framebuffer_object.i: ext/gl_oes_framebuffer_object.c.i
@@ -1120,9 +1120,9 @@ ext/gl_oes_framebuffer_object.i: ext/gl_oes_framebuffer_object.c.i
 
 # target to preprocess a source file
 ext/gl_oes_framebuffer_object.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.i
 .PHONY : ext/gl_oes_framebuffer_object.c.i
 
 ext/gl_oes_framebuffer_object.s: ext/gl_oes_framebuffer_object.c.s
@@ -1130,9 +1130,9 @@ ext/gl_oes_framebuffer_object.s: ext/gl_oes_framebuffer_object.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_framebuffer_object.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.s
 .PHONY : ext/gl_oes_framebuffer_object.c.s
 
 ext/gl_oes_map_buffer.o: ext/gl_oes_map_buffer.c.o
@@ -1140,9 +1140,9 @@ ext/gl_oes_map_buffer.o: ext/gl_oes_map_buffer.c.o
 
 # target to build an object file
 ext/gl_oes_map_buffer.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.o
 .PHONY : ext/gl_oes_map_buffer.c.o
 
 ext/gl_oes_map_buffer.i: ext/gl_oes_map_buffer.c.i
@@ -1150,9 +1150,9 @@ ext/gl_oes_map_buffer.i: ext/gl_oes_map_buffer.c.i
 
 # target to preprocess a source file
 ext/gl_oes_map_buffer.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.i
 .PHONY : ext/gl_oes_map_buffer.c.i
 
 ext/gl_oes_map_buffer.s: ext/gl_oes_map_buffer.c.s
@@ -1160,9 +1160,9 @@ ext/gl_oes_map_buffer.s: ext/gl_oes_map_buffer.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_map_buffer.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.s
 .PHONY : ext/gl_oes_map_buffer.c.s
 
 ext/gl_oes_matrix_palette_client.o: ext/gl_oes_matrix_palette_client.c.o
@@ -1170,9 +1170,9 @@ ext/gl_oes_matrix_palette_client.o: ext/gl_oes_matrix_palette_client.c.o
 
 # target to build an object file
 ext/gl_oes_matrix_palette_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.o
 .PHONY : ext/gl_oes_matrix_palette_client.c.o
 
 ext/gl_oes_matrix_palette_client.i: ext/gl_oes_matrix_palette_client.c.i
@@ -1180,9 +1180,9 @@ ext/gl_oes_matrix_palette_client.i: ext/gl_oes_matrix_palette_client.c.i
 
 # target to preprocess a source file
 ext/gl_oes_matrix_palette_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.i
 .PHONY : ext/gl_oes_matrix_palette_client.c.i
 
 ext/gl_oes_matrix_palette_client.s: ext/gl_oes_matrix_palette_client.c.s
@@ -1190,9 +1190,9 @@ ext/gl_oes_matrix_palette_client.s: ext/gl_oes_matrix_palette_client.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_matrix_palette_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.s
 .PHONY : ext/gl_oes_matrix_palette_client.c.s
 
 ext/gl_oes_query_matrix_client.o: ext/gl_oes_query_matrix_client.c.o
@@ -1200,9 +1200,9 @@ ext/gl_oes_query_matrix_client.o: ext/gl_oes_query_matrix_client.c.o
 
 # target to build an object file
 ext/gl_oes_query_matrix_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.o
 .PHONY : ext/gl_oes_query_matrix_client.c.o
 
 ext/gl_oes_query_matrix_client.i: ext/gl_oes_query_matrix_client.c.i
@@ -1210,9 +1210,9 @@ ext/gl_oes_query_matrix_client.i: ext/gl_oes_query_matrix_client.c.i
 
 # target to preprocess a source file
 ext/gl_oes_query_matrix_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.i
 .PHONY : ext/gl_oes_query_matrix_client.c.i
 
 ext/gl_oes_query_matrix_client.s: ext/gl_oes_query_matrix_client.c.s
@@ -1220,9 +1220,9 @@ ext/gl_oes_query_matrix_client.s: ext/gl_oes_query_matrix_client.c.s
 
 # target to generate assembly for a file
 ext/gl_oes_query_matrix_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.s
 .PHONY : ext/gl_oes_query_matrix_client.c.s
 
 glxx/glxx_client.o: glxx/glxx_client.c.o
@@ -1230,9 +1230,9 @@ glxx/glxx_client.o: glxx/glxx_client.c.o
 
 # target to build an object file
 glxx/glxx_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.o
 .PHONY : glxx/glxx_client.c.o
 
 glxx/glxx_client.i: glxx/glxx_client.c.i
@@ -1240,9 +1240,9 @@ glxx/glxx_client.i: glxx/glxx_client.c.i
 
 # target to preprocess a source file
 glxx/glxx_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.i
 .PHONY : glxx/glxx_client.c.i
 
 glxx/glxx_client.s: glxx/glxx_client.c.s
@@ -1250,9 +1250,9 @@ glxx/glxx_client.s: glxx/glxx_client.c.s
 
 # target to generate assembly for a file
 glxx/glxx_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2.dir/build.make interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/GLESv2_static.dir/build.make interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.s
 .PHONY : glxx/glxx_client.c.s
 
 vg/vg_client.o: vg/vg_client.c.o
@@ -1260,10 +1260,10 @@ vg/vg_client.o: vg/vg_client.c.o
 
 # target to build an object file
 vg/vg_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.o
 .PHONY : vg/vg_client.c.o
 
 vg/vg_client.i: vg/vg_client.c.i
@@ -1271,10 +1271,10 @@ vg/vg_client.i: vg/vg_client.c.i
 
 # target to preprocess a source file
 vg/vg_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.i
 .PHONY : vg/vg_client.c.i
 
 vg/vg_client.s: vg/vg_client.c.s
@@ -1282,10 +1282,10 @@ vg/vg_client.s: vg/vg_client.c.s
 
 # target to generate assembly for a file
 vg/vg_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.s
 .PHONY : vg/vg_client.c.s
 
 vg/vg_int_mat3x3.o: vg/vg_int_mat3x3.c.o
@@ -1293,10 +1293,10 @@ vg/vg_int_mat3x3.o: vg/vg_int_mat3x3.c.o
 
 # target to build an object file
 vg/vg_int_mat3x3.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.o
 .PHONY : vg/vg_int_mat3x3.c.o
 
 vg/vg_int_mat3x3.i: vg/vg_int_mat3x3.c.i
@@ -1304,10 +1304,10 @@ vg/vg_int_mat3x3.i: vg/vg_int_mat3x3.c.i
 
 # target to preprocess a source file
 vg/vg_int_mat3x3.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.i
 .PHONY : vg/vg_int_mat3x3.c.i
 
 vg/vg_int_mat3x3.s: vg/vg_int_mat3x3.c.s
@@ -1315,10 +1315,10 @@ vg/vg_int_mat3x3.s: vg/vg_int_mat3x3.c.s
 
 # target to generate assembly for a file
 vg/vg_int_mat3x3.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL.dir/build.make interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/EGL_static.dir/build.make interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/OpenVG.dir/build.make interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.s
 .PHONY : vg/vg_int_mat3x3.c.s
 
 wf/wfc_client.o: wf/wfc_client.c.o
@@ -1326,8 +1326,8 @@ wf/wfc_client.o: wf/wfc_client.c.o
 
 # target to build an object file
 wf/wfc_client.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.o
 .PHONY : wf/wfc_client.c.o
 
 wf/wfc_client.i: wf/wfc_client.c.i
@@ -1335,8 +1335,8 @@ wf/wfc_client.i: wf/wfc_client.c.i
 
 # target to preprocess a source file
 wf/wfc_client.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.i
 .PHONY : wf/wfc_client.c.i
 
 wf/wfc_client.s: wf/wfc_client.c.s
@@ -1344,8 +1344,8 @@ wf/wfc_client.s: wf/wfc_client.c.s
 
 # target to generate assembly for a file
 wf/wfc_client.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.s
 .PHONY : wf/wfc_client.c.s
 
 wf/wfc_client_ipc.o: wf/wfc_client_ipc.c.o
@@ -1353,8 +1353,8 @@ wf/wfc_client_ipc.o: wf/wfc_client_ipc.c.o
 
 # target to build an object file
 wf/wfc_client_ipc.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.o
 .PHONY : wf/wfc_client_ipc.c.o
 
 wf/wfc_client_ipc.i: wf/wfc_client_ipc.c.i
@@ -1362,8 +1362,8 @@ wf/wfc_client_ipc.i: wf/wfc_client_ipc.c.i
 
 # target to preprocess a source file
 wf/wfc_client_ipc.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.i
 .PHONY : wf/wfc_client_ipc.c.i
 
 wf/wfc_client_ipc.s: wf/wfc_client_ipc.c.s
@@ -1371,8 +1371,8 @@ wf/wfc_client_ipc.s: wf/wfc_client_ipc.c.s
 
 # target to generate assembly for a file
 wf/wfc_client_ipc.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.s
 .PHONY : wf/wfc_client_ipc.c.s
 
 wf/wfc_client_server_api.o: wf/wfc_client_server_api.c.o
@@ -1380,8 +1380,8 @@ wf/wfc_client_server_api.o: wf/wfc_client_server_api.c.o
 
 # target to build an object file
 wf/wfc_client_server_api.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.o
 .PHONY : wf/wfc_client_server_api.c.o
 
 wf/wfc_client_server_api.i: wf/wfc_client_server_api.c.i
@@ -1389,8 +1389,8 @@ wf/wfc_client_server_api.i: wf/wfc_client_server_api.c.i
 
 # target to preprocess a source file
 wf/wfc_client_server_api.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.i
 .PHONY : wf/wfc_client_server_api.c.i
 
 wf/wfc_client_server_api.s: wf/wfc_client_server_api.c.s
@@ -1398,8 +1398,8 @@ wf/wfc_client_server_api.s: wf/wfc_client_server_api.c.s
 
 # target to generate assembly for a file
 wf/wfc_client_server_api.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.s
 .PHONY : wf/wfc_client_server_api.c.s
 
 wf/wfc_client_stream.o: wf/wfc_client_stream.c.o
@@ -1407,8 +1407,8 @@ wf/wfc_client_stream.o: wf/wfc_client_stream.c.o
 
 # target to build an object file
 wf/wfc_client_stream.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.o
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.o
 .PHONY : wf/wfc_client_stream.c.o
 
 wf/wfc_client_stream.i: wf/wfc_client_stream.c.i
@@ -1416,8 +1416,8 @@ wf/wfc_client_stream.i: wf/wfc_client_stream.c.i
 
 # target to preprocess a source file
 wf/wfc_client_stream.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.i
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.i
 .PHONY : wf/wfc_client_stream.c.i
 
 wf/wfc_client_stream.s: wf/wfc_client_stream.c.s
@@ -1425,8 +1425,8 @@ wf/wfc_client_stream.s: wf/wfc_client_stream.c.s
 
 # target to generate assembly for a file
 wf/wfc_client_stream.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.s
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/WFC.dir/build.make interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f interface/khronos/CMakeFiles/khrn_static.dir/build.make interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.s
 .PHONY : wf/wfc_client_stream.c.s
 
 # Help Target
@@ -1580,6 +1580,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

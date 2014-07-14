@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/vmcs_host/CMakeFiles/vcilcs.dir/depend.make
@@ -51,17 +51,17 @@ include interface/vmcs_host/CMakeFiles/vcilcs.dir/flags.make
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o: interface/vmcs_host/CMakeFiles/vcilcs.dir/flags.make
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o: ../../../interface/vmcs_host/vcilcs.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs.c
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vcilcs.dir/vcilcs.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs.c > CMakeFiles/vcilcs.dir/vcilcs.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs.c > CMakeFiles/vcilcs.dir/vcilcs.c.i
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vcilcs.dir/vcilcs.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs.c -o CMakeFiles/vcilcs.dir/vcilcs.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs.c -o CMakeFiles/vcilcs.dir/vcilcs.c.s
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o.requires
@@ -74,17 +74,17 @@ interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o.provides.build: interface/v
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o: interface/vmcs_host/CMakeFiles/vcilcs.dir/flags.make
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o: ../../../interface/vmcs_host/vcilcs_in.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_in.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_in.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_in.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_in.c
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vcilcs.dir/vcilcs_in.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_in.c > CMakeFiles/vcilcs.dir/vcilcs_in.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_in.c > CMakeFiles/vcilcs.dir/vcilcs_in.c.i
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vcilcs.dir/vcilcs_in.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_in.c -o CMakeFiles/vcilcs.dir/vcilcs_in.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_in.c -o CMakeFiles/vcilcs.dir/vcilcs_in.c.s
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o.requires
@@ -97,17 +97,17 @@ interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o.provides.build: interfac
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o: interface/vmcs_host/CMakeFiles/vcilcs.dir/flags.make
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o: ../../../interface/vmcs_host/vcilcs_out.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_out.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_out.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_out.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_out.c
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vcilcs.dir/vcilcs_out.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_out.c > CMakeFiles/vcilcs.dir/vcilcs_out.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_out.c > CMakeFiles/vcilcs.dir/vcilcs_out.c.i
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vcilcs.dir/vcilcs_out.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_out.c -o CMakeFiles/vcilcs.dir/vcilcs_out.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_out.c -o CMakeFiles/vcilcs.dir/vcilcs_out.c.s
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o.requires
@@ -120,17 +120,17 @@ interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o.provides.build: interfa
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o: interface/vmcs_host/CMakeFiles/vcilcs.dir/flags.make
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o: ../../../interface/vmcs_host/vcilcs_common.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_common.c.o   -c /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_common.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vcilcs.dir/vcilcs_common.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_common.c
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vcilcs.dir/vcilcs_common.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_common.c > CMakeFiles/vcilcs.dir/vcilcs_common.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_common.c > CMakeFiles/vcilcs.dir/vcilcs_common.c.i
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vcilcs.dir/vcilcs_common.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vmcs_host/vcilcs_common.c -o CMakeFiles/vcilcs.dir/vcilcs_common.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host/vcilcs_common.c -o CMakeFiles/vcilcs.dir/vcilcs_common.c.s
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o.requires:
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o.requires
@@ -158,8 +158,8 @@ vcilcs_EXTERNAL_OBJECTS =
 ../../lib/libvcilcs.a: interface/vmcs_host/CMakeFiles/vcilcs.dir/build.make
 ../../lib/libvcilcs.a: interface/vmcs_host/CMakeFiles/vcilcs.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../../../../lib/libvcilcs.a"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vcilcs.dir/cmake_clean_target.cmake
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vcilcs.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vcilcs.dir/cmake_clean_target.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vcilcs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/vmcs_host/CMakeFiles/vcilcs.dir/build: ../../lib/libvcilcs.a
@@ -172,10 +172,10 @@ interface/vmcs_host/CMakeFiles/vcilcs.dir/requires: interface/vmcs_host/CMakeFil
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/requires
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vcilcs.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host && $(CMAKE_COMMAND) -P CMakeFiles/vcilcs.dir/cmake_clean.cmake
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/clean
 
 interface/vmcs_host/CMakeFiles/vcilcs.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/vmcs_host /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vcilcs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vmcs_host /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vmcs_host/CMakeFiles/vcilcs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/vmcs_host/CMakeFiles/vcilcs.dir/depend
 

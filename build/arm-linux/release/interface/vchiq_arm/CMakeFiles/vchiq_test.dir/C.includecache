@@ -744,15 +744,15 @@ linux/capability.h
 pathconf.h
 -
 
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq.h
 vchiq_if.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_if.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_if.h
 vchiq_util.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.h
 interface/vcos/vcos.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/interface/vcos/vcos.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/interface/vcos/vcos.h
 
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test.c
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test.c
 stdio.h
 -
 stdlib.h
@@ -760,21 +760,21 @@ stdlib.h
 string.h
 -
 vchiq_test.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test.h
 interface/vchi/vchi.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/interface/vchi/vchi.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/interface/vchi/vchi.h
 fcntl.h
 -
 interface/vmcs_host/vc_cma.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/interface/vmcs_host/vc_cma.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/interface/vmcs_host/vc_cma.h
 vcfw/logging/logging.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vcfw/logging/logging.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vcfw/logging/logging.h
 
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test.h
 vchiq_test_if.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test_if.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test_if.h
 
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_test_if.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_test_if.h
 vchiq.h
-/android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq.h
+/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq.h
 

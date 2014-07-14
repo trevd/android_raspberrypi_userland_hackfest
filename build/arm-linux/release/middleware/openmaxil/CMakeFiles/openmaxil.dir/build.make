@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include middleware/openmaxil/CMakeFiles/openmaxil.dir/depend.make
@@ -51,17 +51,17 @@ include middleware/openmaxil/CMakeFiles/openmaxil.dir/flags.make
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o: middleware/openmaxil/CMakeFiles/openmaxil.dir/flags.make
 middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o: ../../../host_applications/framework/common/ilcore.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o   -c /android/build/android-cm-armv6/userland/host_applications/framework/common/ilcore.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/ilcore.c
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/host_applications/framework/common/ilcore.c > CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/ilcore.c > CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.i
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/host_applications/framework/common/ilcore.c -o CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/host_applications/framework/common/ilcore.c -o CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.s
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o.requires:
 .PHONY : middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o.requires
@@ -93,7 +93,7 @@ openmaxil_EXTERNAL_OBJECTS =
 ../../lib/libopenmaxil.so: ../../lib/libvchiq_arm.so
 ../../lib/libopenmaxil.so: middleware/openmaxil/CMakeFiles/openmaxil.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../../../../lib/libopenmaxil.so"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openmaxil.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openmaxil.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 middleware/openmaxil/CMakeFiles/openmaxil.dir/build: ../../lib/libopenmaxil.so
@@ -103,10 +103,10 @@ middleware/openmaxil/CMakeFiles/openmaxil.dir/requires: middleware/openmaxil/CMa
 .PHONY : middleware/openmaxil/CMakeFiles/openmaxil.dir/requires
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil && $(CMAKE_COMMAND) -P CMakeFiles/openmaxil.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil && $(CMAKE_COMMAND) -P CMakeFiles/openmaxil.dir/cmake_clean.cmake
 .PHONY : middleware/openmaxil/CMakeFiles/openmaxil.dir/clean
 
 middleware/openmaxil/CMakeFiles/openmaxil.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/middleware/openmaxil /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil /android/build/android-cm-armv6/userland/build/arm-linux/release/middleware/openmaxil/CMakeFiles/openmaxil.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/middleware/openmaxil /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/middleware/openmaxil/CMakeFiles/openmaxil.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : middleware/openmaxil/CMakeFiles/openmaxil.dir/depend
 

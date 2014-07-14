@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/mmal/util
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_util.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libmmal_util.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libmmal_util.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_util.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_util.so")
     FILE(RPATH_REMOVE
@@ -52,16 +52,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/interface/mmal/util" TYPE FILE FILES
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_component_wrapper.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_connection.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_default_components.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_graph.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_il.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_list.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_param_convert.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_params.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/util/mmal_util_rational.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_component_wrapper.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_connection.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_default_components.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_graph.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_il.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_list.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_param_convert.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_params.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/util/mmal_util_rational.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

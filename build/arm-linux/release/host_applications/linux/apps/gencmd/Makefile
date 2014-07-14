@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +101,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +111,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/userland/build/arm-linux/release/CPackSourceConfig.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && /usr/bin/cpack --config ./CPackSourceConfig.cmake /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +130,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/userland/build/arm-linux/release/host_applications/linux/apps/gencmd/CMakeFiles/progress.marks
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/host_applications/linux/apps/gencmd/CMakeFiles/progress.marks
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/clean
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +146,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/preinstall
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/rule:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/rule
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f CMakeFiles/Makefile2 host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/rule
 .PHONY : host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ vcgencmd: host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/rule
 
 # fast build rule for target.
 vcgencmd/fast:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build
 .PHONY : vcgencmd/fast
 
 gencmd.o: gencmd.c.o
@@ -178,7 +178,7 @@ gencmd.o: gencmd.c.o
 
 # target to build an object file
 gencmd.c.o:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.o
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.o
 .PHONY : gencmd.c.o
 
 gencmd.i: gencmd.c.i
@@ -186,7 +186,7 @@ gencmd.i: gencmd.c.i
 
 # target to preprocess a source file
 gencmd.c.i:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.i
 .PHONY : gencmd.c.i
 
 gencmd.s: gencmd.c.s
@@ -194,7 +194,7 @@ gencmd.s: gencmd.c.s
 
 # target to generate assembly for a file
 gencmd.c.s:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(MAKE) -f host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/build.make host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.s
 .PHONY : gencmd.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

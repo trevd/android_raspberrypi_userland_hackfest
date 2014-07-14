@@ -4,12 +4,12 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o"
-  "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -33,8 +33,8 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
-  "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vcos/pthreads/CMakeFiles/vcos.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

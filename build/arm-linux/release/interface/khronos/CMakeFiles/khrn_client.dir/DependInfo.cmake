@@ -5,14 +5,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_ASM
-  "/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_hash_asm.s" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash_asm.s.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_hash_asm.s" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash_asm.s.o"
   )
 SET(CMAKE_ASM_COMPILER_ID "GNU")
 SET(CMAKE_DEPENDS_CHECK_C
-  "/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_cache.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.o"
-  "/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_pointermap.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.o"
-  "/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_client_vector.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.o"
-  "/android/build/android-cm-armv6/userland/interface/khronos/common/khrn_int_hash.c" "/android/build/android-cm-armv6/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_cache.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_pointermap.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_client_vector.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.o"
+  "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/khronos/common/khrn_int_hash.c" "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

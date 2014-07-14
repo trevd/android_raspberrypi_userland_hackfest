@@ -32,10 +32,10 @@ if(ANDROID)
     set(ANDROID_COMPILER "${ANDROID_TOOLCHAIN_ROOT}/bin/arm-linux-androideabi-gcc" )
 
 SET(CMAKE_SYSTEM_NAME Linux)
-SET(CMAKE_C_COMPILER /android/build/android-cm-armv6/userland/gcc-wrap)
+SET(CMAKE_C_COMPILER /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap)
 
 #SET(CMAKE_CXX_COMPILER  /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-g++)
-SET(CMAKE_ASM_COMPILER /android/build/android-cm-armv6/userland/gcc-wrap)
+SET(CMAKE_ASM_COMPILER /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap)
 SET(CMAKE_SYSTEM_PROCESSOR arm)
 #ADD_DEFINITIONS("-march=armv6")
 add_definitions("-include ${ANDROID_ROOT}/build/core/combo/include/arch/linux-arm/AndroidConfig.h -mtune=arm1176jzf-s -msoft-float -marm -D__ARM_ARCH_6__ -D__ARM_ARCH_6J__ -mcpu=arm1176jzf-s -mfpu=vfp -msoft-float -mfloat-abi=softfp -D__ARM_ARCH_5__ -D__ARM_ARCH_5T__ -D__ARM_ARCH_5E__ -D__ARM_ARCH_5TE__")
@@ -108,7 +108,7 @@ include(CheckIncludeFile)
 
 add_definitions(-DHAVE_CMAKE_CONFIG)
 configure_file (
-    "/android/build/android-cm-armv6/userland/makefiles/cmake/cmake_config.h.in"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/makefiles/cmake/cmake_config.h.in"
     "${PROJECT_BINARY_DIR}/cmake_config.h"
     )
  

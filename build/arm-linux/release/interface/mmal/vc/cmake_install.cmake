@@ -1,4 +1,4 @@
-# Install script for directory: /android/build/android-cm-armv6/userland/interface/mmal/vc
+# Install script for directory: /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_vc_client.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/userland/build/lib/libmmal_vc_client.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/lib/libmmal_vc_client.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_vc_client.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmmal_vc_client.so")
     FILE(RPATH_REMOVE
@@ -52,13 +52,13 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/interface/mmal/vc" TYPE FILE FILES
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_api_drm.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_client_priv.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgnames.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_msgs.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h"
-    "/android/build/android-cm-armv6/userland/interface/mmal/vc/mmal_vc_shm.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_api_drm.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_client_priv.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgnames.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_msgs.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_opaque_alloc.h"
+    "/android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/mmal/vc/mmal_vc_shm.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

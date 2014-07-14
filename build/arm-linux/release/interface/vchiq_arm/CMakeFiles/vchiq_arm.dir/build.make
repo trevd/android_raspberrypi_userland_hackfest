@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/userland
+CMAKE_SOURCE_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /android/build/android-cm-armv6/userland/build/arm-linux/release
+CMAKE_BINARY_DIR = /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release
 
 # Include any dependencies generated for this target.
 include interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/depend.make
@@ -51,17 +51,17 @@ include interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/flags.make
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o: interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/flags.make
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o: ../../../interface/vchiq_arm/vchiq_lib.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o   -c /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_lib.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_lib.c
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchiq_arm.dir/vchiq_lib.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_lib.c > CMakeFiles/vchiq_arm.dir/vchiq_lib.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_lib.c > CMakeFiles/vchiq_arm.dir/vchiq_lib.c.i
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchiq_arm.dir/vchiq_lib.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_lib.c -o CMakeFiles/vchiq_arm.dir/vchiq_lib.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_lib.c -o CMakeFiles/vchiq_arm.dir/vchiq_lib.c.s
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o.requires:
 .PHONY : interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o.requires
@@ -74,17 +74,17 @@ interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o.provides.build: inter
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o: interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/flags.make
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o: ../../../interface/vchiq_arm/vchiq_util.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchiq_arm.dir/vchiq_util.c.o   -c /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.c
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/vchiq_arm.dir/vchiq_util.c.o   -c /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.c
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vchiq_arm.dir/vchiq_util.c.i"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.c > CMakeFiles/vchiq_arm.dir/vchiq_util.c.i
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -E /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.c > CMakeFiles/vchiq_arm.dir/vchiq_util.c.i
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vchiq_arm.dir/vchiq_util.c.s"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/userland/interface/vchiq_arm/vchiq_util.c -o CMakeFiles/vchiq_arm.dir/vchiq_util.c.s
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && /android/build/android-cm-armv6/vendor/rpi/rpi/userland/gcc-wrap  $(C_DEFINES) $(C_FLAGS) -S /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm/vchiq_util.c -o CMakeFiles/vchiq_arm.dir/vchiq_util.c.s
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o.requires:
 .PHONY : interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o.requires
@@ -108,7 +108,7 @@ vchiq_arm_EXTERNAL_OBJECTS =
 ../../lib/libvchiq_arm.so: interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/build.make
 ../../lib/libvchiq_arm.so: interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library ../../../../lib/libvchiq_arm.so"
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vchiq_arm.dir/link.txt --verbose=$(VERBOSE)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vchiq_arm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/build: ../../lib/libvchiq_arm.so
@@ -119,10 +119,10 @@ interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/requires: interface/vchiq_arm/CMake
 .PHONY : interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/requires
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/clean:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm && $(CMAKE_COMMAND) -P CMakeFiles/vchiq_arm.dir/cmake_clean.cmake
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm && $(CMAKE_COMMAND) -P CMakeFiles/vchiq_arm.dir/cmake_clean.cmake
 .PHONY : interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/clean
 
 interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/depend:
-	cd /android/build/android-cm-armv6/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/userland /android/build/android-cm-armv6/userland/interface/vchiq_arm /android/build/android-cm-armv6/userland/build/arm-linux/release /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm /android/build/android-cm-armv6/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /android/build/android-cm-armv6/vendor/rpi/rpi/userland /android/build/android-cm-armv6/vendor/rpi/rpi/userland/interface/vchiq_arm /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm /android/build/android-cm-armv6/vendor/rpi/rpi/userland/build/arm-linux/release/interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/depend
 
