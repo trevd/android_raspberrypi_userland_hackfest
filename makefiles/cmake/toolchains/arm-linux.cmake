@@ -33,7 +33,8 @@ if(ANDROID)
 
 SET(CMAKE_SYSTEM_NAME Linux)
 SET(CMAKE_C_COMPILER /android/build/android-cm-armv6/userland/gcc-wrap)
-SET(CMAKE_CXX_COMPILER  /android/build/android-cm-armv6/userland/gxx-wrap)
+
+#SET(CMAKE_CXX_COMPILER  /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-g++)
 SET(CMAKE_ASM_COMPILER /android/build/android-cm-armv6/userland/gcc-wrap)
 SET(CMAKE_SYSTEM_PROCESSOR arm)
 #ADD_DEFINITIONS("-march=armv6")

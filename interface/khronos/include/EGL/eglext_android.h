@@ -90,6 +90,11 @@ typedef EGLClientBuffer (EGLAPIENTRYP PFNEGLGETRENDERBUFFERANDROIDPROC) (EGLDisp
 #define EGL_RECORDABLE_ANDROID   0x3142
 #endif
 
+#ifndef EGL_ANDROID_recordable
+#define EGL_ANDROID_recordable   1
+#define EGL_RECORDABLE_ANDROID   0x3147
+#endif
+
 #ifdef __cplusplus
 }
 #endif

@@ -48,7 +48,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "log;c;dl")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "c;dl")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc/arm-linux-androideabi/4.7;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/arm-linux-androideabi/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 

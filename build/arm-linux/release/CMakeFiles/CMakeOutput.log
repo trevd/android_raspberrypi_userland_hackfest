@@ -14,7 +14,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is GNU, found in "/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /android/build/android-cm-armv6/userland/gxx-wrap 
+Compiler: /usr/bin/c++ 
 Build flags: 
 Id flags: 
 
@@ -29,30 +29,30 @@ The CXX compiler identification is GNU, found in "/android/build/android-cm-armv
 Determining if the C compiler works passed with the following output:
 Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1742300703/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1742300703.dir/build.make CMakeFiles/cmTryCompileExec1742300703.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2634419779/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2634419779.dir/build.make CMakeFiles/cmTryCompileExec2634419779.dir/build
 make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1742300703.dir/testCCompiler.c.o
-/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1742300703.dir/testCCompiler.c.o   -c /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec1742300703
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1742300703.dir/link.txt --verbose=1
-/android/build/android-cm-armv6/userland/gcc-wrap       CMakeFiles/cmTryCompileExec1742300703.dir/testCCompiler.c.o  -o cmTryCompileExec1742300703 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec2634419779.dir/testCCompiler.c.o
+/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec2634419779.dir/testCCompiler.c.o   -c /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2634419779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2634419779.dir/link.txt --verbose=1
+/android/build/android-cm-armv6/userland/gcc-wrap       CMakeFiles/cmTryCompileExec2634419779.dir/testCCompiler.c.o  -o cmTryCompileExec2634419779 -rdynamic 
 make[1]: Leaving directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2365816951/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2365816951.dir/build.make CMakeFiles/cmTryCompileExec2365816951.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1333481407/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1333481407.dir/build.make CMakeFiles/cmTryCompileExec1333481407.dir/build
 make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o
-/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec2365816951
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2365816951.dir/link.txt --verbose=1
-/android/build/android-cm-armv6/userland/gcc-wrap     -v CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2365816951 -rdynamic  
+Building C object CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o
+/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1333481407
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1333481407.dir/link.txt --verbose=1
+/android/build/android-cm-armv6/userland/gcc-wrap     -v CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1333481407 -rdynamic  
 Using built-in specs.
 Reading specs from /android/build/android-cm-armv6/userland/specs1
 COLLECT_GCC=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-gcc
@@ -63,8 +63,8 @@ Thread model: posix
 gcc version 4.7 (GCC) 
 COMPILER_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/bin/
 LIBRARY_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib/
-COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec2365816951' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu'
- /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec2365816951 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib -llog CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o
+COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec1333481407' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu'
+ /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec1333481407 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o
 make[1]: Leaving directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 
 
@@ -72,15 +72,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2365816951/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2365816951.dir/build.make CMakeFiles/cmTryCompileExec2365816951.dir/build]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1333481407/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1333481407.dir/build.make CMakeFiles/cmTryCompileExec1333481407.dir/build]
   ignore line: [make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec2365816951]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2365816951.dir/link.txt --verbose=1]
-  ignore line: [/android/build/android-cm-armv6/userland/gcc-wrap     -v CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2365816951 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/android/build/android-cm-armv6/userland/gcc-wrap  -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1333481407]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1333481407.dir/link.txt --verbose=1]
+  ignore line: [/android/build/android-cm-armv6/userland/gcc-wrap     -v CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1333481407 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from /android/build/android-cm-armv6/userland/specs1]
   ignore line: [COLLECT_GCC=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-gcc]
@@ -91,8 +91,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.7 (GCC) ]
   ignore line: [COMPILER_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/bin/]
   ignore line: [LIBRARY_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec2365816951' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu']
-  link line: [ /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec2365816951 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib -llog CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec1333481407' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu']
+  link line: [ /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec1333481407 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o]
     arg [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-export-dynamic] ==> ignore
@@ -105,14 +105,13 @@ Parsed C implicit link information from above output:
     arg [-zrelro] ==> ignore
     arg [-znow] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2365816951] ==> ignore
+    arg [cmTryCompileExec1333481407] ==> ignore
     arg [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/]
     arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7]
     arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc]
     arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib]
-    arg [-llog] ==> lib [log]
-    arg [CMakeFiles/cmTryCompileExec2365816951.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1333481407.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
     arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
@@ -130,7 +129,7 @@ Parsed C implicit link information from above output:
   collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
   collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
   collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-  implicit libs: [log;c;dl]
+  implicit libs: [c;dl]
   implicit dirs: [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc/arm-linux-androideabi/4.7;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/arm-linux-androideabi/lib]
   implicit fwks: []
 
@@ -138,42 +137,41 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec977361571/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec977361571.dir/build.make CMakeFiles/cmTryCompileExec977361571.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3695868030/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3695868030.dir/build.make CMakeFiles/cmTryCompileExec3695868030.dir/build
 make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec977361571.dir/testCXXCompiler.cxx.o
-/android/build/android-cm-armv6/userland/gxx-wrap   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec977361571.dir/testCXXCompiler.cxx.o -c /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec977361571
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec977361571.dir/link.txt --verbose=1
-/android/build/android-cm-armv6/userland/gxx-wrap        CMakeFiles/cmTryCompileExec977361571.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec977361571 -rdynamic 
+Building CXX object CMakeFiles/cmTryCompileExec3695868030.dir/testCXXCompiler.cxx.o
+/usr/bin/c++   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec3695868030.dir/testCXXCompiler.cxx.o -c /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3695868030
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3695868030.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3695868030.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3695868030 -rdynamic 
 make[1]: Leaving directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1267307023/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1267307023.dir/build.make CMakeFiles/cmTryCompileExec1267307023.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1545176461/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1545176461.dir/build.make CMakeFiles/cmTryCompileExec1545176461.dir/build
 make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o
-/android/build/android-cm-armv6/userland/gxx-wrap   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec1267307023
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1267307023.dir/link.txt --verbose=1
-/android/build/android-cm-armv6/userland/gxx-wrap      -v CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1267307023 -rdynamic  
+Building CXX object CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1545176461
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1545176461.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1545176461 -rdynamic  
 Using built-in specs.
-Reading specs from /android/build/android-cm-armv6/userland/specs1
-COLLECT_GCC=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-g++
-COLLECT_LTO_WRAPPER=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/lto-wrapper
-Target: arm-linux-androideabi
-Configured with: /tmp/AOSP-toolchain/build/../gcc/gcc-4.7/configure --prefix=/tmp/toolchain-build-linux/prefix --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/toolchain-build-linux/temp-install --with-mpfr=/tmp/toolchain-build-linux/temp-install --with-mpc=/tmp/toolchain-build-linux/temp-install --with-cloog=/tmp/toolchain-build-linux/temp-install --with-ppl=/tmp/toolchain-build-linux/temp-install --disable-ppl-version-check --disable-cloog-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-initfini-array --disable-nls --prefix=/tmp/toolchain-build-linux/prefix --with-sysroot=/tmp/toolchain-build-linux/prefix/sysroot --with-binutils-version=2.22 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.7 --with-gdb-version=7.3.x --with-gxx-include-dir=/tmp/toolchain-build-linux/prefix/include/c++/4.7 --with-bugurl=http://source.android.com/source/report-bugs.html --disable-bootstrap --disable-libquadmath --enable-plugins --enable-libgomp --enable-gold --enable-graphite=yes --with-cloog-version=0.17.0 --with-ppl-version=1.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.7 (GCC) 
-COMPILER_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/bin/
-LIBRARY_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib/
-COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec1267307023' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu'
- /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec1267307023 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1545176461' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1545176461 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp'
 
 
@@ -181,67 +179,75 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1267307023/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1267307023.dir/build.make CMakeFiles/cmTryCompileExec1267307023.dir/build]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1545176461/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1545176461.dir/build.make CMakeFiles/cmTryCompileExec1545176461.dir/build]
   ignore line: [make[1]: Entering directory `/android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /android/build/android-cm-armv6/userland/build/arm-linux/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/android/build/android-cm-armv6/userland/gxx-wrap   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec1267307023]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1267307023.dir/link.txt --verbose=1]
-  ignore line: [/android/build/android-cm-armv6/userland/gxx-wrap      -v CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1267307023 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -DHAVE_CMAKE_CONFIG -D_HAVE_SBRK -D_LARGEFILE64_SOURCE  -o CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1545176461]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1545176461.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1545176461 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [Reading specs from /android/build/android-cm-armv6/userland/specs1]
-  ignore line: [COLLECT_GCC=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-g++]
-  ignore line: [COLLECT_LTO_WRAPPER=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/lto-wrapper]
-  ignore line: [Target: arm-linux-androideabi]
-  ignore line: [Configured with: /tmp/AOSP-toolchain/build/../gcc/gcc-4.7/configure --prefix=/tmp/toolchain-build-linux/prefix --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/toolchain-build-linux/temp-install --with-mpfr=/tmp/toolchain-build-linux/temp-install --with-mpc=/tmp/toolchain-build-linux/temp-install --with-cloog=/tmp/toolchain-build-linux/temp-install --with-ppl=/tmp/toolchain-build-linux/temp-install --disable-ppl-version-check --disable-cloog-version-check --enable-cloog-backend=isl --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --enable-initfini-array --disable-nls --prefix=/tmp/toolchain-build-linux/prefix --with-sysroot=/tmp/toolchain-build-linux/prefix/sysroot --with-binutils-version=2.22 --with-mpfr-version=3.1.1 --with-mpc-version=1.0.1 --with-gmp-version=5.0.5 --with-gcc-version=4.7 --with-gdb-version=7.3.x --with-gxx-include-dir=/tmp/toolchain-build-linux/prefix/include/c++/4.7 --with-bugurl=http://source.android.com/source/report-bugs.html --disable-bootstrap --disable-libquadmath --enable-plugins --enable-libgomp --enable-gold --enable-graphite=yes --with-cloog-version=0.17.0 --with-ppl-version=1.0 --with-arch=armv5te --program-transform-name='s&^&arm-linux-androideabi-&' --enable-gold=default]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7 (GCC) ]
-  ignore line: [COMPILER_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/bin/]
-  ignore line: [LIBRARY_PATH=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/:/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' '__USE_FILE_OFFSET64' '-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/' '-v' '-o' 'cmTryCompileExec1267307023' '-rdynamic' '-march=armv5te' '-mfloat-abi=soft' '-mfpu=vfp' '-mtls-dialect=gnu']
-  link line: [ /android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2 --eh-frame-hdr -export-dynamic -dynamic-linker /system/bin/linker -X -m armelf_linux_eabi -z noexecstack -z relro -z now -o cmTryCompileExec1267307023 /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7 -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc -L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -lc -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib -ldl -lgcc /REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o]
-    arg [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../libexec/gcc/arm-linux-androideabi/4.7/collect2] ==> ignore
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1545176461' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1545176461 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/system/bin/linker] ==> ignore
-    arg [-X] ==> ignore
-    arg [-m] ==> ignore
-    arg [armelf_linux_eabi] ==> ignore
-    arg [-znoexecstack] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
-    arg [-znow] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1267307023] ==> ignore
-    arg [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtbegin_dynamic.o] ==> ignore
-    arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/]
-    arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7]
-    arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc]
-    arg [-L/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib] ==> dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib]
-    arg [CMakeFiles/cmTryCompileExec1267307023.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTryCompileExec1545176461] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec1545176461.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-    arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
     arg [-lc] ==> lib [c]
-    arg [-L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-    arg [-ldl] ==> lib [dl]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/crtend_android.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
   remove lib [gcc]
+  remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-  collapse library dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7] ==> [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc/arm-linux-androideabi/4.7]
-  collapse library dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc] ==> [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc]
-  collapse library dir [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/../lib/gcc/arm-linux-androideabi/4.7/../../../../arm-linux-androideabi/lib] ==> [/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/arm-linux-androideabi/lib]
-  collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-  collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-  collapse library dir [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib] ==> [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib]
-  implicit libs: [stdc++;m;c;dl]
-  implicit dirs: [/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc/arm-linux-androideabi/4.7;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/lib/gcc;/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/arm-linux-androideabi/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
   implicit fwks: []
 
 

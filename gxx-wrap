@@ -1,3 +1,0 @@
-find /android/build/android-cm-armv6/userland -iname link.txt -exec sed  -i  's#-lpthread##g' {} \;
-find /android/build/android-cm-armv6/userland -iname link.txt -exec sed  -i  's#-lrt##g' {} \;
-/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-g++ -D__USE_FILE_OFFSET64 -L/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib/ -specs=/android/build/android-cm-armv6/userland/specs1 $*
