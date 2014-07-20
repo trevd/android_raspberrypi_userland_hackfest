@@ -81,10 +81,14 @@ extern "C" {
 #define VCOS_HAVE_EVENT_FLAGS  1
 #define VCOS_WANT_LOG_CMD      0    /* User apps should do their own thing */
 
-#define VCOS_ALWAYS_WANT_LOGGING
-
+#define VCOS_ALWAYS_WANT_LOGGING 1
+#ifndef __linux__
+#define __linux__
+#endif
 #ifdef __linux__
-#define VCOS_HAVE_BACKTRACE    1
+#ifdef VCOS_HAVE_BACKTRACE 
+#undef VCOS_HAVE_BACKTRACE 
+#endif
 #endif
 
 #define VCOS_SO_EXT  ".so"

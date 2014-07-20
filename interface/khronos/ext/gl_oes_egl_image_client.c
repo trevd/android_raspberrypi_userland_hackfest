@@ -43,7 +43,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "interface/khronos/include/GLES2/gl2.h"
 #include "interface/khronos/include/GLES2/gl2ext.h"
 
-VCOS_LOG_CAT_T gl_oes_egl_image_client_log = VCOS_LOG_INIT("gl_oes_egl_image", VCOS_LOG_WARN);
+VCOS_LOG_CAT_T gl_oes_egl_image_client_log = VCOS_LOG_INIT("gl_oes_egl_image", VCOS_LOG_TRACE);
 
 static void set_error(GLXX_CLIENT_STATE_T *state, GLenum error)
 {

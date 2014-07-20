@@ -54,6 +54,36 @@ set(CLIENT_SOURCE
    common/khrn_int_hash.c
    common/khrn_int_hash_asm.s
    common/khrn_client_cache.c)
+   
+set(VCHOSTIF_SOURCE
+            ../vmcs_host/linux/vcfilesys.c ../vmcs_host/linux/vcmisc.c
+            ../vmcs_host/vc_vchi_gencmd.c ../vmcs_host/vc_vchi_filesys.c
+            ../vmcs_host/vc_vchi_tvservice.c ../vmcs_host/vc_vchi_cecservice.c
+            ../vmcs_host/vc_vchi_dispmanx.c ../vmcs_host/vc_service_common.c)
+
+set(BCMHOST_SOURCE ../../host_applications/linux/libs/bcm_host/bcm_host.c)
+
+set(VCHQ_ARM_SOURCE ../vchiq_arm/vchiq_lib.c ../vchiq_arm/vchiq_util.c)
+
+set (VCOS_SOURCE
+   ../vcos/pthreads/vcos_pthreads.c
+   ../vcos/pthreads/vcos_dlfcn.c
+   ../vcos/generic/vcos_generic_event_flags.c
+   ../vcos/generic/vcos_mem_from_malloc.c
+   ../vcos/generic/vcos_generic_named_sem.c
+   ../vcos/generic/vcos_generic_safe_string.c
+   ../vcos/generic/vcos_generic_reentrant_mtx.c
+   ../vcos/generic/vcos_abort.c
+   ../vcos/generic/vcos_cmd.c
+   ../vcos/generic/vcos_init.c
+   ../vcos/generic/vcos_msgqueue.c
+   ../vcos/generic/vcos_logcat.c
+   ../vcos/generic/vcos_generic_blockpool.c )
+
+set (GRALLOC_SOURCE
+   ../../gralloc/gralloc_brcm.cpp
+   )
+
 
 add_library(EGL ${SHARED} ${EGL_SOURCE})
 add_library(GLESv2 ${SHARED} ${GLES_SOURCE})
@@ -65,10 +95,13 @@ add_library(khrn_client ${CLIENT_SOURCE})
 add_library(EGL_static STATIC ${EGL_SOURCE})
 add_library(GLESv2_static STATIC ${GLES_SOURCE})
 add_library(khrn_static STATIC
-   ${EGL_SOURCE} ${GLES_SOURCE} ${VG_SOURCE} ${WFC_SOURCE} ${CLIENT_SOURCE})
+   ${EGL_SOURCE} ${GLES_SOURCE} ${VG_SOURCE} ${CLIENT_SOURCE} ${VCHOSTIF_SOURCE} ${BCMHOST_SOURCE} ${VCHQ_ARM_SOURCE} ${VCOS_SOURCE} ${GRALLOC_SOURCE})
+   
+add_library(bcm_host_static STATIC
+   ${VCHOSTIF_SOURCE} ${BCMHOST_SOURCE} ${VCHQ_ARM_SOURCE} ${VCOS_SOURCE} ${GRALLOC_SOURCE})
 
-target_link_libraries(EGL khrn_client vchiq_arm vcos bcm_host -lm -lc)
-target_link_libraries(GLESv2 EGL khrn_client vcos -lc -lm)
+target_link_libraries(EGL khrn_client vchiq_arm vcos bcm_host -lm)
+target_link_libraries(GLESv2 EGL khrn_client vcos)
 target_link_libraries(WFC EGL)
 target_link_libraries(OpenVG EGL)
 

@@ -248,7 +248,7 @@ EGLAPI EGLBoolean EGLAPIENTRY eglInitialize(EGLDisplay dpy, EGLint *major, EGLin
 
    CLIENT_UNLOCK();
 
-   vcos_log_set_level(&egl_client_log_cat, VCOS_LOG_WARN);
+   vcos_log_set_level(&egl_client_log_cat, VCOS_LOG_TRACE);
    vcos_log_register("egl_client", &egl_client_log_cat);
    vcos_log_info("eglInitialize end. dpy=%d.", (int)dpy);
 
@@ -422,10 +422,10 @@ EGLAPI const char EGLAPIENTRY * eglQueryString(EGLDisplay dpy, EGLint name)
       case EGL_EXTENSIONS:
          //TODO: this list isn't quite correct
          result = ""
-#if EGL_KHR_image
+#ifdef EGL_KHR_image
             "EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_vg_parent_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image "
 #endif
-#if EGL_KHR_lock_surface
+#ifdef EGL_KHR_lock_surface
             "EGL_KHR_lock_surface "
 #endif
 #if EGL_ANDROID_swap_rectangle
@@ -433,6 +433,9 @@ EGLAPI const char EGLAPIENTRY * eglQueryString(EGLDisplay dpy, EGLint name)
 #endif
 #ifdef ANDROID
             "EGL_ANDROID_image_native_buffer "
+#endif
+#ifdef EGL_ANDROID_framebuffer_target
+	"EGL_ANDROID_framebuffer_target"
 #endif
 #ifdef ANDROID
 #ifdef EGL_KHR_fence_sync
@@ -584,7 +587,9 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
 
    if (CLIENT_LOCK_AND_GET_STATES(dpy, &thread, &process))
    {
+      
       uint32_t handle = platform_get_handle(dpy, win);
+
 
       if ((int)(size_t)config < 1 || (int)(size_t)config > EGL_MAX_CONFIGS) {
          thread->error = EGL_BAD_CONFIG;
@@ -599,6 +604,7 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
          bool single = false;
 
          if (!egl_surface_check_attribs(WINDOW, attrib_list, &linear, &premult, &single, 0, 0, 0, 0, 0, 0)) {
+	    vcos_log_error("eglCreateWindowSurface egl_surface_check_attribs EGL_BAD_ATTRIBUTE %p", win);
             thread->error = EGL_BAD_ATTRIBUTE;
             result = EGL_NO_SURFACE;
          } else {
@@ -607,10 +613,10 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
             uint32_t width, height;
             uint32_t num_buffers = 3;
             uint32_t swapchain_count;
-
+	    
             platform_get_dimensions(dpy,
-                  win, &width, &height, &swapchain_count);
-
+                 win, &width, &height, &swapchain_count);
+	    
             if (swapchain_count > 0)
                num_buffers = swapchain_count;
             else
@@ -621,6 +627,7 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
 
             if (width <= 0 || width > EGL_CONFIG_MAX_WIDTH || height <= 0 || height > EGL_CONFIG_MAX_HEIGHT) {
                /* TODO: Maybe EGL_BAD_ALLOC might be more appropriate? */
+	       vcos_log_error("eglCreateWindowSurface %d width=%d height=%d EGL_CONFIG_MAX_WIDTH=%d EGL_CONFIG_MAX_HEIGHT=%d", __LINE__,width,height,EGL_CONFIG_MAX_WIDTH,EGL_CONFIG_MAX_HEIGHT);
                thread->error = EGL_BAD_NATIVE_WINDOW;
                result = EGL_NO_SURFACE;
             } else {
@@ -1085,6 +1092,8 @@ EGLAPI EGLBoolean EGLAPIENTRY eglDestroySurface(EGLDisplay dpy, EGLSurface surf)
          surface->is_destroyed = true;
          khrn_pointer_map_delete(&process->surfaces, (uint32_t)(uintptr_t)surf);
          vcos_log_trace("eglDestroySurface: calling egl_surface_maybe_free...");
+	 // decrement the next_surface counter
+	 process->next_surface--;
          egl_surface_maybe_free(surface);
       }
 
@@ -1540,26 +1549,31 @@ EGLAPI EGLContext EGLAPIENTRY eglCreateContext(EGLDisplay dpy, EGLConfig config,
    CLIENT_PROCESS_STATE_T *process;
    EGLContext result;
 
-vcos_log_trace("eglCreateContext start");
+    vcos_log_trace("%s:%d",__FUNCTION__,__LINE__);
 
    if (CLIENT_LOCK_AND_GET_STATES(dpy, &thread, &process))
    {
       if ((int)(size_t)config < 1 || (int)(size_t)config > EGL_MAX_CONFIGS) {
+	  vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
          thread->error = EGL_BAD_CONFIG;
          result = EGL_NO_CONTEXT;
       } else {
          EGLint max_version = (EGLint) (thread->bound_api == EGL_OPENGL_ES_API ? 2 : 1);
          EGLint version = 1;
-
+	vcos_log_trace("%s:%d version=%d max_version=%d",__FUNCTION__,__LINE__,version,max_version);
          if (!egl_context_check_attribs(attrib_list, max_version, &version)) {
+	     vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
             thread->error = EGL_BAD_ATTRIBUTE;
             result = EGL_NO_CONTEXT;
          } else if (!(egl_config_get_api_support((int)(intptr_t)config - 1) &
             ((thread->bound_api == EGL_OPENVG_API) ? EGL_OPENVG_BIT :
             ((version == 1) ? EGL_OPENGL_ES_BIT : EGL_OPENGL_ES2_BIT)))) {
+	    vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
             thread->error = EGL_BAD_CONFIG;
             result = EGL_NO_CONTEXT;
          } else {
+	     vcos_log_trace("%s:%d",__FUNCTION__,__LINE__);
+
             EGL_CONTEXT_T *share_context;
 
             if (share_ctx != EGL_NO_CONTEXT) {
@@ -1568,50 +1582,57 @@ vcos_log_trace("eglCreateContext start");
                if (share_context) {
                   if ((share_context->type == OPENVG && thread->bound_api != EGL_OPENVG_API) ||
                      (share_context->type != OPENVG && thread->bound_api == EGL_OPENVG_API)) {
+		    vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
                      thread->error = EGL_BAD_MATCH;
                      share_context = NULL;
                   }
                } else {
+		  vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
                   thread->error = EGL_BAD_CONTEXT;
                }
             } else {
+		vcos_log_trace("%s:%d",__FUNCTION__,__LINE__);
                share_context = NULL;
-            }
+            } //  (share_ctx != EGL_NO_CONTEXT)
 
             if (share_ctx == EGL_NO_CONTEXT || share_context) {
+		vcos_log_trace("%s:%d thread->bound_api=%d",__FUNCTION__,__LINE__,thread->bound_api);
                EGL_CONTEXT_T *context;
                EGL_CONTEXT_TYPE_T type;
 
-#ifndef NO_OPENVG
-               if (thread->bound_api == EGL_OPENVG_API)
+               if (thread->bound_api == EGL_OPENVG_API){
                   type = OPENVG;
-               else
-#endif
-                  if (version == 1)
-                     type = OPENGL_ES_11;
-                  else
-                     type = OPENGL_ES_20;
-
-               context = egl_context_create(
-                                share_context,
-                                (EGLContext)(size_t)process->next_context,
-                                dpy, config, type);
+               } else {
+		    if (version == 1){ 
+			type = OPENGL_ES_11;
+			vcos_log_trace("%s:%d Creating OpenGL 1.1 Session",__FUNCTION__,__LINE__);
+		    } else {
+			type = OPENGL_ES_20;
+			vcos_log_trace("%s:%d Creating OpenGL 2.0 Session",__FUNCTION__,__LINE__);
+		    }
+		}
+		vcos_log_trace("%s:%d type=%d",__FUNCTION__,__LINE__,type);
+               context = egl_context_create(share_context,(EGLContext)(size_t)process->next_context, dpy, config, OPENGL_ES_20);
 
                if (context) {
                   if (khrn_pointer_map_insert(&process->contexts, process->next_context, context)) {
                      thread->error = EGL_SUCCESS;
+		     vcos_log_trace("%s:%d ",__FUNCTION__,__LINE__);
                      result = (EGLContext)(size_t)process->next_context++;
                   } else {
+		       vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
                      thread->error = EGL_BAD_ALLOC;
                      result = EGL_NO_CONTEXT;
                      egl_context_term(context);
                      khrn_platform_free(context);
                   }
                } else {
+		   vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
                   thread->error = EGL_BAD_ALLOC;
                   result = EGL_NO_CONTEXT;
                }
             } else {
+		vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
                /* thread->error set above */
                result = EGL_NO_CONTEXT;
             }
@@ -1619,10 +1640,11 @@ vcos_log_trace("eglCreateContext start");
       }
       CLIENT_UNLOCK();
    }
-   else
+   else{
+       vcos_log_error("%s:%d",__FUNCTION__,__LINE__);
       result = EGL_NO_CONTEXT;
-
-   vcos_log_trace("eglCreateContext end");
+    }
+   vcos_log_trace("%s:%d result=%p",__FUNCTION__,__LINE__,result);
 
    return result;
 }
@@ -2285,8 +2307,8 @@ EGLAPI EGLBoolean EGLAPIENTRY eglSwapBuffers(EGLDisplay dpy, EGLSurface surf)
                   surface->height = height;
                }
 
-               vcos_log_trace("eglSwapBuffers comparison: %d %d, %d %d",
-                        surface->width, surface->base_width, surface->height,
+               vcos_log_trace("eglSwapBuffers comparison: surface->win=%p surface->internal_handle=%p width=%d base_width=%d, height=%d base_height=%d ",
+                        surface->win,surface->internal_handle,surface->width, surface->base_width, surface->height,
                         surface->base_height);
 
                /* TODO: raise EGL_BAD_ALLOC if we try to enlarge window and then run out of memory

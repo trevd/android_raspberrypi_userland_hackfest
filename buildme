@@ -1,17 +1,5 @@
 #/bin/bash
-function copy_libs(){
 
-	cp -v build/lib/libbcm_host.so $1
-	cp -v build/lib/libmmal_core.so $1
-	cp -v build/lib/libmmal.so $1
-	cp -v build/lib/libmmal_util.so $1
-	cp -v build/lib/libmmal_vc_client.so $1
-	cp -v build/lib/libopenmaxil.so $1
-	cp -v build/lib/libOpenVG.so $1
-	cp -v build/lib/libvchiq_arm.so $1
-	cp -v build/lib/libvcos.so $1
-	cp -v build/lib/libWFC.so  $1
-}
 if [ "armv6l" = `arch` ]; then
 	# Native compile on the Raspberry Pi
 	mkdir -p build/raspberry/release
@@ -25,25 +13,16 @@ if [ "armv6l" = `arch` ]; then
 	fi
 else
 	# Cross compile on a more capable machine
-	ANDROID_VENDOR_LIB_OUT=/REPO/android-out/android-cm-armv6/target/product/rpi/system/vendor/lib
-	ANDROID_OBJ_LIB_OUT=/REPO/android-out/android-cm-armv6/target/product/rpi/obj/lib
-	THIS_DIR=$PWD
 	rm -rfv build
+	THIS_DIR=$PWD
 	mkdir -p build/arm-linux/release/
 	pushd build/arm-linux/release/
-	cmake -L$ANDROID_OBJ_LIB_OUT LD=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-ld -DANDROID=1 -DCMAKE_TOOLCHAIN_FILE=../../../makefiles/cmake/toolchains/arm-linux.cmake -DCMAKE_BUILD_TYPE=Release ../../..
-	LD=/android/build/android-cm-armv6/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-ld make -j16  --debug || exit
-	cd $THIS_DIR
-	copy_libs $ANDROID_VENDOR_LIB_OUT
-	copy_libs $ANDROID_OBJ_LIB_OUT
-	
-	cp build/lib/libEGL.so $ANDROID_VENDOR_LIB_OUT/egl/libEGL_bcm2708.so
-	cp build/lib/libGLESv2.so $ANDROID_VENDOR_LIB_OUT/egl/libGLESv2_bcm2708.so
-	ln -s $ANDROID_VENDOR_LIB_OUT/lib/egl/libEGL_bcm2708.so $ANDROID_VENDOR_LIB_OUT/egl/libGLES_CM_bcm2708.so
-	
-	if [ "$1" != "" ]; then
-	 sudo make install DESTDIR=$1
-	fi
+	cmake -DCMAKE_TOOLCHAIN_FILE=../../../makefiles/cmake/toolchains/arm-linux-gnueabihf.cmake -DCMAKE_BUILD_TYPE=Debug ../../.. 
+	make -j 6 khrn_static bcm_host_static && xclip-copyfile $THIS_DIR/build/lib/lib*.a 
+
+	#if [ "$1" != "" ]; then
+	# sudo make install DESTDIR=$1
+	#fi
 fi
 popd
 

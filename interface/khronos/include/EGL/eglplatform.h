@@ -91,10 +91,10 @@
  */
 #if (defined (__ANDROID__) || defined(ANDROID)) && defined(KHRN_BCG_ANDROID)
 
-struct android_native_window_t;
+struct  ANativeWindow;
 struct egl_native_pixmap_t;
 
-typedef struct android_native_window_t* EGLNativeWindowType;
+typedef struct  ANativeWindow* EGLNativeWindowType;
 typedef struct egl_native_pixmap_t*     EGLNativePixmapType;
 typedef void *EGLNativeDisplayType;
 

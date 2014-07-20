@@ -18,9 +18,15 @@ SET(CMAKE_INSTALL_PREFIX "${VMCS_INSTALL_PREFIX}" CACHE INTERNAL "Prefix
 SET(VMCS_PLUGIN_DIR ${CMAKE_INSTALL_PREFIX}/${CMAKE_SHARED_LIBRARY_PREFIX}/plugins)
 
 # What kind of system are we?
-
+if (${UNIX})
    set (VMCS_TARGET linux)
-
+elseif (${SYMBIAN})
+   set (VMCS_TARGET symbian)
+elseif (${WIN32})
+   set (VMCS_TARGET win32)
+else()
+   message(FATAL_ERROR,"Unknown system type")
+endif()
 
 # construct the vmcs config header file
 add_definitions(-DHAVE_VMCS_CONFIG)

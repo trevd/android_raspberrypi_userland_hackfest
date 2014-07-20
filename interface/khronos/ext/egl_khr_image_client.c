@@ -51,7 +51,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "middleware/khronos/common/2708/khrn_prod_4.h"
 #endif
 
-static VCOS_LOG_CAT_T egl_khr_image_client_log = VCOS_LOG_INIT("egl_khr_image_client", VCOS_LOG_WARN);
+static VCOS_LOG_CAT_T egl_khr_image_client_log = VCOS_LOG_INIT("egl_khr_image_client", VCOS_LOG_TRACE);
 
 EGLAPI EGLImageKHR EGLAPIENTRY eglCreateImageKHR (EGLDisplay dpy, EGLContext ctx, EGLenum target, EGLClientBuffer buffer, const EGLint *attr_list)
 {
@@ -227,8 +227,8 @@ EGLAPI EGLImageKHR EGLAPIENTRY eglCreateImageKHR (EGLDisplay dpy, EGLContext ctx
                      target = EGL_IMAGE_BRCM_MULTIMEDIA;
                   else
                      target = EGL_IMAGE_BRCM_RAW_PIXELS;
-                  buffer_width = gpriv->w;
-                  buffer_height = gpriv->h;
+                  buffer_width = gpriv->window.width;
+                  buffer_height = gpriv->window.height;
                   buffer_stride = gpriv->stride;
 
                   buf[0] = gralloc_private_handle_get_vc_handle(gpriv);

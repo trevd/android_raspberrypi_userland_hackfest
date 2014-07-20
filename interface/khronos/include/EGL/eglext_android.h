@@ -89,11 +89,34 @@ typedef EGLClientBuffer (EGLAPIENTRYP PFNEGLGETRENDERBUFFERANDROIDPROC) (EGLDisp
 #define EGL_ANDROID_recordable   1
 #define EGL_RECORDABLE_ANDROID   0x3142
 #endif
-
-#ifndef EGL_ANDROID_recordable
-#define EGL_ANDROID_recordable   1
-#define EGL_RECORDABLE_ANDROID   0x3147
+#ifndef EGL_ANDROID_framebuffer_target
+#define EGL_ANDROID_framebuffer_target   1
+#define EGL_FRAMEBUFFER_TARGET_ANDROID   0x3147
 #endif
+
+#ifndef EGL_ANDROID_native_fence_sync
+#define EGL_ANDROID_native_fence_sync 1
+#define EGL_SYNC_NATIVE_FENCE_ANDROID		0x3144
+#define EGL_SYNC_NATIVE_FENCE_FD_ANDROID	0x3145
+#define EGL_SYNC_NATIVE_FENCE_SIGNALED_ANDROID	0x3146
+#define EGL_NO_NATIVE_FENCE_FD_ANDROID		-1
+#ifdef EGL_EGLEXT_PROTOTYPES
+EGLAPI EGLint EGLAPIENTRY eglDupNativeFenceFDANDROID( EGLDisplay dpy, EGLSyncKHR);
+#endif /* EGL_EGLEXT_PROTOTYPES */
+typedef EGLint (EGLAPIENTRYP PFNEGLDUPNATIVEFENCEFDANDROIDPROC)(EGLDisplay dpy, EGLSyncKHR);
+#endif
+
+#ifndef EGL_ANDROID_blob_cache
+#define EGL_ANDROID_blob_cache 1
+typedef khronos_ssize_t EGLsizeiANDROID;
+typedef void (*EGLSetBlobFuncANDROID) (const void *key, EGLsizeiANDROID keySize, const void *value, EGLsizeiANDROID valueSize);
+typedef EGLsizeiANDROID (*EGLGetBlobFuncANDROID) (const void *key, EGLsizeiANDROID keySize, void *value, EGLsizeiANDROID valueSize);
+#ifdef EGL_EGLEXT_PROTOTYPES
+EGLAPI void EGLAPIENTRY eglSetBlobCacheFuncsANDROID(EGLDisplay dpy, EGLSetBlobFuncANDROID set, EGLGetBlobFuncANDROID get);
+#endif /* EGL_EGLEXT_PROTOTYPES */
+typedef void (EGLAPIENTRYP PFNEGLSETBLOBCACHEFUNCSANDROIDPROC)(EGLDisplay dpy, EGLSetBlobFuncANDROID set, EGLGetBlobFuncANDROID get);
+#endif
+
 
 #ifdef __cplusplus
 }

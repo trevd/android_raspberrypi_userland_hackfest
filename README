@@ -1,58 +1,81 @@
 android_raspberrypi_userland_hackfest
 =====================================
 
-First of all, I'm not proud of this but sometimes you have to play dirty 
-to get shit done!
+What I Should Of Done The First Time Round
 
-When your done here, you'll probably want to do this
-https://www.youtube.com/watch?v=PN0XRkSyhwM
 
-This repository contains the raspberrypi/userland repo which 
-grossly hacked to compile against bionic using the native cmake build 
-system hopefully with the android options turned on.
+This repo is an intermediate to compiling the RaspberryPI Userland for Android
 
-Don't expect this to compile as all the paths are hardcoded
-Yes even in the GCC specs file!!
+We only really need the libkhrn_static and it's supporting libraries.
+libvchiq_arm, libvcos, libbcm_host and libvchostif.
 
-I have no knowledge of how cmake works I just sort of hacked it til
-it smelt right and whatd'ya know we got a successfull compilation :)
+As this really is the only thing accessing the aforementioned libraries, it 
+seem prudent to just compile everything in to one "fat" static library.
 
-Pre-compiled version of the libraries can be found in build/lib
-Check libGLESv2_readelf.txt for abi stuff etc.
-Everything looks like it's ready for android
+We then use the Android Build System to transform the static library into
+a useable shared library.
 
-What the fuck is this for?
-==========================
-
-Mainly for sanity testing to see if using the official build system
-make any difference. 
-
-Miss-anti-alias
-================
-A Gralloc will no doubt need providing which "respects" broadcoms 
-callback functions
 
 Changes
 =======
-I've added support for the ANDROID_NATIVE_FRAMEBUFFER_TARGET configuration
-attributes in the EGL implementation this is required by Kitkats Surfaceflinger 
-although if I can get away with using a v1.0 hwcomposer then the need for 
-more concrete support should not be required.
 
-Removed the ./vcos/glibc/vcos_backtrace.c from the vcos library as we are
-obviously not using glibc.
+check interface/khronos/CMakeLists.txt for the changes. 
 
-Removed Raspicam, Raspistill etc from the host_applications build as it is
-currently required and more importantly was causing the build to fail
+Changes have been made to makefiles/cmake/toolchains/arm-linux-gnueabihf.cmake.
+CFlags have been adjusted to compile with a soft-float abi.
 
-Still Hungry?
-=============
-This repo is an temporary place for this stuff. The main project -
-Which incase you haven't already figured it out is to Port Android 4.4 ( CM11 ) 
-to the RaspberryPI. It's about 85% of the way there and the Missing piece
-of the Jigsaw is the Graphics Stack.
-If you want to hack on that please follow the instructions found in the 
-Readme file of the https://github.com/trevd/android_vendor_broadcom_rpi repository
-to setup an RaspberryPI compatible version of CM11 which is based off the 
-Androidarmv6 project ( http://github.com/androidarmv6 )
+Adding -DANDROID to the main CMakeLists.txt is all that is really required to 
+"turn on" the Android features. There is absolutely no need for the insanity that
+is on the master branch in this Repo .... we'll chalk that one up to experience :)
+
+DEGL_EGLEXT_ANDROID_STRUCT_HEADER "tells" the build to use the ANativeWindow instead
+of the older android_native_window_t
+
+buildme now only compiles the khrn_static .
+
+Android Changes
+===============
+
+Added the EGL_FRAMEBUFFER_TARGET_ANDROID egl config attribute as required by 
+hwcomposer v1.1 implementations.
+
+Modified the ./interface/khronos/common/linux/khrn_client_platform_linux.c
+to tie ANativeWindow to a "backend" EGL_DISPMANX_WINDOW_T. 
+This is achieved using the CLIENT_THREAD_STATE_T and CLIENT_PROCESS_STATE_T
+structures which maintain the internal state of library within the context
+of the running process.
+
+The egl Calls will still accept and EGL_DISPMANX_WINDOW_T or an ANativeWindow
+when an EGLNativeWindowType argument is required. 
+You should be able to pass an unitialized EGL_DISPMANX_WINDOW_T also
+
+BUGS 'n' Stuff 
+==============
+For some reason you cannot create an GLESv1.1 eglcontext. GLESv2 is used 
+reqardless of the setting. see eglCreateContext in interface/khronos/egl/egl_client.c
+This is the case on both a simple test case aswell as in the context of Android's
+Graphics stack implementation
+
+Logging, Debugging and the Fun Stuff
+====================================
+change the parameters passed to vcos_log_set_level and/or VCOS_LOG_INIT to 
+adjust the logcat log level.
+
+
+Hacking, Building and Linking
+=============================
+
+run ./buildme as normal. from with the context of the Android build system
+you can use the Android.mk in the root of this repositiory.
+The buildme script can probably be added as a phony target to integrate
+cmake into the Android Build System .... I will leave that as an exercise 
+for the reader :) 
+
+
+
+
+
+
+
+
 

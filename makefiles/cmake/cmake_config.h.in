@@ -10,7 +10,6 @@
 
 /** Do we have the execinfo.h include file ? */
 #cmakedefine                    HAVE_EXECINFO_H
-#cmakedefine                    ANDROID
 
 #endif
 

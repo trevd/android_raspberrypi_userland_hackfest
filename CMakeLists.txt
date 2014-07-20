@@ -14,7 +14,7 @@ get_filename_component(VIDEOCORE_ROOT . ABSOLUTE)
 set(VCOS_PTHREADS_BUILD_SHARED TRUE)
 
 include(makefiles/cmake/global_settings.cmake)
-include(makefiles/cmake/toolchains/arm-linux.cmake)
+include(makefiles/cmake/arm-linux.cmake)
 include(makefiles/cmake/vmcs.cmake)
 
 enable_language(ASM)
@@ -31,12 +31,17 @@ include_directories(${PROJECT_BINARY_DIR})
 include_directories(interface/vchiq_arm)
 #include_directories(tools/inet_transport)
 include_directories(host_support/include)
+include_directories(gralloc)
+include_directories(/android/build/android-cm-armv6/hardware/libhardware/include)
+include_directories(/android/build/android-cm-armv6/system/core/include)
 
 # Global compiler flags
 if(CMAKE_COMPILER_IS_GNUCC)
    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-multichar -Wall -Wno-unused-but-set-variable")
 endif()
 
+add_definitions(-DANDROID)
+add_definitions(-DEGL_EGLEXT_ANDROID_STRUCT_HEADER)
 add_definitions(-D_REENTRANT)
 add_definitions(-DUSE_VCHIQ_ARM -DVCHI_BULK_ALIGN=1 -DVCHI_BULK_GRANULARITY=1)
 add_definitions(-DOMX_SKIP64BIT)
@@ -47,12 +52,9 @@ add_definitions(-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
 add_definitions(-D__VIDEOCORE4__)
 add_definitions(-DTV_SUPPORTED_MODE_NO_DEPRECATED)
 
-# add_definitions(-DKHRONOS_CLIENT_LOGGING)
+#add_definitions(-DKHRONOS_CLIENT_LOGGING)
 
-# Check for OpenWF-C value set via command line
-if(KHRONOS_EGL_PLATFORM MATCHES "openwfc")
-   add_definitions(-DKHRONOS_EGL_PLATFORM_OPENWFC)
-endif()
+
 
 # List of subsidiary CMakeLists
 add_subdirectory(interface/vcos)

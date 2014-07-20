@@ -30,12 +30,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "interface/khronos/common/khrn_client.h"
 #include "interface/khronos/common/khrn_client_rpc.h"
 #include "interface/khronos/common/khrn_int_ids.h"
+#include "host_applications/linux/libs/bcm_host/include/bcm_host.h"
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
 #ifdef WANT_X
 #include "X11/Xlib.h"
 #endif
+
 
 extern VCOS_LOG_CAT_T khrn_client_log;
 
@@ -725,6 +727,7 @@ static EGL_DISPMANX_WINDOW_T default_dwin[NUM_WIN];
 static EGL_DISPMANX_WINDOW_T *check_default(EGLNativeWindowType win)
 {
    int wid = (int)win;
+   vcos_log_trace("%s check_default win=%p",__FUNCTION__,win);
    if(wid>-NUM_WIN && wid <=0) {
       /*
        * Special identifiers indicating the default windows. Either use the
@@ -741,13 +744,16 @@ static EGL_DISPMANX_WINDOW_T *check_default(EGLNativeWindowType win)
        * it is expected that Open WFC will provide a proper mechanism in the near future
        */
       wid = -wid;
-
+      
       if (!have_default_dwin[wid]) {
+	  bcm_host_init();
+	  vcos_log_trace("%s (!have_default_dwin[wid])",__FUNCTION__);
          DISPMANX_DISPLAY_HANDLE_T display = vc_dispmanx_display_open( (wid == 5) ? 2 : 0 );
+	 vcos_log_trace("%s display=%p",__FUNCTION__,display);
          DISPMANX_MODEINFO_T info;
          vc_dispmanx_display_get_info(display, &info);
          int32_t dw = info.width, dh = info.height;
-
+	vcos_log_trace("%s dw=%d dh=%d",__FUNCTION__,dw,dh);
          DISPMANX_UPDATE_HANDLE_T update = vc_dispmanx_update_start( 0 );
          VC_DISPMANX_ALPHA_T alpha = {DISPMANX_FLAGS_ALPHA_FIXED_ALL_PIXELS, 255, 0};
          VC_RECT_T dst_rect;
@@ -797,29 +803,211 @@ static EGL_DISPMANX_WINDOW_T *check_default(EGLNativeWindowType win)
       return (EGL_DISPMANX_WINDOW_T*)win;
 }
 
+#ifdef ANDROID
+uint32_t android_platform_get_handle(EGLDisplay dpy,EGLNativeWindowType window)
+{
+ 
+		errno = 0 ;
+		// Do we have a window?
+		if(window == NULL){
+			errno = EINVAL;
+			vcos_log_error("%s Error Window %p %d : %s ",__FUNCTION__,window,errno,strerror(errno));
+			return NULL;	
+		}	
+		void *window_ptr = window;
+		uint32_t* window_magic_ptr = window_ptr;
+		uint32_t window_magic = (*window_magic_ptr);
+		uint32_t return_value = 0;
+		if(window_magic != ANDROID_NATIVE_WINDOW_MAGIC){
+			vcos_log_trace("%s win=%p is not a ANativeWindow 0x%x\n",__FUNCTION__,window , window_magic);
+			vcos_log_trace("%s Trying EGL_DISPMANX_WINDOW_T \n",__FUNCTION__);
+			EGL_DISPMANX_WINDOW_T* native_window = window_ptr;
+			//return_value = (uint32_t) android_get_dispmanx_element();
+			return_value= (uint32_t)window;
+		}else if(window_magic == ANDROID_NATIVE_WINDOW_MAGIC){
+			vcos_log_trace("%s ANativeWindow Found win=%p 0x%x\n",__FUNCTION__,window , window_magic);
+			//return_value = (uint32_t) android_get_dispmanx_element();
+			return_value= (uint32_t)window;
+		}
+		return return_value;
+}
 
+static void android_native_window_get_dimensions(ANativeWindow *native_window,int32_t *width, int32_t *height){
+
+
+
+	// Query ALL THE THINGS!
+	native_window->query(native_window, NATIVE_WINDOW_WIDTH, width);
+	vcos_log_trace("%s NATIVE_WINDOW_WIDTH = %d ",__FUNCTION__,(*width));
+
+	native_window->query(native_window, NATIVE_WINDOW_HEIGHT, height);
+	vcos_log_trace("%s NATIVE_WINDOW_HEIGHT = %d ",__FUNCTION__,(*height));
+
+	int minbuffers = 0 ;
+	native_window->query(native_window, NATIVE_WINDOW_MIN_UNDEQUEUED_BUFFERS, &minbuffers);
+	vcos_log_trace("%s  NATIVE_WINDOW_MIN_UNDEQUEUED_BUFFERS = %d ",__FUNCTION__,minbuffers);
+
+	int composer_queues = 0 ;
+	native_window->query(native_window,  NATIVE_WINDOW_QUEUES_TO_WINDOW_COMPOSER, &composer_queues);
+	vcos_log_trace("%s   NATIVE_WINDOW_QUEUES_TO_WINDOW_COMPOSER = %d ",__FUNCTION__,composer_queues);
+
+
+	vcos_log_trace("%s native_window->common=%p\n",__FUNCTION__,native_window->common);
+	if(native_window->common.magic == NULL){
+		vcos_log_error("%s native_window->common.magic not set\n",__FUNCTION__);
+	}else{
+		vcos_log_trace("%s native_window->common.magic=%p\n",__FUNCTION__,native_window->common.magic);
+	}
+
+
+}
+
+void android_platform_get_dimensions(EGLDisplay display, EGLNativeWindowType window,
+      int32_t *width, int32_t *height, uint32_t *swapchain_count)
+{
+	errno = 0;
+
+	// Do some sanity checks	
+
+	// Make sure we have a valid pointer to store
+	// the width in
+	if(width == NULL){
+		errno = EINVAL;
+		vcos_log_error("%s Error Width %d : %s ",__FUNCTION__,errno,strerror(errno));
+		return ;
+	}
+	// set width to zero now we know the
+	// pointer is valid
+	(*width) = 0;
+
+	// Make sure we have a valid pointer to store the height in
+	if(height == NULL){
+		errno = EINVAL;
+		vcos_log_error("%s Error Height %d : %s ",__FUNCTION__,errno,strerror(errno));
+		return ;
+	}
+
+	// set height to zero now we know the
+	// pointer is valid
+	(*height) = 0;
+
+	// Make sure we have a valid pointer to store the height in
+	if(swapchain_count == NULL){
+		errno = EINVAL;
+		vcos_log_error("%s Error swapchain_count %d : %s ",__FUNCTION__,errno,strerror(errno));
+		return ;
+	}
+
+	// set swapchain_count to zero now we know the
+	// pointer is valid
+	(*swapchain_count) = 0;
+
+
+	// Do we have a window?
+	if(window == NULL){
+		errno = EINVAL;
+		vcos_log_error("%s Error Window %p %d : %s ",__FUNCTION__,window,errno,strerror(errno));
+		return ;	
+	}	
+
+	// We need to figure out what the concrete type backing
+	// the EGLNativeWindow is. ANDROID_NATIVE_WINDOW_MAGIC is
+	// "_wnd" [ 0x5f776e64 ] which fits nicely into a 4 byte integer
+	// Extra void* variable to avoid unneccessary casting drama!
+	// it compiler will abstract it away so there's no extra overhead.
+	void *window_ptr = window;
+	uint32_t* window_magic_ptr = window_ptr;
+	uint32_t window_magic = (*window_magic_ptr);
+	if(window_magic != ANDROID_NATIVE_WINDOW_MAGIC){
+		vcos_log_trace("%s win=%p is not a ANativeWindow 0x%x\n",__FUNCTION__,window , window_magic);
+		vcos_log_trace("%s Trying EGL_DISPMANX_WINDOW_T \n",__FUNCTION__);
+
+		EGL_DISPMANX_WINDOW_T* native_window = NULL ;//android_get_dispmanx();
+		(*height) = native_window->height;
+		(*width) = native_window->width;
+
+
+	}else if(window_magic == ANDROID_NATIVE_WINDOW_MAGIC){
+
+		vcos_log_trace("%s ANDROID_NATIVE_WINDOW_MAGIC FOUND window=%p 0x%x\n",__FUNCTION__,window,window_magic);
+		ANativeWindow *native_window = window;
+		android_native_window_get_dimensions(native_window,height,width);
+	}
+	vcos_log_trace("%s returning height=%d width=%d",__FUNCTION__,(*height),(*width));
+	return ;
+
+
+}
+
+
+#endif
+EGLint is_anativewindow( EGLNativeWindowType window)
+{
+    errno = 0 ;
+    // Do we have a window?
+    if(window == NULL){
+	    errno = EINVAL;
+	    vcos_log_error("%s Error Window %p %d : %s ",__FUNCTION__,window,errno,strerror(errno));
+	    return NULL;	
+    }	
+    void *window_ptr = window;
+    uint32_t* window_magic_ptr = window_ptr;
+    uint32_t window_magic = (*window_magic_ptr);
+    uint32_t return_value = EGL_FALSE;
+    if(window_magic == ANDROID_NATIVE_WINDOW_MAGIC){
+	return_value = EGL_TRUE;
+    }
+    return return_value;
+}
+
+EGL_DISPMANX_WINDOW_T* platform_get_dispmanx_handle_from_anativewindow(EGLDisplay display, EGLNativeWindowType window)
+{
+        // If we are working with an ANativeWindow we need to pull the EGL_DISPMANX_WINDOW_T
+    // out of the process state windows pointer map. 
+    // If it's our first time here then we need to create an EGL_DISPMANX_WINDOW_T
+    // and associate it with this ANative window
+    CLIENT_THREAD_STATE_T *thread = CLIENT_GET_THREAD_STATE();
+    CLIENT_PROCESS_STATE_T *process = client_egl_get_process_state(thread, display, EGL_TRUE);
+    
+	// client_egl_get_window perform an khrn_pointer_map_lookup on the win argument internally
+	EGL_DISPMANX_WINDOW_T *dwin = (EGL_DISPMANX_WINDOW_T*)client_egl_get_window(thread,process,window);
+	vcos_log_trace("%s win %p dwin %p ",__FUNCTION__,window,dwin);
+
+	if ( !is_anativewindow(window) ) {
+	    dwin =  (EGL_DISPMANX_WINDOW_T*)window;
+	} else if ( is_anativewindow(window) && (dwin==NULL) ) {
+	    vcos_log_trace("%s Android Window Found Setting up dispmanx window win=%p dwin=%p ",__FUNCTION__,window,dwin);
+	    dwin = check_default(0);
+	    khrn_pointer_map_insert(&process->windows, window, dwin);
+	
+	}
+	vcos_assert(dwin);
+	
+	return dwin;
+  
+}
 void platform_get_dimensions(EGLDisplay dpy, EGLNativeWindowType win,
       uint32_t *width, uint32_t *height, uint32_t *swapchain_count)
 {
-   EGL_DISPMANX_WINDOW_T *dwin = check_default(win);
-   vcos_assert(dwin);
+   
+    EGL_DISPMANX_WINDOW_T *dwin = platform_get_dispmanx_handle_from_anativewindow(dpy,win);
    vcos_assert(dwin->width < 1<<16); // sanity check
    vcos_assert(dwin->height < 1<<16); // sanity check
    *width = dwin->width;
    *height = dwin->height;
+   vcos_log_trace("%s win=%p dpy=%p dwin=%p dwin->height=%d,dwin->width=%d", __FUNCTION__,win,dpy,dwin,dwin->height,dwin->width);
    *swapchain_count = 0;
 }
-
 uint32_t platform_get_handle(EGLDisplay dpy, EGLNativeWindowType win)
 {
-   EGL_DISPMANX_WINDOW_T *dwin = check_default(win);
-   vcos_assert(dwin);
-   vcos_assert(dwin->width < 1<<16); // sanity check
-   vcos_assert(dwin->height < 1<<16); // sanity check
-   return dwin->element;
+
+    EGL_DISPMANX_WINDOW_T *dwin = platform_get_dispmanx_handle_from_anativewindow(dpy,win);
+    return (uint32_t)dwin->element;
 }
 
+
 #endif
+
 
 uint32_t platform_get_color_format ( uint32_t format ) { return format; }
 void platform_dequeue(EGLDisplay dpy, EGLNativeWindowType window) {}

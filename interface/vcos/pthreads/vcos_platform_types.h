@@ -53,7 +53,7 @@ extern "C" {
 /*#define VCOS_BKPT vcos_abort() */
 
 #define VCOS_ASSERT_LOGGING         1
-#define VCOS_ASSERT_LOGGING_DISABLE 0
+//#define VCOS_ASSERT_LOGGING_DISABLE 0
 
 extern void
 vcos_pthreads_logging_assert(const char *file, const char *func, unsigned int line, const char *fmt, ...);

@@ -601,7 +601,7 @@ bool egl_config_get_attrib(int id, EGLint attrib, EGLint *value)
       return true;
 #endif
 #if EGL_ANDROID_framebuffer_target
-  case EGL_FRAMEBUFFER_TARGET_ANDROID:
+   case EGL_FRAMEBUFFER_TARGET_ANDROID:
       *value = EGL_TRUE;
       return true;
 #endif
@@ -701,7 +701,7 @@ bool egl_config_filter(int id, const EGLint *attrib_list)
       case EGL_RECORDABLE_ANDROID:
 #endif
 #if EGL_ANDROID_framebuffer_target
-      case EGL_FRAMEBUFFER_TARGET_ANDROID:
+   case EGL_FRAMEBUFFER_TARGET_ANDROID:
 #endif
          if (value != EGL_DONT_CARE && value != actual_value)
             return false;

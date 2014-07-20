@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../../../../../../lib/libvcfiled_check.a  CMakeFiles/vcfiled_check.dir/vcfiled_check.c.o
-/usr/bin/ranlib ../../../../../../lib/libvcfiled_check.a

@@ -19,6 +19,7 @@ add_subdirectory (../generic generic)
 set (SOURCES
    vcos_pthreads.c
    vcos_dlfcn.c
+   ../glibc/vcos_backtrace.c
    ../generic/vcos_generic_event_flags.c
    ../generic/vcos_mem_from_malloc.c
    ../generic/vcos_generic_named_sem.c
@@ -34,10 +35,10 @@ set (SOURCES
 
 if (VCOS_PTHREADS_BUILD_SHARED)
    add_library (vcos SHARED ${SOURCES})
-   target_link_libraries (vcos dl)
+   target_link_libraries (vcos pthread dl rt)
 else ()
    add_library (vcos ${SOURCES})
-   target_link_libraries (vcos)
+   target_link_libraries (vcos pthread rt)
 endif ()
 
 

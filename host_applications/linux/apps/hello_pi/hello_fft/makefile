@@ -13,7 +13,7 @@ C = hello_fft.c mailbox.c gpu_fft.c gpu_fft_twiddles.c gpu_fft_shaders.c
 
 B = hello_fft.bin
 
-F = -lm -o $(B)
+F = -lrt -lm -o $(B)
 
 $(B):	$(H) $(C)
 	gcc $(F) $(C)

@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../../../../lib/libvmcs_rpc_client.a  CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/message_dispatch.c.o CMakeFiles/vmcs_rpc_client.dir/test/stubs.c.o CMakeFiles/vmcs_rpc_client.dir/vmcs_rpc_client/platform.c.o
-/usr/bin/ranlib ../../../../lib/libvmcs_rpc_client.a
