@@ -43,7 +43,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "interface/vcos/vcos.h"
 
 #if EGL_ANDROID_image_native_buffer
-#include <gralloc_brcm.h>
+//#include <gralloc_brcm.h>
 #endif
 
 #if defined(ANDROID) && defined(KHRN_BCG_ANDROID)
@@ -174,72 +174,7 @@ EGLAPI EGLImageKHR EGLAPIENTRY eglCreateImageKHR (EGLDisplay dpy, EGLContext ctx
                   buf_error = true;
                }
 #endif
-#if EGL_ANDROID_image_native_buffer
-#ifdef KHRN_BCG_ANDROID
-            } else if (target == EGL_NATIVE_BUFFER_ANDROID) {
-               android_native_buffer_t *android_buffer = (android_native_buffer_t *)buffer;
-               vcos_assert(ANDROID_NATIVE_BUFFER_MAGIC == android_buffer->common.magic);
-               /* TODO check that handle is a valid gralloc handle */
-               /* These are shadow width/height and format, not to be confused with the
-                  underlying formats configuration */
 
-               buf[0] = (uint32_t)khrn_hw_unaddr(((struct private_handle_t *)android_buffer->handle)->oglPhysicalAddress);
-
-               buffer_format = ((struct private_handle_t *)android_buffer->handle)->oglFormat;
-               buffer_width = android_buffer->width;
-               buffer_height = android_buffer->height;
-               buffer_stride = ((struct private_handle_t *)android_buffer->handle)->oglStride;
-
-               switch (((struct private_handle_t *)android_buffer->handle)->oglFormat)
-               {
-                  case BEGL_BufferFormat_eR8G8B8A8_TFormat:       buffer_format = ABGR_8888_TF;    break;
-                  case BEGL_BufferFormat_eX8G8B8A8_TFormat:       buffer_format = XBGR_8888_TF;    break;
-                  case BEGL_BufferFormat_eR5G6B5_TFormat:         buffer_format = RGB_565_TF;      break;
-                  case BEGL_BufferFormat_eR5G5B5A1_TFormat:       buffer_format = RGBA_5551_TF;    break;
-                  case BEGL_BufferFormat_eR4G4B4A4_TFormat:       buffer_format = RGBA_4444_TF;    break;
-                  case BEGL_BufferFormat_eR8G8B8A8_LTFormat:      buffer_format = ABGR_8888_LT;    break;
-                  case BEGL_BufferFormat_eX8G8B8A8_LTFormat:      buffer_format = XBGR_8888_LT;    break;
-                  case BEGL_BufferFormat_eR5G6B5_LTFormat:        buffer_format = RGB_565_LT;      break;
-                  case BEGL_BufferFormat_eR5G5B5A1_LTFormat:      buffer_format = RGBA_5551_LT;    break;
-                  case  BEGL_BufferFormat_eR4G4B4A4_LTFormat:     buffer_format = RGBA_4444_LT;    break;
-                  default :                                       buf_error = true;                break;
-               }
-#else
-            } else if (target == EGL_NATIVE_BUFFER_ANDROID) {
-               gralloc_private_handle_t *gpriv = gralloc_private_handle_from_client_buffer(buffer);
-               int res_type = gralloc_private_handle_get_res_type(gpriv);
-
-               if (res_type == GRALLOC_PRIV_TYPE_GL_RESOURCE) {
-                  /* just return the a copy of the EGLImageKHR gralloc created earlier
-                     see hardware/broadcom/videocore/components/graphics/gralloc/ */
-                  target = EGL_IMAGE_BRCM_DUPLICATE;
-                  buf[0] = (uint32_t)gralloc_private_handle_get_egl_image(gpriv);
-                  vcos_log_trace("%s: converting buffer %p egl_image %d to EGL_IMAGE_BRCM_DUPLICATE",
-                        __FUNCTION__, buffer, buf[0]);
-               }
-               else if (res_type == GRALLOC_PRIV_TYPE_MM_RESOURCE) {
-                  /* MM image is potentially going to be used as a texture so
-                   * VC EGL needs to acquire a reference to the underlying vc_image.
-                   * So, we create the image in the normal way.
-                   * EGL_NATIVE_BUFFER_ANDROID is passed as the target.
-                   */
-                  if (gpriv->gl_format == GRALLOC_MAGICS_HAL_PIXEL_FORMAT_OPAQUE)
-                     target = EGL_IMAGE_BRCM_MULTIMEDIA;
-                  else
-                     target = EGL_IMAGE_BRCM_RAW_PIXELS;
-                  buffer_width = gpriv->window.width;
-                  buffer_height = gpriv->window.height;
-                  buffer_stride = gpriv->stride;
-
-                  buf[0] = gralloc_private_handle_get_vc_handle(gpriv);
-                  vcos_log_trace("%s: converting buffer %p handle %u to EGL_IMAGE_BRCM_MULTIMEDIA",
-                        __FUNCTION__, buffer, buf[0]);
-               }
-               else {
-                  vcos_log_error("%s: unknown gralloc resource type %x", __FUNCTION__, res_type);
-               }
-#endif
-#else /* Not Android */
             } else if (target == EGL_IMAGE_BRCM_MULTIMEDIA) {
                   buf[0] = (uint32_t)buffer;
                   vcos_log_trace("%s: converting buffer handle %u to EGL_IMAGE_BRCM_MULTIMEDIA",
@@ -256,7 +191,7 @@ EGLAPI EGLImageKHR EGLAPIENTRY eglCreateImageKHR (EGLDisplay dpy, EGLContext ctx
                   buf[0] = (uint32_t)buffer;
                   vcos_log_trace("%s: converting buffer handle %u to EGL_IMAGE_BRCM_MULTIMEDIA_V",
                         __FUNCTION__, buf[0]);
-#endif
+
             } else {
                vcos_log_trace("%s:target type %x buffer %p handled on server", __FUNCTION__, target, buffer);
                buf[0] = (uint32_t)buffer;

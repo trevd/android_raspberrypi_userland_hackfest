@@ -31,8 +31,9 @@ include_directories(${PROJECT_BINARY_DIR})
 include_directories(interface/vchiq_arm)
 #include_directories(tools/inet_transport)
 include_directories(host_support/include)
-include_directories(gralloc)
+#include_directories(gralloc)
 include_directories(/android/build/android-cm-armv6/hardware/libhardware/include)
+include_directories(/android/build/android-cm-armv6/hardware/broadcom/bcm2708/gralloc)
 include_directories(/android/build/android-cm-armv6/system/core/include)
 
 # Global compiler flags

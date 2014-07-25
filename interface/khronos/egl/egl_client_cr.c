@@ -473,7 +473,7 @@ static EGLBoolean choose_config(EGLDisplay dpy, const EGLint *attrib_list, EGLCo
 
 EGLAPI EGLBoolean EGLAPIENTRY eglChooseConfig(EGLDisplay dpy, const EGLint *attrib_list, EGLConfig *configs, EGLint config_size, EGLint *num_config)
 {
-   return choose_config(dpy, attrib_list, configs, config_size, num_config, false);
+   return choose_config(dpy, attrib_list, configs, config_size, num_config, true);
 }
 
 #if EGL_BRCM_sane_choose_config

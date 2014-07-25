@@ -435,7 +435,7 @@ EGLAPI const char EGLAPIENTRY * eglQueryString(EGLDisplay dpy, EGLint name)
             "EGL_ANDROID_image_native_buffer "
 #endif
 #ifdef EGL_ANDROID_framebuffer_target
-	"EGL_ANDROID_framebuffer_target"
+	"EGL_ANDROID_framebuffer_target "
 #endif
 #ifdef ANDROID
 #ifdef EGL_KHR_fence_sync
@@ -583,11 +583,12 @@ EGLAPI EGLSurface EGLAPIENTRY eglCreateWindowSurface(EGLDisplay dpy, EGLConfig c
    CLIENT_PROCESS_STATE_T *process;
    EGLSurface result;
 
-   vcos_log_trace("eglCreateWindowSurface for window %p", win);
+   vcos_log_trace("eglCreateWindowSurface for window %p config=%d", win,config);
 
    if (CLIENT_LOCK_AND_GET_STATES(dpy, &thread, &process))
    {
       
+      //win = platform_get_dispmanx_handle_from_anativewindow(dpy,win);
       uint32_t handle = platform_get_handle(dpy, win);
 
 
@@ -1093,7 +1094,7 @@ EGLAPI EGLBoolean EGLAPIENTRY eglDestroySurface(EGLDisplay dpy, EGLSurface surf)
          khrn_pointer_map_delete(&process->surfaces, (uint32_t)(uintptr_t)surf);
          vcos_log_trace("eglDestroySurface: calling egl_surface_maybe_free...");
 	 // decrement the next_surface counter
-	 process->next_surface--;
+	 //process->next_surface--;
          egl_surface_maybe_free(surface);
       }
 
@@ -2296,7 +2297,9 @@ EGLAPI EGLBoolean EGLAPIENTRY eglSwapBuffers(EGLDisplay dpy, EGLSurface surf)
 
                width = surface->width;
                height = surface->height;
-
+	       EGLNativeWindowType _awin = surface->win ; 
+	       
+	       surface->win = platform_get_dispmanx_handle_from_anativewindow(dpy,surface->win);
                platform_get_dimensions(dpy, surface->win,
                      &width, &height, &swapchain_count);
 
@@ -2340,6 +2343,7 @@ EGLAPI EGLBoolean EGLAPIENTRY eglSwapBuffers(EGLDisplay dpy, EGLSurface surf)
                CLIENT_UNLOCK();
                platform_dequeue(dpy, surface->win);
                CLIENT_LOCK();
+	       surface->win = _awin ; 
 #else
 
 #  ifdef KHRONOS_EGL_PLATFORM_OPENWFC
